@@ -390,20 +390,29 @@ function Phone({x, y, h=440, at=0, tilt=-9}){
   );
 }
 
-/* ---------- HUD (persistent wordmark + clock + flag) ---------- */
+/* ---------- ERmark — Groupe ER wordmark rendered as type ---------- */
+function ERmark({h=34, color='#EAF1FB', style={}}){
+  return (
+    <span style={{display:'inline-flex',alignItems:'baseline',gap:h*0.24,fontFamily:FD,lineHeight:1,...style}}>
+      <span style={{fontWeight:900,fontSize:h,letterSpacing:'-0.02em',color}}>ER</span>
+      <span style={{fontWeight:600,fontSize:h*0.42,letterSpacing:'0.14em',textTransform:'uppercase',color,opacity:0.62}}>Group</span>
+    </span>
+  );
+}
+
+/* ---------- HUD (persistent DDS wordmark + partnership tag) ---------- */
 function Hud({actLabel}){
   const t=useTime();
   return (
     <div style={{position:'absolute',inset:0,pointerEvents:'none'}}>
-      <img src="assets/logos/tibok.png" alt="TIBOK" style={{position:'absolute',top:46,left:120,height:34}}/>
-      <div style={{position:'absolute',top:60,right:120,display:'flex',alignItems:'center',gap:14}}>
-        <div style={{display:'flex',height:8,width:48,borderRadius:2,overflow:'hidden'}}>
-          <i style={{flex:1,background:'#EA2839'}}/><i style={{flex:1,background:'#1A206D'}}/><i style={{flex:1,background:'#F4C300'}}/><i style={{flex:1,background:'#00A551'}}/>
-        </div>
+      <img src="assets/logos/dds.png" alt="Digital Data Solutions" style={{position:'absolute',top:44,left:120,height:34,opacity:0.95}}/>
+      <div style={{position:'absolute',top:52,right:120,display:'flex',alignItems:'center',gap:14,opacity:0.72}}>
+        <span style={{fontFamily:FD,fontWeight:500,fontSize:14,letterSpacing:'0.16em',textTransform:'uppercase',color:C.dim}}>Présenté au</span>
+        <ERmark h={26}/>
       </div>
     </div>
   );
 }
 
-Object.assign(window, { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Hud, Logo, Swan, PhotoTile, FlowSvg, FlowLink, NodeChip, Phone });
+Object.assign(window, { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Hud, Logo, Swan, PhotoTile, FlowSvg, FlowLink, NodeChip, Phone, ERmark });
 })();

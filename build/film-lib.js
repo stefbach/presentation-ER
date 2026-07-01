@@ -239,7 +239,7 @@
         whiteSpace: 'nowrap',
         flex: 'none'
       }
-    }, "\xB7 ", title));
+    }, "· ", title));
   }
 
   /* ---------- Narration teleprompter (scrolls / défile) ---------- */
@@ -542,7 +542,7 @@
         fontSize: 13,
         fontWeight: 800
       }
-    }, "\u2713"), children);
+    }, "✓"), children);
   }
 
   /* ---------- Growing bar ---------- */
@@ -1065,7 +1065,7 @@
         fontSize: h * 0.042,
         color: '#fff'
       }
-    }, "Consultation \xB7 Urgences"), /*#__PURE__*/React.createElement("div", {
+    }, "Consultation · Urgences"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 500,
@@ -1073,7 +1073,7 @@
         color: 'rgba(214,226,244,0.82)',
         marginTop: h * 0.008
       }
-    }, "Saisie auxiliaire de sant\xE9")), vit.map((v, i) => {
+    }, "Saisie auxiliaire de santé")), vit.map((v, i) => {
       const fill = ev(localTime, at + 0.6 + i * 0.18, 0.7) * v[1];
       return /*#__PURE__*/React.createElement("div", {
         key: i,
@@ -1123,7 +1123,7 @@
         fontSize: h * 0.038,
         color: C.teal
       }
-    }, "\u2713 Recommandation pr\xEAte"), /*#__PURE__*/React.createElement("div", {
+    }, "✓ Recommandation prête"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 500,
@@ -1131,7 +1131,7 @@
         color: 'rgba(224,238,248,0.9)',
         marginTop: h * 0.006
       }
-    }, "60 000 r\xE9f\xE9rences"))), /*#__PURE__*/React.createElement("div", {
+    }, "60 000 références"))), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         top: w * 0.07,
@@ -1145,7 +1145,41 @@
     })));
   }
 
-  /* ---------- HUD (persistent wordmark + clock + flag) ---------- */
+  /* ---------- ERmark — Groupe ER wordmark rendered as type ---------- */
+  function ERmark({
+    h = 34,
+    color = '#EAF1FB',
+    style = {}
+  }) {
+    return /*#__PURE__*/React.createElement("span", {
+      style: {
+        display: 'inline-flex',
+        alignItems: 'baseline',
+        gap: h * 0.24,
+        fontFamily: FD,
+        lineHeight: 1,
+        ...style
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontWeight: 900,
+        fontSize: h,
+        letterSpacing: '-0.02em',
+        color
+      }
+    }, "ER"), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontWeight: 600,
+        fontSize: h * 0.42,
+        letterSpacing: '0.14em',
+        textTransform: 'uppercase',
+        color,
+        opacity: 0.62
+      }
+    }, "Group"));
+  }
+
+  /* ---------- HUD (persistent DDS wordmark + partnership tag) ---------- */
   function Hud({
     actLabel
   }) {
@@ -1157,52 +1191,37 @@
         pointerEvents: 'none'
       }
     }, /*#__PURE__*/React.createElement("img", {
-      src: "assets/logos/tibok.png",
-      alt: "TIBOK",
+      src: "assets/logos/dds.png",
+      alt: "Digital Data Solutions",
       style: {
         position: 'absolute',
-        top: 46,
+        top: 44,
         left: 120,
-        height: 34
+        height: 34,
+        opacity: 0.95
       }
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 60,
+        top: 52,
         right: 120,
         display: 'flex',
         alignItems: 'center',
-        gap: 14
+        gap: 14,
+        opacity: 0.72
       }
-    }, /*#__PURE__*/React.createElement("div", {
+    }, /*#__PURE__*/React.createElement("span", {
       style: {
-        display: 'flex',
-        height: 8,
-        width: 48,
-        borderRadius: 2,
-        overflow: 'hidden'
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 14,
+        letterSpacing: '0.16em',
+        textTransform: 'uppercase',
+        color: C.dim
       }
-    }, /*#__PURE__*/React.createElement("i", {
-      style: {
-        flex: 1,
-        background: '#EA2839'
-      }
-    }), /*#__PURE__*/React.createElement("i", {
-      style: {
-        flex: 1,
-        background: '#1A206D'
-      }
-    }), /*#__PURE__*/React.createElement("i", {
-      style: {
-        flex: 1,
-        background: '#F4C300'
-      }
-    }), /*#__PURE__*/React.createElement("i", {
-      style: {
-        flex: 1,
-        background: '#00A551'
-      }
-    }))));
+    }, "Présenté au"), /*#__PURE__*/React.createElement(ERmark, {
+      h: 26
+    })));
   }
   Object.assign(window, {
     Scene,
@@ -1223,6 +1242,7 @@
     FlowSvg,
     FlowLink,
     NodeChip,
-    Phone
+    Phone,
+    ERmark
   });
 })();

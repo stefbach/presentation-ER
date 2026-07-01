@@ -17,7 +17,7 @@ const jobs = [
 ];
 fs.mkdirSync('build', { recursive: true });
 for (const [src, out] of jobs) {
-  const code = Babel.transform(fs.readFileSync(src, 'utf8'), { presets: ['react'], filename: src, compact: false }).code;
+  const code = Babel.transform(fs.readFileSync(src, 'utf8'), { presets: [['react', { runtime: 'classic' }]], filename: src, compact: false }).code;
   fs.writeFileSync(out, code);
   console.log('compiled', out);
 }

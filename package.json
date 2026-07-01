@@ -1,0 +1,12 @@
+{
+  "name": "dds-groupe-er-film",
+  "version": "1.0.0",
+  "description": "Film stratégique Digital Data Solutions × Groupe ER (français, ~7 min).",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "@babel/standalone": "^8.0.3"
+  }
+}
