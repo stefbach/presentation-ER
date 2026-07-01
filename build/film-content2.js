@@ -42,7 +42,7 @@
       act: "L'écosystème",
       title: "Un producteur, un portefeuille"
     }), /*#__PURE__*/React.createElement(DDSOrg, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['DDS est une holding. Trois produits IA en production —', 'TIBOK, Lexora, Axon. Chacun avec de vrais clients.', 'Et autour d’eux, des ventures liées :', 'Obesity Care Clinic, et CVMI, tourisme médical au Cap-Vert.', 'Un écosystème — pas une agence.'],
+      lines: ['DDS est une holding. Trois produits IA :', 'TIBOK, Lexora, Axon — déjà en service, de premiers clients.', 'Et autour d’eux, des ventures liées :', 'Obesity Care Clinic, et CVMI, tourisme médical au Cap-Vert.', 'Un écosystème — pas une agence.'],
       x: 960,
       width: 1500,
       align: "center",
@@ -168,7 +168,7 @@
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(TibokHub, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['TIBOK n’est pas une app de téléconsultation.', 'C’est une intelligence médicale qui opère autour', 'de chaque point de soin — distanciel, présentiel,', 'pharmacie, labo, radiologie, urgences, soins primaires.', '60 000 références. En production chez Swan.'],
+      lines: ['TIBOK n’est pas une app de téléconsultation.', 'C’est une intelligence médicale qui opère autour', 'de chaque point de soin — distanciel, présentiel,', 'pharmacie, labo, radiologie, urgences, soins primaires.', '60 000 références. Premier assureur : Swan, signature en cours.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -281,14 +281,14 @@
     hue: 'green',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
       act: "L'opportunité",
-      title: "Swan a validé le principe",
+      title: "Swan — signature en cours",
       color: C.green
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 140,
       size: 52,
       weight: 700,
-      lines: ['Swan a validé', 'le principe.'],
+      lines: ['Avec Swan,', 'la signature est en cours.'],
       accentIdx: [1],
       accentColor: C.green
     }), /*#__PURE__*/React.createElement(Swan, {
@@ -319,12 +319,12 @@
         lineHeight: 1.4,
         textAlign: 'center'
       }
-    }, "Swan accepte de ", /*#__PURE__*/React.createElement("span", {
+    }, "Premier grand assureur à s’", /*#__PURE__*/React.createElement("span", {
       style: {
         color: C.green,
         fontWeight: 800
       }
-    }, "rembourser"), " les consultations et prescriptions réalisées sur TIBOK."))), /*#__PURE__*/React.createElement("div", {
+    }, "engager"), " sur le remboursement des consultations et prescriptions faites sur TIBOK."))), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         top: 474,
@@ -355,7 +355,7 @@
         marginTop: 14,
         marginBottom: 16
       }
-    }, "Prêts à déployer le service — salariés & familles"), /*#__PURE__*/React.createElement("div", {
+    }, "En discussion pour le déploiement — salariés & familles"), /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         justifyContent: 'center',
@@ -380,7 +380,7 @@
       at: 1.28,
       color: C.gold
     }, "… et bien d’autres"))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Swan a signé — et surtout, Swan accepte de rembourser', 'les consultations et les prescriptions faites sur TIBOK.', 'C’est le feu vert qu’attendaient le Groupe ER, Taylor Smith,', 'Alteo, CIM Finance — et bien d’autres encore.', 'La place est ouverte. Le Groupe ER doit y entrer.'],
+      lines: ['Avec Swan, la signature est en cours : le premier grand', 'assureur à s’engager sur le remboursement des consultations', 'et des prescriptions faites sur TIBOK. C’est le tout début', 'de l’histoire — et la place est ouverte. Le Groupe ER,', 'Taylor Smith, Alteo, CIM Finance… Le Groupe ER peut être', 'parmi les premiers à entrer dans l’offre TIBOK.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -1294,7 +1294,7 @@
         gap: 12,
         justifyContent: 'flex-start'
       }
-    }, ['Système prouvé — Swan', 'Équipe 100% mauricienne', '3 produits IA en production'].map((c, i) => /*#__PURE__*/React.createElement("span", {
+    }, ['Swan — signature en cours', 'Équipe 100% mauricienne', 'Écosystème de 3 produits IA'].map((c, i) => /*#__PURE__*/React.createElement("span", {
       key: i,
       style: {
         padding: '11px 20px',

@@ -97,7 +97,7 @@
     const {
       localTime
     } = useScene();
-    const ph = [['1993 — 2003', 'Médecin hospitalier (France)', 'Le système public, de l’intérieur'], ['2003 — 2008', 'Fondateur de clinique', 'Gestion opérationnelle & financière'], ['2008 — 2019', 'Économiste de la santé', 'Classement Le Figaro · 30+ publications · 2 exits'], ['2019 — 2026', 'Maurice', 'Fondateur DDS · scores BSD & BMN · IA depuis 5 ans']];
+    const ph = [['1993 — 2003', 'Médecin hospitalier (France)', 'Le système public, de l’intérieur'], ['2003 — 2008', 'Fondateur de clinique', 'Gestion opérationnelle & financière'], ['2008 — 2019', 'Économiste de la santé', 'Classement Le Figaro · 30+ publications · 2 exits'], ['2019 — 2026', 'Maurice', 'Fondateur DDS · IA dès l’arrivée des LLM · GPT-3, 2020']];
     const W = 380,
       gap = 34,
       total = ph.length * W + (ph.length - 1) * gap,
@@ -336,7 +336,7 @@
       act: "Le fondateur",
       title: "Dr Stéphane Bach"
     }), /*#__PURE__*/React.createElement(TimelineViz, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Je m’appelle Stéphane Bach. Je suis médecin.', 'Trente ans à voir comment fonctionnent', 'vraiment les systèmes de santé —', 'pas comme les manuels le décrivent.', 'J’ai dirigé des cliniques, géré des budgets,', 'publié des algorithmes avec Aix-Marseille.', 'Deux exits derrière moi.', 'Et depuis 2019, à Maurice, j’ai plongé dans l’IA —', 'j’ai grandi avec elle, ses modèles, ses capacités.'],
+      lines: ['Je m’appelle Stéphane Bach. Je suis médecin.', 'Trente ans à voir comment fonctionnent', 'vraiment les systèmes de santé —', 'pas comme les manuels le décrivent.', 'J’ai dirigé des cliniques, géré des budgets,', 'publié des algorithmes avec Aix-Marseille.', 'Deux exits derrière moi.', 'Et dès l’arrivée des grands modèles de langage —', 'GPT-3, en juin 2020 — j’ai plongé dans l’IA,', 'j’ai grandi avec elle, ses modèles, ses capacités.'],
       x: 960,
       width: 1500,
       align: "center",

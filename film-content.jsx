@@ -39,7 +39,7 @@ function TimelineViz(){
   const ph=[['1993 — 2003','Médecin hospitalier (France)','Le système public, de l’intérieur'],
     ['2003 — 2008','Fondateur de clinique','Gestion opérationnelle & financière'],
     ['2008 — 2019','Économiste de la santé','Classement Le Figaro · 30+ publications · 2 exits'],
-    ['2019 — 2026','Maurice','Fondateur DDS · scores BSD & BMN · IA depuis 5 ans']];
+    ['2019 — 2026','Maurice','Fondateur DDS · IA dès l’arrivée des LLM · GPT-3, 2020']];
   const W=380,gap=34,total=ph.length*W+(ph.length-1)*gap,sx=(1920-total)/2,lineY=336;
   const lineP=ev(localTime,0.3,1.4,Easing.easeOutCubic);
   return (
@@ -121,7 +121,8 @@ const SCENES = [
     'J’ai dirigé des cliniques, géré des budgets,',
     'publié des algorithmes avec Aix-Marseille.',
     'Deux exits derrière moi.',
-    'Et depuis 2019, à Maurice, j’ai plongé dans l’IA —',
+    'Et dès l’arrivée des grands modèles de langage —',
+    'GPT-3, en juin 2020 — j’ai plongé dans l’IA,',
     'j’ai grandi avec elle, ses modèles, ses capacités.']}
     x={960} width={1500} align="center" y={812} size={38} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.22)" lead={1.6} tail={1.4}/>

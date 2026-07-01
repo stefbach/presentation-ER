@@ -17,8 +17,8 @@ const SCENES_B = [
   <ActTag act="L'écosystème" title="Un producteur, un portefeuille"/>
   <DDSOrg/>
   <Narration lines={[
-    'DDS est une holding. Trois produits IA en production —',
-    'TIBOK, Lexora, Axon. Chacun avec de vrais clients.',
+    'DDS est une holding. Trois produits IA :',
+    'TIBOK, Lexora, Axon — déjà en service, de premiers clients.',
     'Et autour d’eux, des ventures liées :',
     'Obesity Care Clinic, et CVMI, tourisme médical au Cap-Vert.',
     'Un écosystème — pas une agence.']}
@@ -80,7 +80,7 @@ const SCENES_B = [
     'C’est une intelligence médicale qui opère autour',
     'de chaque point de soin — distanciel, présentiel,',
     'pharmacie, labo, radiologie, urgences, soins primaires.',
-    '60 000 références. En production chez Swan.']}
+    '60 000 références. Premier assureur : Swan, signature en cours.']}
     x={960} width={1560} align="center" y={918} size={31} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -135,19 +135,19 @@ const SCENES_B = [
 
 /* ---------- 14 · SWAN → L'OPPORTUNITÉ ER ---------- */
 { dur:32, hue:'green', node:(<React.Fragment>
-  <ActTag act="L'opportunité" title="Swan a validé le principe" color={C.green}/>
-  <Statement x={120} y={140} size={52} weight={700} lines={['Swan a validé','le principe.']} accentIdx={[1]} accentColor={C.green}/>
+  <ActTag act="L'opportunité" title="Swan — signature en cours" color={C.green}/>
+  <Statement x={120} y={140} size={52} weight={700} lines={['Avec Swan,','la signature est en cours.']} accentIdx={[1]} accentColor={C.green}/>
   <Swan h={70} x={1360} y={150} at={0.5}/>
   <div style={{position:'absolute',top:308,left:0,right:0,display:'flex',justifyContent:'center'}}>
     <Panel at={0.4} style={{maxWidth:1360}}>
       <div style={{fontFamily:FD,fontWeight:600,fontSize:29,color:'#fff',lineHeight:1.4,textAlign:'center'}}>
-        Swan accepte de <span style={{color:C.green,fontWeight:800}}>rembourser</span> les consultations et prescriptions réalisées sur TIBOK.</div>
+        Premier grand assureur à s’<span style={{color:C.green,fontWeight:800}}>engager</span> sur le remboursement des consultations et prescriptions faites sur TIBOK.</div>
     </Panel>
   </div>
   <div style={{position:'absolute',top:474,left:0,right:0,textAlign:'center'}}>
     <div style={{fontFamily:FD,fontWeight:700,fontSize:24,color:'#fff',marginBottom:6}}>
       Le <span style={{color:C.blue}}>Groupe ER</span> doit entrer dans l’offre TIBOK.</div>
-    <div style={{fontFamily:FD,fontWeight:600,fontSize:17,letterSpacing:'0.1em',textTransform:'uppercase',color:C.dim,marginTop:14,marginBottom:16}}>Prêts à déployer le service — salariés & familles</div>
+    <div style={{fontFamily:FD,fontWeight:600,fontSize:17,letterSpacing:'0.1em',textTransform:'uppercase',color:C.dim,marginTop:14,marginBottom:16}}>En discussion pour le déploiement — salariés & familles</div>
     <div style={{display:'flex',justifyContent:'center',gap:14,flexWrap:'wrap',maxWidth:1200,margin:'0 auto'}}>
       <Chip at={0.8} color={C.blue}>Groupe ER</Chip>
       <Chip at={0.92} color={C.blue}>Taylor Smith</Chip>
@@ -157,11 +157,12 @@ const SCENES_B = [
     </div>
   </div>
   <Narration lines={[
-    'Swan a signé — et surtout, Swan accepte de rembourser',
-    'les consultations et les prescriptions faites sur TIBOK.',
-    'C’est le feu vert qu’attendaient le Groupe ER, Taylor Smith,',
-    'Alteo, CIM Finance — et bien d’autres encore.',
-    'La place est ouverte. Le Groupe ER doit y entrer.']}
+    'Avec Swan, la signature est en cours : le premier grand',
+    'assureur à s’engager sur le remboursement des consultations',
+    'et des prescriptions faites sur TIBOK. C’est le tout début',
+    'de l’histoire — et la place est ouverte. Le Groupe ER,',
+    'Taylor Smith, Alteo, CIM Finance… Le Groupe ER peut être',
+    'parmi les premiers à entrer dans l’offre TIBOK.']}
     x={960} width={1560} align="center" y={912} size={29} italic={true}
     accent="#DDF2E8" dim="rgba(200,230,216,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
@@ -448,7 +449,7 @@ function FinalScene(){
       </div>
       <div style={{position:'absolute',right:120,top:300,width:680,opacity:ev(localTime,1.0,0.7),transform:`translateY(${(1-ev(localTime,1.0,0.7))*18}px)`}}>
         <div style={{display:'flex',flexWrap:'wrap',gap:12,justifyContent:'flex-start'}}>
-          {['Système prouvé — Swan','Équipe 100% mauricienne','3 produits IA en production'].map((c,i)=>(
+          {['Swan — signature en cours','Équipe 100% mauricienne','Écosystème de 3 produits IA'].map((c,i)=>(
             <span key={i} style={{padding:'11px 20px',border:'1px solid rgba(255,255,255,0.16)',background:'rgba(255,255,255,0.05)',borderRadius:999,fontFamily:FD,fontWeight:500,fontSize:20,color:C.txt,display:'inline-flex',alignItems:'center',gap:10}}>
               <span style={{width:20,height:20,borderRadius:10,background:C.green,color:C.navy,display:'grid',placeItems:'center',fontSize:12,fontWeight:800}}>✓</span>{c}</span>
           ))}
