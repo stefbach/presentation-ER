@@ -327,7 +327,7 @@
     }, "engager"), " sur le remboursement des consultations et prescriptions faites sur TIBOK."))), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 474,
+        top: 452,
         left: 0,
         right: 0,
         textAlign: 'center'
@@ -337,25 +337,66 @@
         fontFamily: FD,
         fontWeight: 700,
         fontSize: 24,
-        color: '#fff',
-        marginBottom: 6
+        color: '#fff'
       }
-    }, "Le ", /*#__PURE__*/React.createElement("span", {
+    }, "Et la dynamique est lancée.")), /*#__PURE__*/React.createElement("div", {
       style: {
-        color: C.blue
+        position: 'absolute',
+        top: 506,
+        left: 0,
+        right: 0,
+        textAlign: 'center'
       }
-    }, "Groupe ER"), " doit entrer dans l’offre TIBOK."), /*#__PURE__*/React.createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 600,
-        fontSize: 17,
-        letterSpacing: '0.1em',
+        fontSize: 16,
+        letterSpacing: '0.12em',
         textTransform: 'uppercase',
         color: C.dim,
-        marginTop: 14,
-        marginBottom: 16
+        marginBottom: 14
       }
-    }, "En discussion pour le déploiement — salariés & familles"), /*#__PURE__*/React.createElement("div", {
+    }, "Autres assureurs déjà rencontrés"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 14,
+        flexWrap: 'wrap',
+        maxWidth: 1100,
+        margin: '0 auto'
+      }
+    }, /*#__PURE__*/React.createElement(Chip, {
+      at: 0.8,
+      color: C.gold
+    }, "SICOM"), /*#__PURE__*/React.createElement(Chip, {
+      at: 0.9,
+      color: C.gold
+    }, "NIC"), /*#__PURE__*/React.createElement(Chip, {
+      at: 1.0,
+      color: C.gold
+    }, "MedSchem"), /*#__PURE__*/React.createElement(Chip, {
+      at: 1.1,
+      color: C.gold
+    }, "… et d’autres"))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 616,
+        left: 0,
+        right: 0,
+        textAlign: 'center'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 16,
+        letterSpacing: '0.12em',
+        textTransform: 'uppercase',
+        color: C.dim,
+        marginBottom: 14
+      }
+    }, "Groupes prêts à déployer — salariés & familles"), /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         justifyContent: 'center',
@@ -365,22 +406,31 @@
         margin: '0 auto'
       }
     }, /*#__PURE__*/React.createElement(Chip, {
-      at: 0.8,
+      at: 1.2,
       color: C.blue
     }, "Groupe ER"), /*#__PURE__*/React.createElement(Chip, {
-      at: 0.92,
+      at: 1.3,
       color: C.blue
     }, "Taylor Smith"), /*#__PURE__*/React.createElement(Chip, {
-      at: 1.04,
+      at: 1.4,
       color: C.blue
     }, "Alteo"), /*#__PURE__*/React.createElement(Chip, {
-      at: 1.16,
+      at: 1.5,
       color: C.blue
-    }, "CIM Finance"), /*#__PURE__*/React.createElement(Chip, {
-      at: 1.28,
-      color: C.gold
-    }, "… et bien d’autres"))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Avec Swan, la signature est en cours : le premier grand', 'assureur à s’engager sur le remboursement des consultations', 'et des prescriptions faites sur TIBOK. C’est le tout début', 'de l’histoire — et la place est ouverte. Le Groupe ER,', 'Taylor Smith, Alteo, CIM Finance… Le Groupe ER peut être', 'parmi les premiers à entrer dans l’offre TIBOK.'],
+    }, "CIM Finance")), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 700,
+        fontSize: 22,
+        color: '#fff',
+        marginTop: 22
+      }
+    }, "Le ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: C.blue
+      }
+    }, "Groupe ER"), " doit entrer dans l’offre TIBOK.")), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Avec Swan, la signature est en cours : le premier grand', 'assureur à s’engager sur le remboursement des consultations', 'et des prescriptions faites sur TIBOK. Et la dynamique est lancée :', 'd’autres assureurs — la SICOM, la NIC, MedSchem — ont déjà été rencontrés.', 'Des groupes prêts à déployer pour leurs salariés : le Groupe ER,', 'Taylor Smith, Alteo, CIM Finance. C’est le tout début de l’histoire,', 'et la place est ouverte. Le Groupe ER peut être parmi les premiers.'],
       x: 960,
       width: 1560,
       align: "center",

@@ -144,25 +144,38 @@ const SCENES_B = [
         Premier grand assureur à s’<span style={{color:C.green,fontWeight:800}}>engager</span> sur le remboursement des consultations et prescriptions faites sur TIBOK.</div>
     </Panel>
   </div>
-  <div style={{position:'absolute',top:474,left:0,right:0,textAlign:'center'}}>
-    <div style={{fontFamily:FD,fontWeight:700,fontSize:24,color:'#fff',marginBottom:6}}>
-      Le <span style={{color:C.blue}}>Groupe ER</span> doit entrer dans l’offre TIBOK.</div>
-    <div style={{fontFamily:FD,fontWeight:600,fontSize:17,letterSpacing:'0.1em',textTransform:'uppercase',color:C.dim,marginTop:14,marginBottom:16}}>En discussion pour le déploiement — salariés & familles</div>
-    <div style={{display:'flex',justifyContent:'center',gap:14,flexWrap:'wrap',maxWidth:1200,margin:'0 auto'}}>
-      <Chip at={0.8} color={C.blue}>Groupe ER</Chip>
-      <Chip at={0.92} color={C.blue}>Taylor Smith</Chip>
-      <Chip at={1.04} color={C.blue}>Alteo</Chip>
-      <Chip at={1.16} color={C.blue}>CIM Finance</Chip>
-      <Chip at={1.28} color={C.gold}>… et bien d’autres</Chip>
+  <div style={{position:'absolute',top:452,left:0,right:0,textAlign:'center'}}>
+    <div style={{fontFamily:FD,fontWeight:700,fontSize:24,color:'#fff'}}>
+      Et la dynamique est lancée.</div>
+  </div>
+  <div style={{position:'absolute',top:506,left:0,right:0,textAlign:'center'}}>
+    <div style={{fontFamily:FD,fontWeight:600,fontSize:16,letterSpacing:'0.12em',textTransform:'uppercase',color:C.dim,marginBottom:14}}>Autres assureurs déjà rencontrés</div>
+    <div style={{display:'flex',justifyContent:'center',gap:14,flexWrap:'wrap',maxWidth:1100,margin:'0 auto'}}>
+      <Chip at={0.8} color={C.gold}>SICOM</Chip>
+      <Chip at={0.9} color={C.gold}>NIC</Chip>
+      <Chip at={1.0} color={C.gold}>MedSchem</Chip>
+      <Chip at={1.1} color={C.gold}>… et d’autres</Chip>
     </div>
+  </div>
+  <div style={{position:'absolute',top:616,left:0,right:0,textAlign:'center'}}>
+    <div style={{fontFamily:FD,fontWeight:600,fontSize:16,letterSpacing:'0.12em',textTransform:'uppercase',color:C.dim,marginBottom:14}}>Groupes prêts à déployer — salariés & familles</div>
+    <div style={{display:'flex',justifyContent:'center',gap:14,flexWrap:'wrap',maxWidth:1200,margin:'0 auto'}}>
+      <Chip at={1.2} color={C.blue}>Groupe ER</Chip>
+      <Chip at={1.3} color={C.blue}>Taylor Smith</Chip>
+      <Chip at={1.4} color={C.blue}>Alteo</Chip>
+      <Chip at={1.5} color={C.blue}>CIM Finance</Chip>
+    </div>
+    <div style={{fontFamily:FD,fontWeight:700,fontSize:22,color:'#fff',marginTop:22}}>
+      Le <span style={{color:C.blue}}>Groupe ER</span> doit entrer dans l’offre TIBOK.</div>
   </div>
   <Narration lines={[
     'Avec Swan, la signature est en cours : le premier grand',
     'assureur à s’engager sur le remboursement des consultations',
-    'et des prescriptions faites sur TIBOK. C’est le tout début',
-    'de l’histoire — et la place est ouverte. Le Groupe ER,',
-    'Taylor Smith, Alteo, CIM Finance… Le Groupe ER peut être',
-    'parmi les premiers à entrer dans l’offre TIBOK.']}
+    'et des prescriptions faites sur TIBOK. Et la dynamique est lancée :',
+    'd’autres assureurs — la SICOM, la NIC, MedSchem — ont déjà été rencontrés.',
+    'Des groupes prêts à déployer pour leurs salariés : le Groupe ER,',
+    'Taylor Smith, Alteo, CIM Finance. C’est le tout début de l’histoire,',
+    'et la place est ouverte. Le Groupe ER peut être parmi les premiers.']}
     x={960} width={1560} align="center" y={912} size={29} italic={true}
     accent="#DDF2E8" dim="rgba(200,230,216,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
