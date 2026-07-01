@@ -96,16 +96,24 @@ const SCENES = [
 { dur:15, hue:'blue', node:(<React.Fragment>
   <Photo src={IMG('bach')} x={1080} y={0} w={840} h={1080} radius={0} objPos="50% 22%" from={1.04} to={1.14} pany={-3} ring={false}/>
   <div style={{position:'absolute',top:0,left:0,bottom:0,width:1300,background:'linear-gradient(90deg, #0A1A33 38%, rgba(10,26,51,0.2) 70%, transparent 88%)'}}/>
-  <div style={{position:'absolute',left:124,top:300,width:900}}>
-    <div style={{fontFamily:FD,fontWeight:800,fontSize:68,lineHeight:1.03,letterSpacing:'-0.03em',color:'#fff'}}>
+  <img src="assets/logos/dds.png" alt="Digital Data Solutions" style={{position:'absolute',left:122,top:92,height:88}}/>
+  <div style={{position:'absolute',left:126,top:210,display:'flex',alignItems:'center',gap:14}}>
+    <span style={{fontFamily:FD,fontWeight:600,fontSize:13.5,letterSpacing:'0.18em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Présenté au</span>
+    <ERmark h={24} color="#D6E0F0"/>
+  </div>
+  <div style={{position:'absolute',left:124,top:296,width:900}}>
+    <div style={{fontFamily:FD,fontWeight:800,fontSize:62,lineHeight:1.04,letterSpacing:'-0.03em',color:'#fff'}}>
       L&rsquo;intelligence artificielle<br/><span style={{color:C.blue}}>souveraine</span>, construite<br/>à Maurice.</div>
   </div>
-  <Narration lines={['Digital Data Solutions','Dr Stéphane Bach · Fondateur & CEO']} x={130} width={760} align="left" y={648} size={30} weight={500}
-    accent="#D6E0F0" dim="rgba(206,219,240,0.32)" lead={1.0} tail={1.2}/>
-  <div style={{position:'absolute',left:130,bottom:64,display:'flex',alignItems:'center',gap:14,flexWrap:'wrap',maxWidth:820}}>
+  <div style={{position:'absolute',left:130,top:548,fontFamily:FD,fontWeight:500,fontSize:29,letterSpacing:'-0.01em',color:'#D6E0F0'}}>Dr Stéphane Bach · Fondateur &amp; CEO</div>
+  <div style={{position:'absolute',left:130,top:636,display:'flex',alignItems:'center',gap:14,flexWrap:'wrap',maxWidth:820}}>
     {['SaaS IA','Agents IA','Expertise métier','Maîtrise de tous les LLM'].map((c,i)=>(
       <Chip key={i} at={0.4+i*0.14} color={C.blue}>{c}</Chip>
     ))}
+  </div>
+  <div style={{position:'absolute',left:130,bottom:56,display:'flex',alignItems:'center',gap:18}}>
+    <span style={{fontFamily:FD,fontWeight:600,fontSize:14,letterSpacing:'0.14em',textTransform:'uppercase',color:'rgba(206,219,240,0.55)'}}>Incubé chez</span>
+    <img src="assets/logos/laturbine.svg" alt="La Turbine" style={{height:50}}/>
   </div>
 </React.Fragment>)},
 

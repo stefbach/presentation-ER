@@ -280,19 +280,49 @@
         width: 1300,
         background: 'linear-gradient(90deg, #0A1A33 38%, rgba(10,26,51,0.2) 70%, transparent 88%)'
       }
+    }), /*#__PURE__*/React.createElement("img", {
+      src: "assets/logos/dds.png",
+      alt: "Digital Data Solutions",
+      style: {
+        position: 'absolute',
+        left: 122,
+        top: 92,
+        height: 88
+      }
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
+        left: 126,
+        top: 210,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 14
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 13.5,
+        letterSpacing: '0.18em',
+        textTransform: 'uppercase',
+        color: 'rgba(206,219,240,0.5)'
+      }
+    }, "Présenté au"), /*#__PURE__*/React.createElement(ERmark, {
+      h: 24,
+      color: "#D6E0F0"
+    })), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
         left: 124,
-        top: 300,
+        top: 296,
         width: 900
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 800,
-        fontSize: 68,
-        lineHeight: 1.03,
+        fontSize: 62,
+        lineHeight: 1.04,
         letterSpacing: '-0.03em',
         color: '#fff'
       }
@@ -300,23 +330,22 @@
       style: {
         color: C.blue
       }
-    }, "souveraine"), ", construite", /*#__PURE__*/React.createElement("br", null), "à Maurice.")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Digital Data Solutions', 'Dr Stéphane Bach · Fondateur & CEO'],
-      x: 130,
-      width: 760,
-      align: "left",
-      y: 648,
-      size: 30,
-      weight: 500,
-      accent: "#D6E0F0",
-      dim: "rgba(206,219,240,0.32)",
-      lead: 1.0,
-      tail: 1.2
-    }), /*#__PURE__*/React.createElement("div", {
+    }, "souveraine"), ", construite", /*#__PURE__*/React.createElement("br", null), "à Maurice.")), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         left: 130,
-        bottom: 64,
+        top: 548,
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 29,
+        letterSpacing: '-0.01em',
+        color: '#D6E0F0'
+      }
+    }, "Dr Stéphane Bach · Fondateur & CEO"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        left: 130,
+        top: 636,
         display: 'flex',
         alignItems: 'center',
         gap: 14,
@@ -327,7 +356,31 @@
       key: i,
       at: 0.4 + i * 0.14,
       color: C.blue
-    }, c))))
+    }, c))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        left: 130,
+        bottom: 56,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 18
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 14,
+        letterSpacing: '0.14em',
+        textTransform: 'uppercase',
+        color: 'rgba(206,219,240,0.55)'
+      }
+    }, "Incubé chez"), /*#__PURE__*/React.createElement("img", {
+      src: "assets/logos/laturbine.svg",
+      alt: "La Turbine",
+      style: {
+        height: 50
+      }
+    })))
   }, /* ---------- 2 · LE FONDATEUR ---------- */
   {
     dur: 28,

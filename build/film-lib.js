@@ -1179,16 +1179,20 @@
     }, "Group"));
   }
 
-  /* ---------- HUD (persistent DDS wordmark + partnership tag) ---------- */
+  /* ---------- HUD (persistent DDS wordmark + partnership tag) ----------
+     Hidden on the title card, fades in once the film gets going, so the
+     opening logo lockup stays clean. */
   function Hud({
     actLabel
   }) {
     const t = useTime();
+    const op = clamp((t - 12) / 2.2, 0, 1);
     return /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         inset: 0,
-        pointerEvents: 'none'
+        pointerEvents: 'none',
+        opacity: op
       }
     }, /*#__PURE__*/React.createElement("img", {
       src: "assets/logos/dds.png",

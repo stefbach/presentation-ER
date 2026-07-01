@@ -400,11 +400,14 @@ function ERmark({h=34, color='#EAF1FB', style={}}){
   );
 }
 
-/* ---------- HUD (persistent DDS wordmark + partnership tag) ---------- */
+/* ---------- HUD (persistent DDS wordmark + partnership tag) ----------
+   Hidden on the title card, fades in once the film gets going, so the
+   opening logo lockup stays clean. */
 function Hud({actLabel}){
   const t=useTime();
+  const op=clamp((t-12)/2.2,0,1);
   return (
-    <div style={{position:'absolute',inset:0,pointerEvents:'none'}}>
+    <div style={{position:'absolute',inset:0,pointerEvents:'none',opacity:op}}>
       <img src="assets/logos/dds.png" alt="Digital Data Solutions" style={{position:'absolute',top:44,left:120,height:34,opacity:0.95}}/>
       <div style={{position:'absolute',top:52,right:120,display:'flex',alignItems:'center',gap:14,opacity:0.72}}>
         <span style={{fontFamily:FD,fontWeight:500,fontSize:14,letterSpacing:'0.16em',textTransform:'uppercase',color:C.dim}}>Présenté au</span>
