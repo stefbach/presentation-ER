@@ -8,8 +8,10 @@ et l'océan Indien, l'opportunité autour de Swan, et la convergence avec les va
 Groupe ER.
 
 Le texte défile à l'écran (téléprompteur) pendant que les visuels s'animent : photos en
-Ken Burns, chiffres animés, diagrammes qui se construisent. Le film est **auto-chronométré**
-(chaque scène porte sa durée `dur`) — **sans voix-off**.
+Ken Burns, chiffres animés, diagrammes qui se construisent. Une **voix-off française**
+(ElevenLabs v3, voix « James ») narre chaque scène ; le film est **recalé sur la durée de
+chaque clip**. La voix se coupe/réactive au clic sur le bouton en bas à droite, ou avec la
+touche **M**.
 
 C'est un site statique : React 18 + JS précompilé, servi en local, sans CDN.
 
@@ -26,7 +28,8 @@ C'est un site statique : React 18 + JS précompilé, servi en local, sans CDN.
 | `main.jsx` | Monte le film et la timeline |
 | `assets/team/` | Photos de l'équipe |
 | `assets/logos/` | Logos (TIBOK, Lexora, Axon, DDS, Obesity Care Clinic, La Turbine, MRIC…) |
-| `assets/vo/` | Anciens fichiers de voix-off (non utilisés dans ce montage français) |
+| `assets/vo/fr_scene_*.mp3` | Voix-off française (ElevenLabs v3 · voix « James ») — une piste par scène |
+| `build/vo-manifest.js` | Table `window.VO` : fichier + durée de chaque clip (sert au recalage) |
 
 ## Lancer en local
 

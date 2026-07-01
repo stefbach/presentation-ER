@@ -1,8 +1,9 @@
 # DDS × Groupe ER — Script du film (français)
 
-_Film auto-chronométré · 17 scènes · ≈ 7 min · sans voix-off (texte à l'écran)_
+_17 scènes · ≈ 7 min · voix-off française ElevenLabs v3 (voix « James »)_
 
-Le texte ci-dessous est la narration qui défile au téléprompteur, scène par scène.
+Le texte ci-dessous est la narration — voix-off et téléprompteur, scène par scène.
+Les pistes audio sont dans `assets/vo/fr_scene_<n>.mp3`.
 
 ---
 
