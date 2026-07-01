@@ -174,7 +174,7 @@
     const {
       localTime
     } = useScene();
-    const cols = [['SaaS IA', 'Des logiciels en production, pas des démos. De vrais clients qui paient.', C.blue], ['Agents IA', 'Des agents autonomes qui exécutent le travail — voix, admin, décisions.', C.teal], ['Expertise métier', 'Un savoir-faire réel sur chaque produit : santé, compta, RH, relation client.', C.gold], ['Maîtrise des LLM', 'Tous les modèles maîtrisés, le bon modèle au bon endroit, à moindre coût.', C.green]];
+    const cols = [['SaaS IA', 'Des logiciels en production, pas des démos. En usage réel, au quotidien.', C.blue], ['Agents IA', 'Des agents autonomes qui exécutent le travail — voix, admin, décisions.', C.teal], ['Expertise métier', 'Un savoir-faire réel sur chaque produit : santé, compta, RH, relation client.', C.gold], ['Maîtrise des LLM', 'Tous les modèles maîtrisés, le bon modèle au bon endroit, à moindre coût.', C.green]];
     const W = 402,
       gap = 20;
     return /*#__PURE__*/React.createElement("div", {
@@ -360,10 +360,10 @@
       style: {
         position: 'absolute',
         left: 130,
-        bottom: 56,
+        bottom: 54,
         display: 'flex',
         alignItems: 'center',
-        gap: 18
+        gap: 16
       }
     }, /*#__PURE__*/React.createElement("span", {
       style: {
@@ -379,6 +379,28 @@
       alt: "La Turbine",
       style: {
         height: 50
+      }
+    }), /*#__PURE__*/React.createElement("div", {
+      style: {
+        width: 1,
+        height: 42,
+        background: 'rgba(255,255,255,0.18)',
+        margin: '0 6px'
+      }
+    }), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 14,
+        letterSpacing: '0.14em',
+        textTransform: 'uppercase',
+        color: 'rgba(206,219,240,0.55)'
+      }
+    }, "Soutenu par"), /*#__PURE__*/React.createElement("img", {
+      src: "assets/logos/mric.avif",
+      alt: "MRIC",
+      style: {
+        height: 56
       }
     })))
   }, /* ---------- 2 · LE FONDATEUR ---------- */
@@ -477,7 +499,7 @@
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(Pillars, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Beaucoup se disent « agence IA » : ils prennent ChatGPT,', 'y versent vos données. C’est inutile — et ça crée de la dépendance.', 'Nous, nous construisons des logiciels qui tournent en production,', 'avec de vrais clients qui paient. Une approche unique à Maurice.'],
+      lines: ['Beaucoup se disent « agence IA » : ils prennent ChatGPT,', 'y versent vos données. C’est inutile — et ça crée de la dépendance.', 'Nous, nous construisons des logiciels qui tournent en production,', 'en conditions réelles. Une approche unique à Maurice.'],
       x: 960,
       width: 1560,
       align: "center",

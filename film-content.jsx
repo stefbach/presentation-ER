@@ -66,7 +66,7 @@ function TimelineViz(){
 function Pillars(){
   const {localTime}=useScene();
   const cols=[
-    ['SaaS IA','Des logiciels en production, pas des démos. De vrais clients qui paient.',C.blue],
+    ['SaaS IA','Des logiciels en production, pas des démos. En usage réel, au quotidien.',C.blue],
     ['Agents IA','Des agents autonomes qui exécutent le travail — voix, admin, décisions.',C.teal],
     ['Expertise métier','Un savoir-faire réel sur chaque produit : santé, compta, RH, relation client.',C.gold],
     ['Maîtrise des LLM','Tous les modèles maîtrisés, le bon modèle au bon endroit, à moindre coût.',C.green]];
@@ -111,9 +111,12 @@ const SCENES = [
       <Chip key={i} at={0.4+i*0.14} color={C.blue}>{c}</Chip>
     ))}
   </div>
-  <div style={{position:'absolute',left:130,bottom:56,display:'flex',alignItems:'center',gap:18}}>
+  <div style={{position:'absolute',left:130,bottom:54,display:'flex',alignItems:'center',gap:16}}>
     <span style={{fontFamily:FD,fontWeight:600,fontSize:14,letterSpacing:'0.14em',textTransform:'uppercase',color:'rgba(206,219,240,0.55)'}}>Incubé chez</span>
     <img src="assets/logos/laturbine.svg" alt="La Turbine" style={{height:50}}/>
+    <div style={{width:1,height:42,background:'rgba(255,255,255,0.18)',margin:'0 6px'}}/>
+    <span style={{fontFamily:FD,fontWeight:600,fontSize:14,letterSpacing:'0.14em',textTransform:'uppercase',color:'rgba(206,219,240,0.55)'}}>Soutenu par</span>
+    <img src="assets/logos/mric.avif" alt="MRIC" style={{height:56}}/>
   </div>
 </React.Fragment>)},
 
@@ -174,7 +177,7 @@ const SCENES = [
     'Beaucoup se disent « agence IA » : ils prennent ChatGPT,',
     'y versent vos données. C’est inutile — et ça crée de la dépendance.',
     'Nous, nous construisons des logiciels qui tournent en production,',
-    'avec de vrais clients qui paient. Une approche unique à Maurice.']}
+    'en conditions réelles. Une approche unique à Maurice.']}
     x={960} width={1560} align="center" y={905} size={29} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},

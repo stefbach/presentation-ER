@@ -18,7 +18,7 @@ const SCENES_B = [
   <DDSOrg/>
   <Narration lines={[
     'DDS est une holding. Trois produits IA :',
-    'TIBOK, Lexora, Axon — déjà en service, de premiers clients.',
+    'TIBOK, Lexora, Axon — des logiciels réels, déjà en service.',
     'Et autour d’eux, des ventures liées :',
     'Obesity Care Clinic, et CVMI, tourisme médical au Cap-Vert.',
     'Un écosystème — pas une agence.']}

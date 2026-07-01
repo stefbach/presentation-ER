@@ -42,7 +42,7 @@
       act: "L'écosystème",
       title: "Un producteur, un portefeuille"
     }), /*#__PURE__*/React.createElement(DDSOrg, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['DDS est une holding. Trois produits IA :', 'TIBOK, Lexora, Axon — déjà en service, de premiers clients.', 'Et autour d’eux, des ventures liées :', 'Obesity Care Clinic, et CVMI, tourisme médical au Cap-Vert.', 'Un écosystème — pas une agence.'],
+      lines: ['DDS est une holding. Trois produits IA :', 'TIBOK, Lexora, Axon — des logiciels réels, déjà en service.', 'Et autour d’eux, des ventures liées :', 'Obesity Care Clinic, et CVMI, tourisme médical au Cap-Vert.', 'Un écosystème — pas une agence.'],
       x: 960,
       width: 1500,
       align: "center",
