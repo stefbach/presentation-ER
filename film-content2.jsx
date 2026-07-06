@@ -219,14 +219,15 @@ const SCENES_B = [
   <Narration lines={[
     'Pas un produit de plus à gérer — une couche d’intelligence',
     'à embarquer sur l’ensemble de votre portefeuille.',
-    'Pour le grand public : huit cents roupies la consultation.',
-    'Pour la MUA, en marque conjointe — MUA Medical Intelligence,',
-    'powered by Tibok : cinquante roupies par mois et par vie couverte.',
-    'Pour vos assurés : la consultation à cinq cents roupies,',
-    'le suivi chronique offert, le second avis offert, SilentCheck inclus.',
-    'Et le gainsharing : Tibok et la MUA partagent une part des coûts évités,',
-    'documentés et auditables. Vous n’assurez plus seulement la sinistralité —',
-    'vous investissez dans la santé préservée.']}
+    'L’accès à la plateforme est offert à la MUA — en marque conjointe,',
+    'MUA Medical Intelligence, powered by Tibok. Pas d’abonnement.',
+    'Vos assurés paient uniquement la consultation : cinq cents roupies,',
+    'au lieu de huit cents. Tout le reste leur est offert — le second avis,',
+    'le suivi des maladies chroniques, SilentCheck.',
+    'Un seul module se paie : le contrôle de pertinence,',
+    'cinquante roupies par mois et par vie couverte. Ou, mieux :',
+    'le gagnant-gagnant — pas d’abonnement, un partage des économies',
+    'générées, documentées et auditables. Vous ne payez que sur les coûts évités.']}
     x={960} width={1560} align="center" y={935} size={28} italic={true}
     accent="#F2E6CF" dim="rgba(224,210,180,0.22)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -455,31 +456,31 @@ function OfferCards(){
   return (
     <div style={{position:'absolute',top:330,left:0,right:0}}>
       <div style={{display:'flex',justifyContent:'center',gap:24,alignItems:'stretch'}}>
-        <Card3D w={440} at={0.4} i={0} accent={C.blue} accentSide="top" minHeight={290} pad="30px 32px">
-          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.blue}}>Grand public</div>
-          <div style={{fontFamily:FD,fontWeight:800,fontSize:64,color:'#fff',marginTop:16,lineHeight:1}}>Rs 800</div>
-          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.dim,marginTop:8}}>la consultation, à la demande</div>
-          <div style={{fontFamily:FD,fontWeight:400,fontSize:17,color:C.dim,marginTop:16,lineHeight:1.4}}>Facturée par les médecins — le standard du marché.</div>
+        <Card3D w={440} at={0.4} i={0} accent={C.blue} accentSide="top" minHeight={300} pad="30px 32px">
+          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.blue}}>Accès plateforme · MUA</div>
+          <div style={{fontFamily:FD,fontWeight:800,fontSize:64,color:'#fff',marginTop:16,lineHeight:1}}>Offert</div>
+          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.dim,marginTop:8}}>pas d’abonnement, pas de surcoût</div>
+          <div style={{fontFamily:FD,fontWeight:400,fontSize:17,color:C.dim,marginTop:14,lineHeight:1.45}}>En marque conjointe — <span style={{color:'#fff',fontWeight:600}}>MUA Medical Intelligence</span>, powered by TIBOK — sur tout le portefeuille.</div>
         </Card3D>
-        <Card3D w={520} at={0.6} i={1} accent={C.gold} accentSide="top" minHeight={290} pad="30px 32px"
-          style={{background:'rgba(224,169,59,0.08)',border:'1px solid rgba(224,169,59,0.35)'}}>
-          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.gold}}>Marque conjointe</div>
-          <div style={{fontFamily:FD,fontWeight:800,fontSize:27,color:'#fff',marginTop:12,lineHeight:1.15}}>MUA Medical Intelligence<br/><span style={{fontWeight:600,fontSize:19,color:C.dim}}>powered by TIBOK</span></div>
-          <div style={{fontFamily:FD,fontWeight:800,fontSize:64,color:C.gold,marginTop:12,lineHeight:1}}>Rs 50</div>
-          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:'#fff',marginTop:8}}>par mois · par vie couverte</div>
-          <div style={{fontFamily:FD,fontWeight:400,fontSize:17,color:C.dim,marginTop:12,lineHeight:1.4}}>Accès complet à la plateforme, déployable sur tout le portefeuille — sans surcoût administratif.</div>
-        </Card3D>
-        <Card3D w={440} at={0.8} i={2} accent={C.green} accentSide="top" minHeight={290} pad="30px 32px">
+        <Card3D w={470} at={0.6} i={1} accent={C.green} accentSide="top" minHeight={300} pad="30px 32px">
           <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.green}}>Assurés MUA</div>
           <div style={{fontFamily:FD,fontWeight:800,fontSize:64,color:'#fff',marginTop:16,lineHeight:1}}>Rs 500 <span style={{fontSize:26,fontWeight:600,color:C.dim,textDecoration:'line-through'}}>800</span></div>
-          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.dim,marginTop:8}}>la consultation, tarif préférentiel</div>
-          <div style={{fontFamily:FD,fontWeight:500,fontSize:17,color:C.txt,marginTop:14,lineHeight:1.6}}>✓ Suivi chronique offert<br/>✓ Second avis médical offert<br/>✓ SilentCheck inclus</div>
+          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.dim,marginTop:8}}>la consultation — seul paiement</div>
+          <div style={{fontFamily:FD,fontWeight:500,fontSize:17,color:C.txt,marginTop:14,lineHeight:1.6}}>✓ Second avis médical offert<br/>✓ Suivi des maladies chroniques offert<br/>✓ SilentCheck offert</div>
+        </Card3D>
+        <Card3D w={520} at={0.8} i={2} accent={C.gold} accentSide="top" minHeight={300} pad="30px 32px"
+          style={{background:'rgba(224,169,59,0.08)',border:'1px solid rgba(224,169,59,0.35)'}}>
+          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.gold}}>Seul module payant · Contrôle de pertinence</div>
+          <div style={{fontFamily:FD,fontWeight:800,fontSize:56,color:C.gold,marginTop:14,lineHeight:1}}>Rs 50</div>
+          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:'#fff',marginTop:6}}>par mois · par vie couverte</div>
+          <div style={{fontFamily:FD,fontWeight:600,fontSize:18,color:C.teal,marginTop:14,lineHeight:1.4}}>ou l’option gagnant-gagnant :</div>
+          <div style={{fontFamily:FD,fontWeight:400,fontSize:17,color:C.dim,marginTop:6,lineHeight:1.45}}>pas d’abonnement — une part des <span style={{color:'#fff',fontWeight:600}}>économies générées</span>, documentées et auditables.</div>
         </Card3D>
       </div>
       <div style={{display:'flex',justifyContent:'center',marginTop:26}}>
         <Panel at={1.3} style={{maxWidth:1420}}>
           <div style={{fontFamily:FD,fontWeight:600,fontSize:24,color:'#fff',lineHeight:1.45,textAlign:'center'}}>
-            <span style={{color:C.gold,fontWeight:800}}>Gainsharing</span> — la véracité native rend l’économie mesurable : TIBOK et la MUA partagent une part des coûts évités, documentés et auditables. <span style={{color:C.dim,fontWeight:400,fontSize:19}}>(part et seuils à fixer ensemble)</span></div>
+            <span style={{color:C.gold,fontWeight:800}}>Gagnant-gagnant</span> — la véracité native rend l’économie mesurable : vous ne payez que sur les <span style={{color:C.teal,fontWeight:700}}>coûts évités</span>. <span style={{color:C.dim,fontWeight:400,fontSize:19}}>(part et seuils à fixer ensemble)</span></div>
         </Panel>
       </div>
     </div>

@@ -182,13 +182,11 @@ Le principe est validé sur le marché mauricien. La place de partenaire de réf
 
 Voici concrètement ce que Tibok propose à la MUA. Pas un produit de plus à gérer — une couche d'intelligence à embarquer sur l'ensemble de votre portefeuille.
 
-Pour le grand public, le standard reste simple : huit cents roupies la consultation, à la demande, facturée par les médecins.
+L'accès à la plateforme est offert à la MUA — en marque conjointe, MUA Medical Intelligence, powered by Tibok. Pas d'abonnement, pas de surcoût administratif.
 
-Pour la MUA, en marque conjointe — MUA Medical Intelligence, powered by Tibok — un accès complet à la plateforme pour cinquante roupies par mois et par vie couverte, déployable à l'échelle de tout votre portefeuille d'assurés. Une couche intégrable à vos contrats santé, sans surcoût administratif.
+Vos assurés paient uniquement la consultation : cinq cents roupies, au lieu de huit cents pour le grand public. Tout le reste leur est offert — le second avis médical, le suivi des maladies chroniques, SilentCheck.
 
-Pour les assurés MUA : un tarif préférentiel de cinq cents roupies la consultation, au lieu de huit cents. Le suivi des maladies chroniques offert. Le second avis médical offert. SilentCheck inclus. Le contrôle de pertinence, sans paperasse.
-
-Et le mécanisme qui aligne tout le monde — le gainsharing. Pour la première fois, la véracité native rend l'économie mesurable. Tibok et la MUA partagent une part des coûts évités, documentés et auditables, sur les contrats pilotés. Vos coûts cessent de suivre la seule sinistralité subie — vous investissez dans la santé préservée. (Part et seuils à fixer ensemble.)
+Un seul module se paie : le contrôle de pertinence — cinquante roupies par mois et par vie couverte. Ou, mieux : le gagnant-gagnant. Pas d'abonnement — un partage des économies générées, documentées et auditables. Vous ne payez que sur les coûts évités. (Part et seuils à fixer ensemble.)
 
 Aucun standard de cette qualité n'existe aujourd'hui sur le continent africain. Soixante mille références scientifiques. Quatre millions de patients dans la base. Le verrouillage LLM plus RAG. Vingt médecins du Medical Council of Mauritius. C'est unique.
 

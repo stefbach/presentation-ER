@@ -448,7 +448,7 @@
       accentIdx: [1],
       accentColor: C.gold
     }), /*#__PURE__*/React.createElement(OfferCards, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Pas un produit de plus à gérer — une couche d’intelligence', 'à embarquer sur l’ensemble de votre portefeuille.', 'Pour le grand public : huit cents roupies la consultation.', 'Pour la MUA, en marque conjointe — MUA Medical Intelligence,', 'powered by Tibok : cinquante roupies par mois et par vie couverte.', 'Pour vos assurés : la consultation à cinq cents roupies,', 'le suivi chronique offert, le second avis offert, SilentCheck inclus.', 'Et le gainsharing : Tibok et la MUA partagent une part des coûts évités,', 'documentés et auditables. Vous n’assurez plus seulement la sinistralité —', 'vous investissez dans la santé préservée.'],
+      lines: ['Pas un produit de plus à gérer — une couche d’intelligence', 'à embarquer sur l’ensemble de votre portefeuille.', 'L’accès à la plateforme est offert à la MUA — en marque conjointe,', 'MUA Medical Intelligence, powered by Tibok. Pas d’abonnement.', 'Vos assurés paient uniquement la consultation : cinq cents roupies,', 'au lieu de huit cents. Tout le reste leur est offert — le second avis,', 'le suivi des maladies chroniques, SilentCheck.', 'Un seul module se paie : le contrôle de pertinence,', 'cinquante roupies par mois et par vie couverte. Ou, mieux :', 'le gagnant-gagnant — pas d’abonnement, un partage des économies', 'générées, documentées et auditables. Vous ne payez que sur les coûts évités.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -1184,7 +1184,7 @@
       i: 0,
       accent: C.blue,
       accentSide: "top",
-      minHeight: 290,
+      minHeight: 300,
       pad: "30px 32px"
     }, /*#__PURE__*/React.createElement("div", {
       style: {
@@ -1195,7 +1195,7 @@
         textTransform: 'uppercase',
         color: C.blue
       }
-    }, "Grand public"), /*#__PURE__*/React.createElement("div", {
+    }, "Accès plateforme · MUA"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 800,
@@ -1204,7 +1204,7 @@
         marginTop: 16,
         lineHeight: 1
       }
-    }, "Rs 800"), /*#__PURE__*/React.createElement("div", {
+    }, "Offert"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 500,
@@ -1212,84 +1212,27 @@
         color: C.dim,
         marginTop: 8
       }
-    }, "la consultation, à la demande"), /*#__PURE__*/React.createElement("div", {
+    }, "pas d’abonnement, pas de surcoût"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 400,
         fontSize: 17,
         color: C.dim,
-        marginTop: 16,
-        lineHeight: 1.4
+        marginTop: 14,
+        lineHeight: 1.45
       }
-    }, "Facturée par les médecins — le standard du marché.")), /*#__PURE__*/React.createElement(Card3D, {
-      w: 520,
+    }, "En marque conjointe — ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: '#fff',
+        fontWeight: 600
+      }
+    }, "MUA Medical Intelligence"), ", powered by TIBOK — sur tout le portefeuille.")), /*#__PURE__*/React.createElement(Card3D, {
+      w: 470,
       at: 0.6,
       i: 1,
-      accent: C.gold,
-      accentSide: "top",
-      minHeight: 290,
-      pad: "30px 32px",
-      style: {
-        background: 'rgba(224,169,59,0.08)',
-        border: '1px solid rgba(224,169,59,0.35)'
-      }
-    }, /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 700,
-        fontSize: 15,
-        letterSpacing: '0.14em',
-        textTransform: 'uppercase',
-        color: C.gold
-      }
-    }, "Marque conjointe"), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 800,
-        fontSize: 27,
-        color: '#fff',
-        marginTop: 12,
-        lineHeight: 1.15
-      }
-    }, "MUA Medical Intelligence", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
-      style: {
-        fontWeight: 600,
-        fontSize: 19,
-        color: C.dim
-      }
-    }, "powered by TIBOK")), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 800,
-        fontSize: 64,
-        color: C.gold,
-        marginTop: 12,
-        lineHeight: 1
-      }
-    }, "Rs 50"), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 500,
-        fontSize: 20,
-        color: '#fff',
-        marginTop: 8
-      }
-    }, "par mois · par vie couverte"), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 400,
-        fontSize: 17,
-        color: C.dim,
-        marginTop: 12,
-        lineHeight: 1.4
-      }
-    }, "Accès complet à la plateforme, déployable sur tout le portefeuille — sans surcoût administratif.")), /*#__PURE__*/React.createElement(Card3D, {
-      w: 440,
-      at: 0.8,
-      i: 2,
       accent: C.green,
       accentSide: "top",
-      minHeight: 290,
+      minHeight: 300,
       pad: "30px 32px"
     }, /*#__PURE__*/React.createElement("div", {
       style: {
@@ -1324,7 +1267,7 @@
         color: C.dim,
         marginTop: 8
       }
-    }, "la consultation, tarif préférentiel"), /*#__PURE__*/React.createElement("div", {
+    }, "la consultation — seul paiement"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 500,
@@ -1333,7 +1276,68 @@
         marginTop: 14,
         lineHeight: 1.6
       }
-    }, "✓ Suivi chronique offert", /*#__PURE__*/React.createElement("br", null), "✓ Second avis médical offert", /*#__PURE__*/React.createElement("br", null), "✓ SilentCheck inclus"))), /*#__PURE__*/React.createElement("div", {
+    }, "✓ Second avis médical offert", /*#__PURE__*/React.createElement("br", null), "✓ Suivi des maladies chroniques offert", /*#__PURE__*/React.createElement("br", null), "✓ SilentCheck offert")), /*#__PURE__*/React.createElement(Card3D, {
+      w: 520,
+      at: 0.8,
+      i: 2,
+      accent: C.gold,
+      accentSide: "top",
+      minHeight: 300,
+      pad: "30px 32px",
+      style: {
+        background: 'rgba(224,169,59,0.08)',
+        border: '1px solid rgba(224,169,59,0.35)'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 700,
+        fontSize: 15,
+        letterSpacing: '0.14em',
+        textTransform: 'uppercase',
+        color: C.gold
+      }
+    }, "Seul module payant · Contrôle de pertinence"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 800,
+        fontSize: 56,
+        color: C.gold,
+        marginTop: 14,
+        lineHeight: 1
+      }
+    }, "Rs 50"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 20,
+        color: '#fff',
+        marginTop: 6
+      }
+    }, "par mois · par vie couverte"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 18,
+        color: C.teal,
+        marginTop: 14,
+        lineHeight: 1.4
+      }
+    }, "ou l’option gagnant-gagnant :"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 400,
+        fontSize: 17,
+        color: C.dim,
+        marginTop: 6,
+        lineHeight: 1.45
+      }
+    }, "pas d’abonnement — une part des ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: '#fff',
+        fontWeight: 600
+      }
+    }, "économies générées"), ", documentées et auditables."))), /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         justifyContent: 'center',
@@ -1358,7 +1362,12 @@
         color: C.gold,
         fontWeight: 800
       }
-    }, "Gainsharing"), " — la véracité native rend l’économie mesurable : TIBOK et la MUA partagent une part des coûts évités, documentés et auditables. ", /*#__PURE__*/React.createElement("span", {
+    }, "Gagnant-gagnant"), " — la véracité native rend l’économie mesurable : vous ne payez que sur les ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: C.teal,
+        fontWeight: 700
+      }
+    }, "coûts évités"), ". ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: C.dim,
         fontWeight: 400,
