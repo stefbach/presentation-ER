@@ -252,7 +252,22 @@ const SCENES_B = [
 </React.Fragment>)},
 
 /* ---------- 15 · CLÔTURE ---------- */
-{ dur:30, hue:'blue', node:(<FinalScene/>)},
+{ dur:30, hue:'blue', node:(<React.Fragment>
+  <FinalScene/>
+  <Narration lines={[
+    'Le marché mauricien de l’assurance santé est à un tournant.',
+    'Les assurés attendent des services modernes. Les régulateurs',
+    'attendent de la transparence. Les coûts de santé augmentent.',
+    'Votre métier : protéger ce qui compte le plus — la santé de vos assurés.',
+    'Ce qui rend cette protection durable, c’est l’intelligence —',
+    'la prévention, le contrôle natif, la donnée clinique.',
+    'C’est ce que Tibok apporte à la MUA.',
+    'Bâtissons ensemble le standard de demain — pour Maurice,',
+    'pour l’Afrique et pour l’océan Indien.',
+    'Docteur Stéphane Bach · Digital Data Solutions · tibok.mu']}
+    x={960} width={1560} align="center" y={905} size={30} italic={true}
+    accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.4} tail={1.6}/>
+</React.Fragment>)},
 
 ];
 
