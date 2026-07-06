@@ -172,9 +172,7 @@ Pour la MUA, trois leviers structurels :
 
 ## 12 — LA PREUVE : SWAN A VALIDÉ LE PRINCIPE (9:55 → 10:20)
 
-Ce modèle n'est pas une promesse. Il est déjà en production.
-
-Swan a signé — et surtout, Swan accepte de rembourser les consultations et les prescriptions faites sur Tibok.
+Ce modèle n'est pas une promesse. Avec Swan, la signature est en cours : le premier grand assureur à s'engager sur le remboursement des consultations et des prescriptions faites sur Tibok.
 
 Le principe est validé sur le marché mauricien. La place de partenaire de référence, elle, est encore ouverte. C'est cette place que je propose à la MUA.
 

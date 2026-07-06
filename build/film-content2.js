@@ -1,6 +1,7 @@
-/* film-content2.jsx — Film DDS × Groupe ER (partie 2 : produits, TIBOK,
-   vision régionale, convergence ER, clôture). Loads after film-content.jsx.
-   Exposes window.SCENES_B. */
+/* film-content2.jsx — Film DDS × MUA (partie 2 : la plateforme TIBOK vue
+   de l'assureur — cadre légal, écosystème, Medical Intelligence, SilentCheck,
+   second avis, contrôle de pertinence, preuve Swan, offre, vision, clôture).
+   Loads after film-content.jsx. Exposes window.SCENES_B. */
 
 (function () {
   const {
@@ -17,7 +18,7 @@
     Card3D,
     Logo,
     Swan,
-    ERmark,
+    MUAmark,
     C,
     FD,
     FS,
@@ -34,192 +35,116 @@
   } = window;
   const PIMG = n => `assets/people/${n}.jpg`;
   const IMG = n => `assets/team/${n}.jpg`;
-  const SCENES_B = [/* ---------- 7 · L'ÉCOSYSTÈME DDS ---------- */
+  const SCENES_B = [/* ---------- 5 · TIBOK, LA PLATEFORME ---------- */
   {
-    dur: 26,
+    dur: 40,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "L'écosystème",
-      title: "Un producteur, un portefeuille"
-    }), /*#__PURE__*/React.createElement(DDSOrg, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['DDS est une holding. Trois produits IA :', 'TIBOK, Lexora, Axon — des logiciels réels, déjà en service.', 'Et autour d’eux, des ventures liées :', 'Obesity Care Clinic, et CVMI, tourisme médical au Cap-Vert.', 'Un écosystème — pas une agence.'],
-      x: 960,
-      width: 1500,
-      align: "center",
-      y: 888,
-      size: 32,
-      italic: true,
-      accent: "#EDEFF4",
-      dim: "rgba(206,219,240,0.22)",
-      lead: 1.4,
-      tail: 1.2
-    }))
-  }, /* ---------- 8 · LEXORA ---------- */
-  {
-    dur: 26,
-    hue: 'teal',
-    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Produit — Lexora",
-      title: "L'ERP IA-natif",
-      color: C.teal
-    }), /*#__PURE__*/React.createElement(Logo, {
-      name: "lexora",
-      w: 300,
-      x: 120,
-      y: 150,
-      at: 0.2
+      act: "TIBOK",
+      title: "Un OS clinique au-dessus de l'assurance santé"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
-      y: 300,
-      size: 54,
-      weight: 700,
-      lines: ['Vous scannez. Vous photographiez.', 'La comptabilité se fait toute seule.'],
-      accentIdx: [1],
-      accentColor: C.teal
-    }), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        top: 560,
-        left: 0,
-        right: 0,
-        display: 'flex',
-        justifyContent: 'center',
-        gap: 22
-      }
-    }, [['Piloté par des agents IA', 'Un reçu scanné ou photographié — et il est comptabilisé', C.teal], ['Paie & RH simplifiées', 'La paie, les RH — sans effort', C.blue], ['Du temps, pas de la paperasse', 'Des heures gagnées chaque semaine', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
-      key: i,
-      p: p,
-      i: i
-    }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Je l’ai d’abord construit pour moi : RH internes,', 'comptabilité en retard, pas toujours rigoureuse — je connais le problème.', 'J’ai développé mes outils, puis je les ai rendus simples,', 'pour que le plus grand nombre en profite. Expertise métier, valeur créée.'],
-      x: 960,
-      width: 1560,
-      align: "center",
-      y: 905,
-      size: 29,
-      italic: true,
-      accent: "#D8F2F4",
-      dim: "rgba(200,230,236,0.2)",
-      lead: 1.6,
-      tail: 1.1
-    }))
-  }, /* ---------- 9 · AXON ---------- */
-  {
-    dur: 26,
-    hue: 'teal',
-    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Produit — Axon",
-      title: "Une équipe d'agents IA",
-      color: C.teal
-    }), /*#__PURE__*/React.createElement(Logo, {
-      name: "axon",
-      w: 210,
-      x: 120,
-      y: 150,
-      at: 0.2
-    }), /*#__PURE__*/React.createElement(Statement, {
-      x: 120,
-      y: 250,
-      size: 52,
-      weight: 700,
-      lines: ['Une équipe d’agents IA.', 'Voix, secrétariat, back-office.'],
-      accentIdx: [1],
-      accentColor: C.teal
-    }), /*#__PURE__*/React.createElement(Waveform, null), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        top: 500,
-        left: 0,
-        right: 0,
-        display: 'flex',
-        justifyContent: 'center',
-        gap: 24
-      }
-    }, [['Agent vocal', 'Appelle & répond — FR · EN · toutes langues, éprouvé en santé', C.teal], ['Agent administratif', 'Secrétariat : courriers, e-mails, agenda', C.blue], ['Tout le back-office', 'Une équipe multi-services d’agents IA', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
-      key: i,
-      p: p,
-      i: i
-    }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Axon n’est pas qu’un agent vocal. Il appelle, il répond,', 'dans toutes les langues. Mais aussi un agent administratif :', 'secrétariat, courriers, e-mails, planning — tout le back-office.', 'Une vraie équipe d’agents IA. Expertise métier, valeur créée.'],
-      x: 960,
-      width: 1540,
-      align: "center",
-      y: 880,
-      size: 30,
-      italic: true,
-      accent: "#D8F2F4",
-      dim: "rgba(200,230,236,0.2)",
-      lead: 1.6,
-      tail: 1.2
-    }))
-  }, /* ---------- 10 · TIBOK — LE HUB ---------- */
-  {
-    dur: 28,
-    hue: 'blue',
-    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Produit phare — TIBOK",
-      title: "L'intelligence médicale"
-    }), /*#__PURE__*/React.createElement(Statement, {
-      x: 120,
-      y: 180,
+      y: 168,
       size: 50,
       weight: 700,
-      lines: ['L’intelligence médicale', 'qui connecte tout.'],
+      lines: ['Pas une app de consultation.', 'Une couche d’intelligence médicale.'],
       accentIdx: [1],
       accentColor: C.blue
-    }), /*#__PURE__*/React.createElement(TibokHub, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['TIBOK n’est pas une app de téléconsultation.', 'C’est une intelligence médicale qui opère autour', 'de chaque point de soin — distanciel, présentiel,', 'pharmacie, labo, radiologie, urgences, soins primaires.', '60 000 références. Premier assureur : Swan, signature en cours.'],
+    }), /*#__PURE__*/React.createElement(TibokHub, null), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 342,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 14
+      }
+    }, ['20+ médecins — Medical Council of Mauritius', 'FR · EN · Kreol', '7 jours sur 7'].map((c, i) => /*#__PURE__*/React.createElement(Chip, {
+      key: i,
+      at: 0.6 + i * 0.16,
+      color: C.teal
+    }, c))), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Tibok est la première plateforme mauricienne de télémédecine grand public.', 'Plus de vingt médecins inscrits au Medical Council of Mauritius', 'prennent en charge les patients en vidéo — en français, en anglais,', 'ou en kreol — sept jours sur sept. Mais Tibok n’est pas une app', 'de consultation : c’est une couche d’intelligence médicale,', 'un système d’exploitation clinique conçu pour s’installer', 'au-dessus de l’assurance santé. Là où l’assureur ne voit que', 'la trace papier d’un acte déjà survenu, Tibok produit l’acte', 'lui-même — natif, structuré, horodaté, vérifiable.'],
       x: 960,
       width: 1560,
       align: "center",
       y: 918,
-      size: 31,
+      size: 30,
       italic: true,
       accent: "#EDEFF4",
       dim: "rgba(206,219,240,0.2)",
       lead: 1.6,
       tail: 1.2
     }))
-  }, /* ---------- 11 · LA VISION SANTÉ ---------- */
+  }, /* ---------- 6 · CADRE LÉGAL ---------- */
   {
-    dur: 28,
-    hue: 'coral',
+    dur: 45,
+    hue: 'gold',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "La vision",
-      title: "Augmenter, pas remplacer",
-      color: C.coral
+      act: "Cadre légal",
+      title: "Un fait accompli depuis 30 ans",
+      color: C.gold
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
-      y: 168,
-      size: 48,
+      y: 158,
+      size: 54,
       weight: 700,
-      lines: ['On ne crée pas 50 000 médecins en 5 ans.', 'On augmente les soignants avec l’IA.'],
+      lines: ['Ce qui n’est pas interdit', 'est permis.'],
       accentIdx: [1],
       accentColor: C.gold
-    }), /*#__PURE__*/React.createElement(Ratios, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['TIBOK est un écosystème de santé — distanciel et présentiel —', 'conçu pour gérer les soins primaires d’un pays, surtout en Afrique.', 'Des outils pour que les médecins soient au niveau, et augmentés.', 'Tous les produits de DDS sont bâtis sur cette même vision.'],
+    }), /*#__PURE__*/React.createElement(LegalTimeline, null), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 700,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        justifyContent: 'center'
+      }
+    }, /*#__PURE__*/React.createElement(Panel, {
+      at: 1.6,
+      style: {
+        maxWidth: 1400
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 27,
+        color: '#fff',
+        lineHeight: 1.45,
+        textAlign: 'center'
+      }
+    }, "Un acte médical ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: C.gold,
+        fontWeight: 800
+      }
+    }, "légal, opposable et adjudicable"), " — que la MUA peut couvrir et rembourser en droit commun, dans la nomenclature qu’elle pilote déjà."))), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['La téléconsultation n’est pas un débat juridique.', 'C’est un fait accompli — depuis bientôt trente ans.', 'Depuis 1997, l’OMS la définit comme un acte médical à part entière.', 'La France la rembourse depuis 2018. Les États-Unis, le Royaume-Uni,', 'l’Allemagne, l’Australie, le Canada, la Suisse l’ont intégrée à leur droit.', 'Et à Maurice ? Le Medical Council Act de 1999 n’impose', 'aucune condition de présence physique. Ce qui n’est pas interdit est permis.', 'La téléconsultation Tibok est un acte médical légal, opposable,', 'et adjudicable — que la MUA peut couvrir et rembourser en droit commun.'],
       x: 960,
       width: 1560,
       align: "center",
-      y: 882,
-      size: 31,
+      y: 928,
+      size: 29,
       italic: true,
-      accent: "#F6DED7",
-      dim: "rgba(230,200,192,0.24)",
+      accent: "#F2E6CF",
+      dim: "rgba(224,210,180,0.22)",
       lead: 1.6,
       tail: 1.2
     }))
-  }, /* ---------- 12 · COMMENT ÇA MARCHE ---------- */
+  }, /* ---------- 7 · L'ÉCOSYSTÈME TIBOK ---------- */
   {
-    dur: 26,
+    dur: 45,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Comment ça marche",
-      title: "Distanciel + présentiel"
-    }), /*#__PURE__*/React.createElement("div", {
+      act: "L'écosystème",
+      title: "Dix outils, une intelligence centrale"
+    }), /*#__PURE__*/React.createElement(ToolsGrid, null), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 150,
+        top: 620,
         left: 0,
         right: 0,
         textAlign: 'center'
@@ -227,68 +152,199 @@
     }, /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
-        fontWeight: 500,
-        fontSize: 18,
-        letterSpacing: '0.01em',
-        color: C.dim,
-        maxWidth: 1500,
-        margin: '0 auto'
+        fontWeight: 600,
+        fontSize: 16,
+        letterSpacing: '0.12em',
+        textTransform: 'uppercase',
+        color: C.gold,
+        marginBottom: 14
       }
-    }, "Chaque consultation — présentiel et distanciel, urgences, centres de santé et dispensaires — labo · radiologie · pharmacie")), /*#__PURE__*/React.createElement(EcosystemLive, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Le soignant saisit les données.', 'TIBOK les traite face à 60 000 références médicales,', 'ses guidelines, ses algorithmes propriétaires.', 'Une recommandation fondée sur la preuve.', 'Et à chaque cas traité, le système apprend.', 'An 1, c’est bon. An 3, meilleur que bien des médecins.'],
+    }, "Des agents IA qui ne dorment jamais"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 14,
+        flexWrap: 'wrap'
+      }
+    }, /*#__PURE__*/React.createElement(Chip, {
+      at: 1.4,
+      color: C.gold
+    }, "Agent de suivi chronique — rappels WhatsApp, alertes"), /*#__PURE__*/React.createElement(Chip, {
+      at: 1.55,
+      color: C.gold
+    }, "Agent de prévention — cohortes × référentiels"), /*#__PURE__*/React.createElement(Chip, {
+      at: 1.7,
+      color: C.gold
+    }, "Agent de contrôle — chaque ordonnance analysée"))), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Dix outils — gravitant autour d’une intelligence centrale.', 'La téléconsultation sans rendez-vous. L’ordonnance numérique signée.', 'Le réseau de pharmacies qui livre jusqu’à Rodrigues. Les analyses', 'et l’imagerie. Le suivi des maladies chroniques. La gestion famille.', 'SilentCheck pour la prévention. Le second avis. Le contrôle de pertinence.', 'Et autour, des agents IA qui ne dorment jamais : suivi chronique,', 'prévention, contrôle. Pour la MUA, ce sont les bras que votre gestion', 'du risque n’a jamais eus — une chaîne pilotée, tracée, verrouillée.'],
       x: 960,
-      width: 1500,
+      width: 1560,
       align: "center",
-      y: 860,
-      size: 33,
-      italic: true,
-      accent: "#EDEFF4",
-      dim: "rgba(206,219,240,0.2)",
-      lead: 1.6,
-      tail: 1.4
-    }))
-  }, /* ---------- 13 · LES MODULES ---------- */
-  {
-    dur: 24,
-    hue: 'blue',
-    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Une plateforme",
-      title: "11 modules, un seul système"
-    }), /*#__PURE__*/React.createElement(Statement, {
-      x: 120,
-      y: 150,
-      size: 46,
-      weight: 700,
-      lines: ['11 modules.', 'Un seul système connecté.'],
-      accentIdx: [1],
-      accentColor: C.blue
-    }), /*#__PURE__*/React.createElement(Modules, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Consultation — distanciel, présentiel, chronique, dermatologie.', 'Les connexions — labo, radiologie, pharmacie.', 'Suivi des maladies chroniques par WhatsApp : tension, diabète, poids.', 'Prévention avec SilentCheck. Urgences, et tableau de bord RH.'],
-      x: 960,
-      width: 1540,
-      align: "center",
-      y: 912,
+      y: 928,
       size: 29,
       italic: true,
       accent: "#EDEFF4",
       dim: "rgba(206,219,240,0.2)",
       lead: 1.6,
-      tail: 1.1
+      tail: 1.2
     }))
-  }, /* ---------- 14 · SWAN → L'OPPORTUNITÉ ER ---------- */
+  }, /* ---------- 8 · MEDICAL INTELLIGENCE & RAG ---------- */
   {
-    dur: 32,
+    dur: 40,
+    hue: 'teal',
+    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
+      act: "Medical Intelligence",
+      title: "LLM + RAG — le socle scientifique",
+      color: C.teal
+    }), /*#__PURE__*/React.createElement(Statement, {
+      x: 120,
+      y: 158,
+      size: 50,
+      weight: 700,
+      lines: ['L’IA ne remplace pas le médecin.', 'Elle l’augmente.'],
+      accentIdx: [1],
+      accentColor: C.teal
+    }), /*#__PURE__*/React.createElement(IntelCore, null), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Au cœur de Tibok, notre signature : la Medical Intelligence.', 'Les meilleurs grands modèles de langage — Claude, GPT, Gemini, Mistral —', 'combinés à un système RAG adossé à plus de soixante mille références', 'des plus grandes sociétés savantes : OMS, Société européenne de cardiologie,', 'American Heart Association, NICE, INSERM, HAS, FDA.', 'Chaque consultation, chaque ordonnance est verrouillée par ce socle.', 'L’IA ne remplace pas le médecin. Elle l’augmente. Elle vérifie,', 'elle suggère, elle alerte — et le médecin garde, toujours, la décision finale.'],
+      x: 960,
+      width: 1560,
+      align: "center",
+      y: 928,
+      size: 29,
+      italic: true,
+      accent: "#D8F2F4",
+      dim: "rgba(200,230,236,0.2)",
+      lead: 1.6,
+      tail: 1.2
+    }))
+  }, /* ---------- 9 · SILENTCHECK ---------- */
+  {
+    dur: 50,
+    hue: 'gold',
+    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
+      act: "Prévention active",
+      title: "SilentCheck · Score BSD",
+      color: C.gold
+    }), /*#__PURE__*/React.createElement(Statement, {
+      x: 120,
+      y: 150,
+      size: 50,
+      weight: 700,
+      lines: ['Détecter 5 à 10 ans à l’avance', 'ce que les symptômes taisent.'],
+      accentIdx: [1],
+      accentColor: C.gold
+    }), /*#__PURE__*/React.createElement(SilentCheckViz, null), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Notre innovation phare s’appelle SilentCheck —', 'la stratification du risque cardiovasculaire, basée sur le Score BSD.', 'Quatre millions de patients suivis dans cinquante-deux pays.', 'Cinquante-trois références publiées dans le New England Journal', 'of Medicine, The Lancet, JACC, Circulation. Quinze biomarqueurs.', 'SilentCheck détecte cinq à dix ans à l’avance les anomalies', 'que les symptômes ne révèlent pas encore. Un assureur classique', 'regarde dans le rétroviseur. SilentCheck regarde devant :', 'c’est la brique qui fait passer la MUA de la sinistralité subie', 'à la prévention active.'],
+      x: 960,
+      width: 1560,
+      align: "center",
+      y: 928,
+      size: 29,
+      italic: true,
+      accent: "#F2E6CF",
+      dim: "rgba(224,210,180,0.22)",
+      lead: 1.6,
+      tail: 1.2
+    }))
+  }, /* ---------- 10 · SECOND AVIS MÉDICAL ---------- */
+  {
+    dur: 35,
+    hue: 'blue',
+    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
+      act: "Second avis",
+      title: "Une seconde lecture, entièrement sourcée"
+    }), /*#__PURE__*/React.createElement(Statement, {
+      x: 120,
+      y: 158,
+      size: 50,
+      weight: 700,
+      lines: ['Un contrôle qualité automatisé,', 'avant tout acte coûteux.'],
+      accentIdx: [1],
+      accentColor: C.blue
+    }), /*#__PURE__*/React.createElement(SecondOpinionFlow, null), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Pour les pathologies complexes : le Second Avis Médical.', 'Le dossier complet du patient — anamnèse, ordonnance, imagerie,', 'biologie, antécédents — est revérifié par notre dispositif IA et RAG,', 'puis validé par un médecin Tibok. Une seconde lecture entièrement sourcée.', 'Pour l’assuré : un dossier revu sans angle mort. Pour la MUA :', 'un contrôle qualité automatisé avant tout acte coûteux — le geste lourd,', 'l’hospitalisation, l’orientation à l’étranger.', 'Exactement là où se joue la dépense.'],
+      x: 960,
+      width: 1560,
+      align: "center",
+      y: 918,
+      size: 30,
+      italic: true,
+      accent: "#EDEFF4",
+      dim: "rgba(206,219,240,0.2)",
+      lead: 1.6,
+      tail: 1.2
+    }))
+  }, /* ---------- 11 · LE CONTRÔLE DE PERTINENCE ---------- */
+  {
+    dur: 45,
     hue: 'green',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "L'opportunité",
-      title: "Swan — signature en cours",
+      act: "Le module clé",
+      title: "Contrôle de pertinence",
       color: C.green
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
-      y: 140,
-      size: 52,
+      y: 150,
+      size: 50,
       weight: 700,
-      lines: ['Avec Swan,', 'la signature est en cours.'],
+      lines: ['Du contrôle ex-post sur papier', 'au contrôle natif, en temps réel.'],
+      accentIdx: [1],
+      accentColor: C.green
+    }), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 352,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 14
+      }
+    }, ['Horodatage', 'Signature électronique', 'Traçabilité vidéo', 'Analyse de pertinence'].map((c, i) => /*#__PURE__*/React.createElement(Chip, {
+      key: i,
+      at: 0.5 + i * 0.14,
+      color: C.green
+    }, c))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 470,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 22
+      }
+    }, [['Fin de la sur-prescription', 'Chaque examen, chaque acte confronté aux référentiels avant d’entrer dans la dépense. La prescription opportuniste devient visible.', C.teal], ['Lutte structurée contre la fraude', 'L’acte fantôme et le sur-codage n’ont plus d’angle mort — l’acte est nativement prouvable.', C.blue], ['Ratio sinistres / primes', 'Détection précoce, parcours coordonné, donnée clinique structurée pour piloter cohortes et tarification.', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
+      key: i,
+      p: p,
+      i: i
+    }))), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Et voici le module clé pour la MUA.', 'Aujourd’hui, on vérifie un document reconstruit après coup —', 'personne n’a observé l’acte. Tibok renverse ce modèle :', 'chaque ordonnance, chaque examen transite par la plateforme,', 'nativement prouvable — horodatage, signature électronique,', 'traçabilité vidéo, analyse de pertinence. La MUA passe du contrôle', 'ex-post sur papier au contrôle natif, en temps réel. Trois leviers :', 'fin de la sur-prescription, lutte structurée contre la fraude,', 'maîtrise du ratio sinistres sur primes.'],
+      x: 960,
+      width: 1560,
+      align: "center",
+      y: 928,
+      size: 29,
+      italic: true,
+      accent: "#DDF2E8",
+      dim: "rgba(200,230,216,0.2)",
+      lead: 1.6,
+      tail: 1.2
+    }))
+  }, /* ---------- 12 · LA PREUVE : SWAN ---------- */
+  {
+    dur: 30,
+    hue: 'green',
+    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
+      act: "La preuve",
+      title: "Le principe est validé",
+      color: C.green
+    }), /*#__PURE__*/React.createElement(Statement, {
+      x: 120,
+      y: 150,
+      size: 54,
+      weight: 700,
+      lines: ['Ce modèle n’est pas une promesse.', 'Il est déjà engagé.'],
       accentIdx: [1],
       accentColor: C.green
     }), /*#__PURE__*/React.createElement(Swan, {
@@ -299,14 +355,14 @@
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 308,
+        top: 380,
         left: 0,
         right: 0,
         display: 'flex',
         justifyContent: 'center'
       }
     }, /*#__PURE__*/React.createElement(Panel, {
-      at: 0.4,
+      at: 0.5,
       style: {
         maxWidth: 1360
       }
@@ -319,7 +375,7 @@
         lineHeight: 1.4,
         textAlign: 'center'
       }
-    }, "Premier grand assureur à s’", /*#__PURE__*/React.createElement("span", {
+    }, "Avec Swan, la signature est en cours — le premier grand assureur à s’", /*#__PURE__*/React.createElement("span", {
       style: {
         color: C.green,
         fontWeight: 800
@@ -327,224 +383,231 @@
     }, "engager"), " sur le remboursement des consultations et prescriptions faites sur TIBOK."))), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 452,
+        top: 588,
         left: 0,
         right: 0,
-        textAlign: 'center'
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 22
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 700,
-        fontSize: 24,
-        color: '#fff'
-      }
-    }, "Et la dynamique est lancée.")), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        top: 506,
-        left: 0,
-        right: 0,
-        textAlign: 'center'
-      }
-    }, /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 600,
-        fontSize: 16,
-        letterSpacing: '0.12em',
-        textTransform: 'uppercase',
-        color: C.dim,
-        marginBottom: 14
-      }
-    }, "Autres assureurs déjà rencontrés"), /*#__PURE__*/React.createElement("div", {
-      style: {
-        display: 'flex',
-        justifyContent: 'center',
-        gap: 14,
-        flexWrap: 'wrap',
-        maxWidth: 1100,
-        margin: '0 auto'
-      }
-    }, /*#__PURE__*/React.createElement(Chip, {
-      at: 0.8,
-      color: C.gold
-    }, "SICOM"), /*#__PURE__*/React.createElement(Chip, {
-      at: 0.9,
-      color: C.gold
-    }, "NIC"), /*#__PURE__*/React.createElement(Chip, {
-      at: 1.0,
-      color: C.gold
-    }, "MedSchem"), /*#__PURE__*/React.createElement(Chip, {
-      at: 1.1,
-      color: C.gold
-    }, "… et d’autres"))), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        top: 616,
-        left: 0,
-        right: 0,
-        textAlign: 'center'
-      }
-    }, /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 600,
-        fontSize: 16,
-        letterSpacing: '0.12em',
-        textTransform: 'uppercase',
-        color: C.dim,
-        marginBottom: 14
-      }
-    }, "Groupes prêts à déployer — salariés & familles"), /*#__PURE__*/React.createElement("div", {
-      style: {
-        display: 'flex',
-        justifyContent: 'center',
-        gap: 14,
-        flexWrap: 'wrap',
-        maxWidth: 1200,
-        margin: '0 auto'
-      }
-    }, /*#__PURE__*/React.createElement(Chip, {
-      at: 1.2,
-      color: C.blue
-    }, "Groupe ER"), /*#__PURE__*/React.createElement(Chip, {
-      at: 1.3,
-      color: C.blue
-    }, "Taylor Smith"), /*#__PURE__*/React.createElement(Chip, {
-      at: 1.4,
-      color: C.blue
-    }, "Alteo"), /*#__PURE__*/React.createElement(Chip, {
-      at: 1.5,
-      color: C.blue
-    }, "CIM Finance")), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 700,
-        fontSize: 22,
+        fontSize: 30,
         color: '#fff',
-        marginTop: 22
+        opacity: 1
       }
-    }, "Le ", /*#__PURE__*/React.createElement("span", {
+    }, "La place de ", /*#__PURE__*/React.createElement("span", {
       style: {
-        color: C.blue
+        color: C.gold
       }
-    }, "Groupe ER"), " doit entrer dans l’offre TIBOK.")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Avec Swan, la signature est en cours : le premier grand', 'assureur à s’engager sur le remboursement des consultations', 'et des prescriptions faites sur TIBOK. Et la dynamique est lancée :', 'd’autres assureurs — la SICOM, la NIC, MedSchem — ont déjà été rencontrés.', 'Des groupes prêts à déployer pour leurs salariés : le Groupe ER,', 'Taylor Smith, Alteo, CIM Finance. C’est le tout début de l’histoire,', 'et la place est ouverte. Le Groupe ER peut être parmi les premiers.'],
+    }, "partenaire de référence"), " est encore ouverte."), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        alignItems: 'center',
+        gap: 18
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 22,
+        color: C.dim
+      }
+    }, "C’est cette place que je propose à la"), /*#__PURE__*/React.createElement(MUAmark, {
+      h: 30
+    }))), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Ce modèle n’est pas une promesse. Avec Swan, la signature est en cours :', 'le premier grand assureur à s’engager sur le remboursement', 'des consultations et des prescriptions faites sur Tibok.', 'Le principe est validé sur le marché mauricien.', 'La place de partenaire de référence, elle, est encore ouverte.', 'C’est cette place que je propose à la MUA.'],
       x: 960,
-      width: 1560,
+      width: 1500,
       align: "center",
       y: 912,
-      size: 29,
+      size: 31,
       italic: true,
       accent: "#DDF2E8",
       dim: "rgba(200,230,216,0.2)",
       lead: 1.6,
-      tail: 1.1
+      tail: 1.2
     }))
-  }, /* ---------- 15 · VISION RÉGIONALE ---------- */
+  }, /* ---------- 13 · L'OFFRE : PARTENARIAT DE PLATEFORME ---------- */
   {
-    dur: 26,
-    hue: 'blue',
+    dur: 50,
+    hue: 'gold',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Vision régionale",
-      title: "Maurice, preuve de concept"
-    }), /*#__PURE__*/React.createElement(AfricaArc, null), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        top: 602,
-        left: 0,
-        right: 0,
-        textAlign: 'center'
-      }
-    }, /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 700,
-        fontSize: 56,
-        letterSpacing: '-0.025em',
-        color: '#fff'
-      }
-    }, "Bien plus qu’un marché."), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 600,
-        fontSize: 30,
-        color: C.blue,
-        marginTop: 12
-      }
-    }, "Une infrastructure de santé souveraine pour l’Afrique et l’océan Indien.")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Maurice est la preuve de concept.', 'Ça marche ici — donc ça marche partout en Afrique.', 'Partout le même problème : pas assez de médecins.', 'C’est bien plus qu’un produit : une infrastructure', 'de santé souveraine, pour un continent et son océan.'],
+      act: "L'offre",
+      title: "Un partenariat de plateforme",
+      color: C.gold
+    }), /*#__PURE__*/React.createElement(Statement, {
+      x: 120,
+      y: 144,
+      size: 46,
+      weight: 700,
+      lines: ['Pas un produit de plus à gérer.', 'Une couche d’intelligence sur tout votre portefeuille.'],
+      accentIdx: [1],
+      accentColor: C.gold
+    }), /*#__PURE__*/React.createElement(OfferCards, null), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Pas un produit de plus à gérer — une couche d’intelligence', 'à embarquer sur l’ensemble de votre portefeuille.', 'Pour le grand public : huit cents roupies la consultation.', 'Pour la MUA, en marque conjointe — MUA Medical Intelligence,', 'powered by Tibok : cinquante roupies par mois et par vie couverte.', 'Pour vos assurés : la consultation à cinq cents roupies,', 'le suivi chronique offert, le second avis offert, SilentCheck inclus.', 'Et le gainsharing : Tibok et la MUA partagent une part des coûts évités,', 'documentés et auditables. Vous n’assurez plus seulement la sinistralité —', 'vous investissez dans la santé préservée.'],
       x: 960,
       width: 1560,
       align: "center",
-      y: 912,
-      size: 29,
-      italic: true,
-      accent: "#EDEFF4",
-      dim: "rgba(206,219,240,0.2)",
-      lead: 1.6,
-      tail: 1.1
-    }))
-  }, /* ---------- 16 · CONVERGENCE ER × DDS ---------- */
-  {
-    dur: 28,
-    hue: 'gold',
-    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Ensemble",
-      title: "Les valeurs ER, la vision DDS",
-      color: C.gold
-    }), /*#__PURE__*/React.createElement(Statement, {
-      align: "center",
-      y: 168,
-      size: 58,
-      weight: 700,
-      lines: ['Les valeurs du Groupe ER.', 'La vision de DDS. Une même ambition.'],
-      accentIdx: [1],
-      accentColor: C.gold
-    }), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        top: 430,
-        left: 0,
-        right: 0,
-        display: 'flex',
-        justifyContent: 'center',
-        gap: 24
-      }
-    }, [['Ancrage mauricien', 'Un groupe d’ici, une IA d’ici — la valeur reste à Maurice'], ['Croissance responsable', 'Des logiciels qui créent de la valeur, durablement'], ['Impact régional', 'L’Afrique et l’océan Indien comme horizon commun']].map((p, i) => /*#__PURE__*/React.createElement(MiniPanel, {
-      key: i,
-      p: p,
-      i: i,
-      color: C.gold
-    }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Ce que je cherche : associer cette vision au Groupe ER —', 'entrer dans TIBOK, nouer un partenariat, rejoindre le groupe.', 'De quelque manière que ce soit. Parce qu’ensemble,', 'nous pouvons réaliser de grandes choses — pour Maurice,', 'pour l’Afrique et pour l’océan Indien.'],
-      x: 960,
-      width: 1500,
-      align: "center",
-      y: 840,
-      size: 33,
+      y: 935,
+      size: 28,
       italic: true,
       accent: "#F2E6CF",
       dim: "rgba(224,210,180,0.22)",
       lead: 1.6,
       tail: 1.2
     }))
-  }, /* ---------- 17 · CLÔTURE ---------- */
+  }, /* ---------- 14 · VISION RÉGIONALE ---------- */
   {
-    dur: 18,
+    dur: 30,
+    hue: 'blue',
+    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
+      act: "Vision régionale",
+      title: "Maurice, puis l'Afrique"
+    }), /*#__PURE__*/React.createElement(AfricaArc, null), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 588,
+        left: 0,
+        right: 0,
+        textAlign: 'center'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 700,
+        fontSize: 52,
+        letterSpacing: '-0.025em',
+        color: '#fff'
+      }
+    }, "La MUA est déjà là où TIBOK veut aller."), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 28,
+        color: C.blue,
+        marginTop: 12
+      }
+    }, "Votre réseau régional · notre infrastructure de santé souveraine")), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Maurice est la preuve de concept. Ça marche ici — donc ça marche', 'partout où le problème est le même : pas assez de médecins.', 'Et la MUA est déjà là où Tibok veut aller : en Afrique de l’Est.', 'Votre réseau régional, notre infrastructure de santé souveraine.', 'Ensemble, le standard mauricien peut devenir le standard', 'du continent et de son océan.'],
+      x: 960,
+      width: 1560,
+      align: "center",
+      y: 912,
+      size: 30,
+      italic: true,
+      accent: "#EDEFF4",
+      dim: "rgba(206,219,240,0.2)",
+      lead: 1.6,
+      tail: 1.1
+    }))
+  }, /* ---------- 15 · CLÔTURE ---------- */
+  {
+    dur: 30,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(FinalScene, null)
   }];
 
   /* ============================ COMPOSANTS ============================ */
 
-  function DDSOrg() {
+  function TibokHub() {
     const {
       localTime
     } = useScene();
-    const root = ev(localTime, 0.2, 0.6, Easing.easeOutCubic);
-    const products = [['tibok', 'OS de santé · présentiel + distanciel'], ['lexora', 'ERP IA-natif · compta & paie'], ['axon', 'Agents vocaux · relation client']];
+    const nodes = [['Consultation', C.blue], ['Ordonnance', C.teal], ['Pharmacie', C.gold], ['Analyses', C.teal], ['Suivi chronique', C.gold], ['Second avis', C.blue], ['Prévention', C.green], ['Contrôle', C.coral]];
+    const cx = 960,
+      cy = 584,
+      rx = 620,
+      ry = 176;
+    const pts = nodes.map((n, i) => {
+      const ang = (-90 + i * (360 / nodes.length)) * Math.PI / 180;
+      return {
+        n: n[0],
+        c: n[1],
+        x: cx + Math.cos(ang) * rx,
+        y: cy + Math.sin(ang) * ry
+      };
+    });
+    const pulse = 0.5 + 0.5 * Math.sin(localTime * 1.6);
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        inset: 0
+      }
+    }, /*#__PURE__*/React.createElement(FlowSvg, null, pts.map((pt, i) => /*#__PURE__*/React.createElement(FlowLink, {
+      key: i,
+      x1: cx,
+      y1: cy,
+      x2: pt.x,
+      y2: pt.y,
+      color: pt.c,
+      at: 0.6 + i * 0.1
+    }))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        left: cx,
+        top: cy,
+        transform: 'translate(-50%,-50%)',
+        width: 250,
+        height: 250,
+        borderRadius: '50%',
+        background: `radial-gradient(circle, ${C.blue}3a, ${C.blue}08)`,
+        border: `2px solid ${C.blue}88`,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 9,
+        opacity: ev(localTime, 0.2, 0.6),
+        boxShadow: `0 0 ${70 + 34 * pulse}px ${C.blue}55, inset 0 0 40px ${C.blue}22`
+      }
+    }, /*#__PURE__*/React.createElement(Logo, {
+      name: "tibok",
+      w: 150,
+      intro: false,
+      style: {
+        position: 'static'
+      }
+    }), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 700,
+        fontSize: 15,
+        color: '#fff'
+      }
+    }, "Medical Intelligence"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 700,
+        fontSize: 15,
+        color: C.teal
+      }
+    }, "60 000 références")), pts.map((pt, i) => /*#__PURE__*/React.createElement(NodeChip, {
+      key: i,
+      label: pt.n,
+      icon: "◆",
+      x: pt.x,
+      y: pt.y,
+      color: pt.c,
+      at: 0.9 + i * 0.11
+    })));
+  }
+
+  /* ===== chronologie légale de la téléconsultation ===== */
+  function LegalTimeline() {
+    const {
+      localTime
+    } = useScene();
+    const ph = [['1997', 'OMS', 'Acte médical à part entière', C.blue], ['2018', 'France', 'Remboursée par l’Assurance Maladie', C.blue], ['Medicare Act', 'États-Unis', 'Généralisée aux cinquante États', C.blue], ['Droit commun', 'UK · DE · AU · CA · CH', 'Intégrée au droit national', C.teal], ['1999', 'Maurice — Medical Council Act', 'Aucune condition de présence physique', C.gold]];
+    const W = 316,
+      gap = 24,
+      total = ph.length * W + (ph.length - 1) * gap,
+      sx = (1920 - total) / 2,
+      lineY = 452;
+    const lineP = ev(localTime, 0.3, 1.4, Easing.easeOutCubic);
     return /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
@@ -553,122 +616,293 @@
     }, /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        left: '50%',
-        top: 178,
-        transform: `translate(-50%,0) scale(${0.92 + 0.08 * root})`,
-        opacity: root,
-        background: 'rgba(59,131,232,0.12)',
-        border: '1px solid rgba(59,131,232,0.4)',
-        borderRadius: 16,
-        padding: '16px 36px',
-        display: 'flex',
-        alignItems: 'center'
+        left: sx + 10,
+        top: lineY,
+        height: 3,
+        width: (total - 20) * lineP,
+        background: 'rgba(255,255,255,0.25)'
       }
-    }, /*#__PURE__*/React.createElement(Logo, {
-      name: "dds",
-      w: 300,
-      intro: false,
+    }), ph.map((p, i) => {
+      const op = ev(localTime, 0.5 + i * 0.3, 0.6, Easing.easeOutCubic);
+      const x = sx + i * (W + gap);
+      const last = i == ph.length - 1;
+      return /*#__PURE__*/React.createElement("div", {
+        key: i,
+        style: {
+          position: 'absolute',
+          left: x,
+          top: lineY - 9,
+          width: W,
+          opacity: op,
+          transform: `translateY(${(1 - op) * 16}px)`
+        }
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          width: 18,
+          height: 18,
+          borderRadius: 9,
+          background: p[3],
+          boxShadow: `0 0 18px ${p[3]}`,
+          marginBottom: 24
+        }
+      }), /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontFamily: FD,
+          fontWeight: 700,
+          fontSize: 25,
+          color: '#fff'
+        }
+      }, p[0]), /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontFamily: FD,
+          fontWeight: 600,
+          fontSize: 20,
+          color: p[3],
+          marginTop: 8,
+          lineHeight: 1.25
+        }
+      }, p[1]), /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontFamily: FD,
+          fontWeight: 400,
+          fontSize: 17,
+          color: C.dim,
+          marginTop: 7,
+          lineHeight: 1.35
+        }
+      }, p[2]));
+    }));
+  }
+
+  /* ===== grille des 10 outils de l'écosystème ===== */
+  function ToolsGrid() {
+    const {
+      localTime
+    } = useScene();
+    const I = {
+      video: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
+        x: "2.5",
+        y: "6",
+        width: "13",
+        height: "12",
+        rx: "2.5"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M15.5 10.5l5-2.5v8l-5-2.5z"
+      })),
+      rx: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
+        x: "5",
+        y: "4.5",
+        width: "14",
+        height: "16.5",
+        rx: "2.2"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M9 4.5V3.2h6v1.3M8.6 12l2 2 4-4"
+      })),
+      pill: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M10.6 3.7l9.7 9.7a4.8 4.8 0 0 1-6.8 6.8L3.8 10.5a4.8 4.8 0 0 1 6.8-6.8z"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M7.2 7.1l9.7 9.7"
+      })),
+      lab: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M9.5 3.5h5M10.5 3.5v5.5l-4.6 8.2a2 2 0 0 0 1.7 3h8.8a2 2 0 0 0 1.7-3l-4.6-8.2V3.5"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M8 15h8"
+      })),
+      heart: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M20.6 8.6a4.8 4.8 0 0 0-8.6-2 4.8 4.8 0 0 0-8.6 2c0 3.9 4.4 7.3 8.6 10.1 4.2-2.8 8.6-6.2 8.6-10.1z"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M4.5 11.5h3l1.2-2.2 1.8 4 1.2-1.8h2"
+      })),
+      family: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("circle", {
+        cx: "8.5",
+        cy: "7.5",
+        r: "2.6"
+      }), /*#__PURE__*/React.createElement("circle", {
+        cx: "16",
+        cy: "8.6",
+        r: "2.1"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M3.8 19.5a4.8 4.8 0 0 1 9.4 0M12.8 19.5a3.9 3.9 0 0 1 6.6-2.4"
+      })),
+      shield: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M12 3.2l7 3v5.3c0 4.8-3 6.8-7 8.8-4-2-7-4-7-8.8V6.2z"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M9 12l2 2 4-4"
+      })),
+      second: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("circle", {
+        cx: "10",
+        cy: "10",
+        r: "6"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M14.5 14.5L20 20M8 10h4M10 8v4"
+      })),
+      control: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
+        x: "3",
+        y: "3",
+        width: "18",
+        height: "18",
+        rx: "2.5"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M7.5 12l3 3 6-6"
+      })),
+      brain: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("circle", {
+        cx: "12",
+        cy: "12",
+        r: "3.2"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"
+      }))
+    };
+    const mods = [['Téléconsultation', 'Vidéo, sans rendez-vous', C.blue, 'video'], ['Ordonnance numérique', 'Signée, transmise à la pharmacie', C.teal, 'rx'], ['Réseau pharmacies', 'Livraison jusqu’à Rodrigues', C.gold, 'pill'], ['Analyses & imagerie', 'Biologie et radiologie intégrées', C.teal, 'lab'], ['Suivi chronique', 'Tension · diabète · poids, par WhatsApp', C.gold, 'heart'], ['Gestion famille', 'Tous les proches, un seul compte', C.blue, 'family'], ['SilentCheck', 'Prévention & détection précoce', C.gold, 'shield'], ['Second avis', 'Dossier revu par IA + médecin', C.blue, 'second'], ['Contrôle de pertinence', 'Chaque acte vérifié avant la dépense', C.green, 'control'], ['Medical Intelligence', 'Au cœur — sur chaque consultation, ordonnance, examen', C.coral, 'brain']];
+    const gap = 18,
+      W = 402;
+    return /*#__PURE__*/React.createElement("div", {
       style: {
-        position: 'static'
+        position: 'absolute',
+        top: 196,
+        left: 120,
+        right: 120,
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: gap,
+        justifyContent: 'center'
       }
+    }, mods.map((m, i) => {
+      const pulse = 0.5 + 0.5 * Math.sin(localTime * 1.5 + i * 0.9);
+      return /*#__PURE__*/React.createElement(Card3D, {
+        key: i,
+        w: W,
+        at: 0.3 + i * 0.07,
+        i: i,
+        accent: m[2],
+        accentSide: "left",
+        radius: 16,
+        pad: "17px 20px",
+        style: {
+          display: 'flex',
+          gap: 16,
+          alignItems: 'flex-start'
+        }
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          width: 50,
+          height: 50,
+          flex: 'none',
+          borderRadius: 14,
+          background: `${m[2]}22`,
+          border: `1px solid ${m[2]}66`,
+          display: 'grid',
+          placeItems: 'center',
+          color: m[2],
+          boxShadow: `0 0 ${9 + 8 * pulse}px ${m[2]}55`
+        }
+      }, /*#__PURE__*/React.createElement("svg", {
+        width: "26",
+        height: "26",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "currentColor",
+        strokeWidth: "1.7",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }, I[m[3]])), /*#__PURE__*/React.createElement("div", {
+        style: {
+          minWidth: 0
+        }
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontFamily: FD,
+          fontWeight: 700,
+          fontSize: 22,
+          color: '#fff',
+          lineHeight: 1.05
+        }
+      }, m[0]), /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontFamily: FD,
+          fontWeight: 400,
+          fontSize: 15,
+          color: C.dim,
+          marginTop: 6,
+          lineHeight: 1.32
+        }
+      }, m[1])));
+    }));
+  }
+
+  /* ===== LLM + RAG : le cœur scientifique ===== */
+  function IntelCore() {
+    const {
+      localTime
+    } = useScene();
+    const cx = 960,
+      cy = 520;
+    const pulse = 0.5 + 0.5 * Math.sin(localTime * 1.6);
+    const llms = [['Claude', 392], ['GPT', 462], ['Gemini', 532], ['Mistral', 602]];
+    const socs = ['OMS', 'ESC — cardiologie', 'American Heart Association', 'NICE', 'INSERM', 'HAS', 'FDA'];
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        inset: 0
+      }
+    }, /*#__PURE__*/React.createElement(FlowSvg, null, llms.map((l, i) => /*#__PURE__*/React.createElement(FlowLink, {
+      key: i,
+      x1: 430,
+      y1: l[1],
+      x2: cx - 130,
+      y2: cy,
+      color: C.teal,
+      at: 0.5 + i * 0.12
+    })), /*#__PURE__*/React.createElement(FlowLink, {
+      x1: cx + 130,
+      y1: cy,
+      x2: 1500,
+      y2: cy,
+      color: C.blue,
+      at: 1.1
     })), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        left: 100,
-        top: 348,
-        width: 1090,
-        opacity: ev(localTime, 0.55, 0.6)
-      }
-    }, /*#__PURE__*/React.createElement("div", {
-      style: {
+        left: 250,
+        top: 352,
         fontFamily: FD,
         fontWeight: 700,
-        fontSize: 18,
-        letterSpacing: '0.16em',
+        fontSize: 16,
+        letterSpacing: '0.14em',
         textTransform: 'uppercase',
-        color: C.blue,
-        marginBottom: 18
+        color: C.teal,
+        opacity: ev(localTime, 0.4, 0.6)
       }
-    }, "Produits IA"), /*#__PURE__*/React.createElement("div", {
-      style: {
-        display: 'flex',
-        gap: 22
-      }
-    }, products.map((p, i) => /*#__PURE__*/React.createElement(Card3D, {
+    }, "Les meilleurs LLM"), llms.map((l, i) => /*#__PURE__*/React.createElement(NodeChip, {
       key: i,
-      at: 0.7 + i * 0.16,
-      i: i,
-      minHeight: 206,
-      pad: "28px 22px",
-      radius: 16,
+      label: l[0],
+      icon: "◆",
+      x: 330,
+      y: l[1],
+      color: C.teal,
+      at: 0.5 + i * 0.12
+    })), /*#__PURE__*/React.createElement("div", {
       style: {
-        flex: 1,
+        position: 'absolute',
+        left: cx,
+        top: cy,
+        transform: 'translate(-50%,-50%)',
+        width: 260,
+        height: 260,
+        borderRadius: '50%',
+        background: `radial-gradient(circle, ${C.teal}3a, ${C.teal}08)`,
+        border: `2px solid ${C.teal}88`,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: 20
-      }
-    }, /*#__PURE__*/React.createElement("div", {
-      style: {
-        height: 52,
-        display: 'flex',
-        alignItems: 'center'
+        gap: 8,
+        opacity: ev(localTime, 0.3, 0.6),
+        boxShadow: `0 0 ${70 + 34 * pulse}px ${C.teal}55, inset 0 0 40px ${C.teal}22`
       }
     }, /*#__PURE__*/React.createElement(Logo, {
-      name: p[0],
-      w: p[0] === 'axon' ? 170 : p[0] === 'tibok' ? 150 : 210,
-      intro: false,
-      style: {
-        position: 'static'
-      }
-    })), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 400,
-        fontSize: 18,
-        color: C.dim,
-        textAlign: 'center',
-        lineHeight: 1.35
-      }
-    }, p[1]))))), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        left: 1240,
-        top: 348,
-        width: 580,
-        opacity: ev(localTime, 1.05, 0.6)
-      }
-    }, /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 700,
-        fontSize: 18,
-        letterSpacing: '0.16em',
-        textTransform: 'uppercase',
-        color: C.gold,
-        marginBottom: 18
-      }
-    }, "Ventures liées"), /*#__PURE__*/React.createElement("div", {
-      style: {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 18
-      }
-    }, /*#__PURE__*/React.createElement(Card3D, {
-      at: 1.1,
-      i: 1,
-      minHeight: 96,
-      pad: "16px 24px",
-      radius: 16,
-      style: {
-        display: 'flex',
-        alignItems: 'center',
-        gap: 18
-      }
-    }, /*#__PURE__*/React.createElement(Logo, {
-      name: "obesity",
-      w: 200,
+      name: "tibok",
+      w: 140,
       intro: false,
       style: {
         position: 'static'
@@ -676,143 +910,461 @@
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
-        fontWeight: 400,
+        fontWeight: 700,
         fontSize: 16,
-        color: C.dim,
-        lineHeight: 1.3
+        color: '#fff'
       }
-    }, "Chirurgie bariatrique · NHS S2")), /*#__PURE__*/React.createElement(Card3D, {
-      at: 1.25,
-      i: 3,
-      accent: C.gold,
-      minHeight: 96,
-      pad: "18px 24px",
-      radius: 16,
+    }, "Medical Intelligence"), /*#__PURE__*/React.createElement("div", {
       style: {
-        background: 'rgba(224,169,59,0.08)',
-        border: '1px solid rgba(224,169,59,0.3)'
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 14,
+        color: C.teal
+      }
+    }, "LLM + RAG")), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        left: 1500,
+        top: cy,
+        transform: 'translate(0,-50%)',
+        opacity: ev(localTime, 1.3, 0.6)
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: 'rgba(16,30,56,0.85)',
+        border: `1px solid ${C.blue}66`,
+        borderRadius: 18,
+        padding: '22px 30px',
+        boxShadow: `0 12px 34px rgba(0,0,0,0.4), 0 0 26px ${C.blue}33`
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 800,
-        fontSize: 24,
-        color: C.gold
+        fontSize: 42,
+        color: C.blue,
+        lineHeight: 1
       }
-    }, "CVMI · Cap-Vert"), /*#__PURE__*/React.createElement("div", {
+    }, "60 000"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 18,
+        color: '#fff',
+        marginTop: 8
+      }
+    }, "références scientifiques"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 400,
-        fontSize: 16,
+        fontSize: 15,
         color: C.dim,
-        marginTop: 6,
-        lineHeight: 1.3
+        marginTop: 4
       }
-    }, "Tourisme médical — prévention des maladies chroniques + tourisme")))));
-  }
-  function Waveform() {
-    const {
-      localTime
-    } = useScene();
-    const bars = 46;
-    return /*#__PURE__*/React.createElement("div", {
+    }, "RAG — Retrieval-Augmented Generation"))), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 400,
+        top: 712,
         left: 0,
         right: 0,
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
-        gap: 8,
-        height: 120
+        gap: 12,
+        flexWrap: 'wrap',
+        maxWidth: 1500,
+        margin: '0 auto'
       }
-    }, Array.from({
-      length: bars
-    }).map((_, i) => {
-      const amp = ev(localTime, 0.3, 0.8) * (0.4 + 0.6 * Math.abs(Math.sin(i * 0.5)));
-      const h = 14 + Math.abs(Math.sin(localTime * 4 + i * 0.55)) * amp * 90;
-      return /*#__PURE__*/React.createElement("div", {
-        key: i,
-        style: {
-          width: 7,
-          height: h,
-          borderRadius: 4,
-          background: i % 3 == 0 ? C.teal : 'rgba(39,176,190,0.5)'
-        }
-      });
-    }));
+    }, socs.map((s, i) => /*#__PURE__*/React.createElement(Chip, {
+      key: i,
+      at: 1.4 + i * 0.1,
+      color: C.blue
+    }, s))));
   }
-  function Ratios() {
+
+  /* ===== SilentCheck : la science en chiffres ===== */
+  function SilentCheckViz() {
     const {
       localTime
     } = useScene();
-    const r = [['Maurice', '≈ 1 : 500', 500, C.green], ['Sénégal', '1 : 7 000', 7000, C.blue], ['Mali', '1 : 15 000', 15000, C.gold], ['Sahel', '1 : 25 000', 25000, C.coral]];
-    const maxR = 25000;
+    const bars = [['des maladies cardiaques se développent sans symptôme pendant 10 ans', 80, C.coral], ['des complications sont évitables avec une détection précoce', 85, C.green]];
     return /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 400,
-        left: 300,
-        right: 300,
+        inset: 0
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 380,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 70
+      }
+    }, /*#__PURE__*/React.createElement(Stat, {
+      to: 4,
+      suffix: " M",
+      size: 72,
+      color: C.gold,
+      label: "patients · 52 pays",
+      align: "center",
+      at: 0.5
+    }), /*#__PURE__*/React.createElement(Stat, {
+      to: 53,
+      size: 72,
+      color: C.blue,
+      label: "références — NEJM · Lancet · JACC",
+      align: "center",
+      at: 0.7
+    }), /*#__PURE__*/React.createElement(Stat, {
+      to: 69612,
+      size: 72,
+      color: C.teal,
+      label: "cohorte de validation",
+      align: "center",
+      at: 0.9
+    }), /*#__PURE__*/React.createElement(Stat, {
+      to: 11,
+      size: 72,
+      color: C.green,
+      label: "profils ethniques",
+      align: "center",
+      at: 1.1
+    }), /*#__PURE__*/React.createElement(Stat, {
+      to: 15,
+      size: 72,
+      color: C.coral,
+      label: "biomarqueurs",
+      align: "center",
+      at: 1.3
+    })), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 614,
+        left: 330,
+        right: 330,
         display: 'flex',
         flexDirection: 'column',
-        gap: 22
+        gap: 24
       }
-    }, r.map((x, i) => {
-      const p = ev(localTime, 0.4 + i * 0.25, 0.8, Easing.easeOutCubic);
+    }, bars.map((b, i) => {
+      const p = ev(localTime, 1.5 + i * 0.3, 1.0, Easing.easeOutCubic);
       return /*#__PURE__*/React.createElement("div", {
         key: i,
         style: {
           display: 'flex',
           alignItems: 'center',
-          gap: 24
+          gap: 24,
+          opacity: ev(localTime, 1.4 + i * 0.3, 0.5)
         }
       }, /*#__PURE__*/React.createElement("div", {
         style: {
-          width: 140,
+          width: 120,
           fontFamily: FD,
-          fontWeight: 600,
-          fontSize: 24,
-          color: '#fff',
-          textAlign: 'right'
+          fontWeight: 800,
+          fontSize: 44,
+          color: b[2],
+          textAlign: 'right',
+          fontVariantNumeric: 'tabular-nums'
         }
-      }, x[0]), /*#__PURE__*/React.createElement("div", {
+      }, Math.round(b[1] * p), "%"), /*#__PURE__*/React.createElement("div", {
         style: {
-          flex: 1,
-          height: 30,
+          flex: 1
+        }
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          height: 22,
           background: 'rgba(255,255,255,0.06)',
-          borderRadius: 15,
+          borderRadius: 11,
           overflow: 'hidden'
         }
       }, /*#__PURE__*/React.createElement("div", {
         style: {
           height: '100%',
-          width: `${x[2] / maxR * 100 * p}%`,
-          background: x[3],
-          borderRadius: 15,
-          boxShadow: `0 0 24px ${x[3]}55`
+          width: `${b[1] * p}%`,
+          background: b[2],
+          borderRadius: 11,
+          boxShadow: `0 0 24px ${b[2]}55`
         }
       })), /*#__PURE__*/React.createElement("div", {
         style: {
-          width: 150,
           fontFamily: FD,
-          fontWeight: 700,
-          fontSize: 24,
-          color: x[3]
+          fontWeight: 500,
+          fontSize: 18,
+          color: C.dim,
+          marginTop: 8
         }
-      }, x[1]));
-    }), /*#__PURE__*/React.createElement("div", {
+      }, b[0])));
+    })));
+  }
+
+  /* ===== flux du second avis médical ===== */
+  function SecondOpinionFlow() {
+    const {
+      localTime
+    } = useScene();
+    const y = 520;
+    const steps = [['Dossier complet', '◆', 300, C.blue], ['LLM — analyse globale', '◆', 780, C.teal], ['RAG — 60 000 références', '◆', 1230, C.blue], ['Médecin TIBOK — validation', '◆', 1650, C.green]];
+    const docs = ['Anamnèse', 'Ordonnance', 'Imagerie', 'Biologie', 'Antécédents'];
+    return /*#__PURE__*/React.createElement("div", {
       style: {
-        marginTop: 8,
+        position: 'absolute',
+        inset: 0
+      }
+    }, /*#__PURE__*/React.createElement(FlowSvg, null, steps.slice(0, -1).map((s, i) => /*#__PURE__*/React.createElement(FlowLink, {
+      key: i,
+      x1: s[2],
+      y1: y,
+      x2: steps[i + 1][2],
+      y2: y,
+      color: steps[i + 1][3],
+      at: 0.6 + i * 0.3
+    }))), steps.map((s, i) => /*#__PURE__*/React.createElement(NodeChip, {
+      key: i,
+      label: s[0],
+      icon: s[1],
+      x: s[2],
+      y: y,
+      color: s[3],
+      at: 0.5 + i * 0.3
+    })), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 600,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 12
+      }
+    }, docs.map((d, i) => /*#__PURE__*/React.createElement(Chip, {
+      key: i,
+      at: 1.5 + i * 0.1,
+      color: C.blue,
+      tick: false
+    }, d))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 702,
+        left: 0,
+        right: 0,
         textAlign: 'center',
         fontFamily: FD,
-        fontWeight: 500,
-        fontSize: 18,
-        color: C.dim,
-        opacity: ev(localTime, 1.6, 0.7)
+        fontWeight: 600,
+        fontSize: 24,
+        color: C.teal,
+        opacity: ev(localTime, 2.0, 0.7)
       }
-    }, "Ratio médecin / habitants — l’auxiliaire de santé, augmenté par TIBOK, devient un praticien."));
+    }, "Une seconde lecture entièrement sourcée — avant le geste lourd, l’hospitalisation, l’orientation à l’étranger."));
+  }
+
+  /* ===== l'offre : trois cartes tarifaires + gainsharing ===== */
+  function OfferCards() {
+    const {
+      localTime
+    } = useScene();
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 330,
+        left: 0,
+        right: 0
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 24,
+        alignItems: 'stretch'
+      }
+    }, /*#__PURE__*/React.createElement(Card3D, {
+      w: 440,
+      at: 0.4,
+      i: 0,
+      accent: C.blue,
+      accentSide: "top",
+      minHeight: 290,
+      pad: "30px 32px"
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 700,
+        fontSize: 15,
+        letterSpacing: '0.14em',
+        textTransform: 'uppercase',
+        color: C.blue
+      }
+    }, "Grand public"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 800,
+        fontSize: 64,
+        color: '#fff',
+        marginTop: 16,
+        lineHeight: 1
+      }
+    }, "Rs 800"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 20,
+        color: C.dim,
+        marginTop: 8
+      }
+    }, "la consultation, à la demande"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 400,
+        fontSize: 17,
+        color: C.dim,
+        marginTop: 16,
+        lineHeight: 1.4
+      }
+    }, "Facturée par les médecins — le standard du marché.")), /*#__PURE__*/React.createElement(Card3D, {
+      w: 520,
+      at: 0.6,
+      i: 1,
+      accent: C.gold,
+      accentSide: "top",
+      minHeight: 290,
+      pad: "30px 32px",
+      style: {
+        background: 'rgba(224,169,59,0.08)',
+        border: '1px solid rgba(224,169,59,0.35)'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 700,
+        fontSize: 15,
+        letterSpacing: '0.14em',
+        textTransform: 'uppercase',
+        color: C.gold
+      }
+    }, "Marque conjointe"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 800,
+        fontSize: 27,
+        color: '#fff',
+        marginTop: 12,
+        lineHeight: 1.15
+      }
+    }, "MUA Medical Intelligence", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontWeight: 600,
+        fontSize: 19,
+        color: C.dim
+      }
+    }, "powered by TIBOK")), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 800,
+        fontSize: 64,
+        color: C.gold,
+        marginTop: 12,
+        lineHeight: 1
+      }
+    }, "Rs 50"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 20,
+        color: '#fff',
+        marginTop: 8
+      }
+    }, "par mois · par vie couverte"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 400,
+        fontSize: 17,
+        color: C.dim,
+        marginTop: 12,
+        lineHeight: 1.4
+      }
+    }, "Accès complet à la plateforme, déployable sur tout le portefeuille — sans surcoût administratif.")), /*#__PURE__*/React.createElement(Card3D, {
+      w: 440,
+      at: 0.8,
+      i: 2,
+      accent: C.green,
+      accentSide: "top",
+      minHeight: 290,
+      pad: "30px 32px"
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 700,
+        fontSize: 15,
+        letterSpacing: '0.14em',
+        textTransform: 'uppercase',
+        color: C.green
+      }
+    }, "Assurés MUA"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 800,
+        fontSize: 64,
+        color: '#fff',
+        marginTop: 16,
+        lineHeight: 1
+      }
+    }, "Rs 500 ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 26,
+        fontWeight: 600,
+        color: C.dim,
+        textDecoration: 'line-through'
+      }
+    }, "800")), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 20,
+        color: C.dim,
+        marginTop: 8
+      }
+    }, "la consultation, tarif préférentiel"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 17,
+        color: C.txt,
+        marginTop: 14,
+        lineHeight: 1.6
+      }
+    }, "✓ Suivi chronique offert", /*#__PURE__*/React.createElement("br", null), "✓ Second avis médical offert", /*#__PURE__*/React.createElement("br", null), "✓ SilentCheck inclus"))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: 'flex',
+        justifyContent: 'center',
+        marginTop: 26
+      }
+    }, /*#__PURE__*/React.createElement(Panel, {
+      at: 1.3,
+      style: {
+        maxWidth: 1420
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 24,
+        color: '#fff',
+        lineHeight: 1.45,
+        textAlign: 'center'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: C.gold,
+        fontWeight: 800
+      }
+    }, "Gainsharing"), " — la véracité native rend l’économie mesurable : TIBOK et la MUA partagent une part des coûts évités, documentés et auditables. ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: C.dim,
+        fontWeight: 400,
+        fontSize: 19
+      }
+    }, "(part et seuils à fixer ensemble)")))));
   }
   function MiniPanel({
     p,
@@ -873,354 +1425,14 @@
       }
     }, p[1]));
   }
-  function TibokHub() {
-    const {
-      localTime
-    } = useScene();
-    const nodes = [['Distanciel', C.blue], ['Présentiel', C.blue], ['Pharmacie', C.gold], ['Labo', C.teal], ['Radiologie', C.blue], ['Urgences', C.coral], ['Soins primaires', C.teal]];
-    const cx = 960,
-      cy = 560,
-      rx = 600,
-      ry = 178;
-    const pts = nodes.map((n, i) => {
-      const ang = (-90 + i * (360 / nodes.length)) * Math.PI / 180;
-      return {
-        n: n[0],
-        c: n[1],
-        x: cx + Math.cos(ang) * rx,
-        y: cy + Math.sin(ang) * ry
-      };
-    });
-    const pulse = 0.5 + 0.5 * Math.sin(localTime * 1.6);
-    return /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        inset: 0
-      }
-    }, /*#__PURE__*/React.createElement(FlowSvg, null, pts.map((pt, i) => /*#__PURE__*/React.createElement(FlowLink, {
-      key: i,
-      x1: cx,
-      y1: cy,
-      x2: pt.x,
-      y2: pt.y,
-      color: pt.c,
-      at: 0.6 + i * 0.1
-    }))), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        left: cx,
-        top: cy,
-        transform: 'translate(-50%,-50%)',
-        width: 250,
-        height: 250,
-        borderRadius: '50%',
-        background: `radial-gradient(circle, ${C.blue}3a, ${C.blue}08)`,
-        border: `2px solid ${C.blue}88`,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: 9,
-        opacity: ev(localTime, 0.2, 0.6),
-        boxShadow: `0 0 ${70 + 34 * pulse}px ${C.blue}55, inset 0 0 40px ${C.blue}22`
-      }
-    }, /*#__PURE__*/React.createElement(Logo, {
-      name: "tibok",
-      w: 150,
-      intro: false,
-      style: {
-        position: 'static'
-      }
-    }), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 700,
-        fontSize: 15,
-        color: '#fff'
-      }
-    }, "Intelligence médicale"), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 700,
-        fontSize: 15,
-        color: C.teal
-      }
-    }, "60 000 références")), pts.map((pt, i) => /*#__PURE__*/React.createElement(NodeChip, {
-      key: i,
-      label: pt.n,
-      icon: "◆",
-      x: pt.x,
-      y: pt.y,
-      color: pt.c,
-      at: 0.9 + i * 0.11
-    })));
-  }
 
-  /* ===== écosystème vivant : soignants en action + services connectés ===== */
-  function EcosystemLive() {
-    const {
-      localTime
-    } = useScene();
-    const cx = 960;
-    const glow = 0.4 + 0.6 * Math.abs(Math.sin(localTime * 1.3));
-    const nodes = [['Labo', '◆', 660, C.teal], ['Radiologie', '◆', 860, C.blue], ['Pharmacie', '◆', 1060, C.gold], ['Urgences', '◆', 1260, C.coral]];
-    return /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        inset: 0
-      }
-    }, /*#__PURE__*/React.createElement(FlowSvg, null, /*#__PURE__*/React.createElement(FlowLink, {
-      x1: 630,
-      y1: 350,
-      x2: 874,
-      y2: 384,
-      color: C.blue,
-      at: 0.9
-    }), /*#__PURE__*/React.createElement(FlowLink, {
-      x1: 1290,
-      y1: 350,
-      x2: 1046,
-      y2: 384,
-      color: C.teal,
-      at: 1.0
-    }), nodes.map((n, i) => /*#__PURE__*/React.createElement(FlowLink, {
-      key: i,
-      x1: cx,
-      y1: 588,
-      x2: n[2],
-      y2: 660,
-      color: n[3],
-      at: 1.4 + i * 0.12
-    }))), /*#__PURE__*/React.createElement(PhotoTile, {
-      src: PIMG('doctor-er'),
-      x: 130,
-      y: 188,
-      w: 500,
-      h: 322,
-      at: 0.3,
-      color: C.blue,
-      objPos: "48% 50%",
-      label: "Médecin · urgences",
-      sub: "Consultation augmentée par TIBOK"
-    }), /*#__PURE__*/React.createElement(PhotoTile, {
-      src: PIMG('nurse-center'),
-      x: 1290,
-      y: 188,
-      w: 500,
-      h: 322,
-      at: 0.5,
-      color: C.teal,
-      objPos: "50% 38%",
-      label: "Auxiliaire de santé",
-      sub: "Saisie structurée au centre de santé"
-    }), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        left: cx,
-        top: 384,
-        transform: 'translate(-50%,-50%)',
-        width: 360,
-        height: 360,
-        borderRadius: '50%',
-        background: `radial-gradient(circle, ${C.blue}33, transparent 70%)`,
-        opacity: glow,
-        filter: 'blur(6px)'
-      }
-    }), /*#__PURE__*/React.createElement(Phone, {
-      x: cx - 98,
-      y: 184,
-      h: 400,
-      at: 0.7
-    }), nodes.map((n, i) => /*#__PURE__*/React.createElement(NodeChip, {
-      key: i,
-      label: n[0],
-      icon: n[1],
-      x: n[2],
-      y: 662,
-      color: n[3],
-      at: 1.7 + i * 0.12
-    })));
-  }
-
-  /* ===== grille des modules ===== */
-  function Modules() {
-    const {
-      localTime
-    } = useScene();
-    const I = {
-      video: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
-        x: "2.5",
-        y: "6",
-        width: "13",
-        height: "12",
-        rx: "2.5"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M15.5 10.5l5-2.5v8l-5-2.5z"
-      })),
-      person: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("circle", {
-        cx: "12",
-        cy: "8",
-        r: "3.4"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M5.5 20a6.5 6.5 0 0 1 13 0"
-      })),
-      clip: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
-        x: "5",
-        y: "4.5",
-        width: "14",
-        height: "16.5",
-        rx: "2.2"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M9 4.5V3.2h6v1.3M8.6 12l2 2 4-4"
-      })),
-      derma: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
-        x: "3",
-        y: "4.5",
-        width: "18",
-        height: "15",
-        rx: "2.2"
-      }), /*#__PURE__*/React.createElement("circle", {
-        cx: "8.5",
-        cy: "9.5",
-        r: "1.7"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M3.5 16.5l5-4 4 3 3-2.2 5 4"
-      })),
-      lab: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
-        d: "M9.5 3.5h5M10.5 3.5v5.5l-4.6 8.2a2 2 0 0 0 1.7 3h8.8a2 2 0 0 0 1.7-3l-4.6-8.2V3.5"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M8 15h8"
-      })),
-      xray: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
-        d: "M4 8V5.5a1.5 1.5 0 0 1 1.5-1.5H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"
-      }), /*#__PURE__*/React.createElement("circle", {
-        cx: "12",
-        cy: "12",
-        r: "3.4"
-      })),
-      pill: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
-        d: "M10.6 3.7l9.7 9.7a4.8 4.8 0 0 1-6.8 6.8L3.8 10.5a4.8 4.8 0 0 1 6.8-6.8z"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M7.2 7.1l9.7 9.7"
-      })),
-      heart: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
-        d: "M20.6 8.6a4.8 4.8 0 0 0-8.6-2 4.8 4.8 0 0 0-8.6 2c0 3.9 4.4 7.3 8.6 10.1 4.2-2.8 8.6-6.2 8.6-10.1z"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M4.5 11.5h3l1.2-2.2 1.8 4 1.2-1.8h2"
-      })),
-      shield: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
-        d: "M12 3.2l7 3v5.3c0 4.8-3 6.8-7 8.8-4-2-7-4-7-8.8V6.2z"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M9 12l2 2 4-4"
-      })),
-      alert: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
-        d: "M12 4l9 16H3z"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M12 10v4.5M12 17.4h.01"
-      })),
-      dash: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
-        x: "3",
-        y: "3",
-        width: "18",
-        height: "18",
-        rx: "2.5"
-      }), /*#__PURE__*/React.createElement("path", {
-        d: "M7.5 15.5v-3M12 15.5v-7M16.5 15.5v-4.5"
-      }))
-    };
-    const mods = [['Consultation', 'Distanciel', 'Téléconsultation vidéo HD — le patient vu où qu’il soit', C.blue, 'video'], ['Consultation', 'Présentiel', 'Le cabinet augmenté par l’IA, en face à face', C.blue, 'person'], ['Consultation', 'Standard', 'Du premier contact au suivi, un seul dossier', C.blue, 'clip'], ['Consultation', 'Dermatologie', 'Analyse assistée par IA des images de peau', C.blue, 'derma'], ['Connexion', 'Labo', 'Résultats d’analyses synchronisés automatiquement', C.teal, 'lab'], ['Connexion', 'Radiologie', 'Imagerie médicale intégrée au dossier patient', C.teal, 'xray'], ['Connexion', 'Pharmacie', 'E-prescription sécurisée, traçable de bout en bout', C.teal, 'pill'], ['Suivi', 'Maladies chroniques', 'Tension · diabète · poids — suivi continu par WhatsApp', C.gold, 'heart'], ['Prévention', 'SilentCheck', 'Dépistage silencieux & détection précoce des risques', C.gold, 'shield'], ['Urgences', 'Triage & alerte', 'Détection précoce et alerte immédiate', C.coral, 'alert'], ['Pilotage', 'Tableau de bord RH', 'Santé au travail pilotée en temps réel', C.green, 'dash']];
-    const gap = 18,
-      W = 402;
-    return /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        top: 226,
-        left: 120,
-        right: 120,
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: gap,
-        justifyContent: 'center'
-      }
-    }, mods.map((m, i) => {
-      const pulse = 0.5 + 0.5 * Math.sin(localTime * 1.5 + i * 0.9);
-      return /*#__PURE__*/React.createElement(Card3D, {
-        key: i,
-        w: W,
-        at: 0.3 + i * 0.07,
-        i: i,
-        accent: m[3],
-        accentSide: "left",
-        radius: 16,
-        pad: "18px 20px",
-        style: {
-          display: 'flex',
-          gap: 16,
-          alignItems: 'flex-start'
-        }
-      }, /*#__PURE__*/React.createElement("div", {
-        style: {
-          width: 52,
-          height: 52,
-          flex: 'none',
-          borderRadius: 14,
-          background: `${m[3]}22`,
-          border: `1px solid ${m[3]}66`,
-          display: 'grid',
-          placeItems: 'center',
-          color: m[3],
-          boxShadow: `0 0 ${9 + 8 * pulse}px ${m[3]}55`
-        }
-      }, /*#__PURE__*/React.createElement("svg", {
-        width: "27",
-        height: "27",
-        viewBox: "0 0 24 24",
-        fill: "none",
-        stroke: "currentColor",
-        strokeWidth: "1.7",
-        strokeLinecap: "round",
-        strokeLinejoin: "round"
-      }, I[m[4]])), /*#__PURE__*/React.createElement("div", {
-        style: {
-          minWidth: 0
-        }
-      }, /*#__PURE__*/React.createElement("div", {
-        style: {
-          fontFamily: FD,
-          fontWeight: 700,
-          fontSize: 12,
-          letterSpacing: '0.12em',
-          textTransform: 'uppercase',
-          color: m[3]
-        }
-      }, m[0]), /*#__PURE__*/React.createElement("div", {
-        style: {
-          fontFamily: FD,
-          fontWeight: 700,
-          fontSize: 23,
-          color: '#fff',
-          marginTop: 5,
-          lineHeight: 1.05
-        }
-      }, m[1]), /*#__PURE__*/React.createElement("div", {
-        style: {
-          fontFamily: FD,
-          fontWeight: 400,
-          fontSize: 15,
-          color: C.dim,
-          marginTop: 6,
-          lineHeight: 1.32
-        }
-      }, m[2])));
-    }));
-  }
-
-  /* ===== constellation Afrique / océan Indien ===== */
+  /* ===== constellation Afrique de l'Est / océan Indien ===== */
   function AfricaArc() {
     const {
       localTime
     } = useScene();
-    const nodes = [['Maurice', 0], ['Cap-Vert', 1.4], ['Sénégal', 1.9], ['Bénin', 2.3], ['Ghana', 2.7], ['Mali', 3.4], ['Kenya', 3.8], ['Tanzanie', 4.1], ['Mozambique', 4.4]];
+    // gold = réseau MUA en Afrique de l'Est · blue = TIBOK aujourd'hui · teal = expansion naturelle
+    const nodes = [['Maurice', 0, C.blue], ['Rodrigues', 0.8, C.blue], ['Madagascar', 1.6, C.teal], ['Mozambique', 2.0, C.teal], ['Tanzanie', 2.6, C.gold], ['Kenya', 3.0, C.gold], ['Ouganda', 3.4, C.gold], ['Rwanda', 3.8, C.gold]];
     const cx = 960,
       cy = 400,
       rx = 760,
@@ -1235,7 +1447,7 @@
       const x = cx + Math.cos(ang) * rx,
         y = cy - Math.sin(ang) * ry * 0.9 + (i % 2 ? 28 : -28);
       const p = ev(localTime, n[1] + 0.4, 0.6, Easing.easeOutBack);
-      const lit = n[1] < 2 ? C.blue : n[1] < 3 ? C.teal : C.gold;
+      const lit = n[2];
       return /*#__PURE__*/React.createElement("div", {
         key: i,
         style: {
@@ -1266,10 +1478,40 @@
           whiteSpace: 'nowrap'
         }
       }, n[0]));
-    }));
+    }), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 492,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 28,
+        opacity: ev(localTime, 3.4, 0.7)
+      }
+    }, [['TIBOK aujourd’hui', C.blue], ['Réseau MUA — Afrique de l’Est', C.gold], ['Expansion naturelle', C.teal]].map((l, i) => /*#__PURE__*/React.createElement("span", {
+      key: i,
+      style: {
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: 10,
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 18,
+        color: C.dim
+      }
+    }, /*#__PURE__*/React.createElement("i", {
+      style: {
+        width: 12,
+        height: 12,
+        borderRadius: 6,
+        background: l[1],
+        boxShadow: `0 0 12px ${l[1]}`
+      }
+    }), l[0]))));
   }
 
-  /* ===== clôture DDS × ER ===== */
+  /* ===== clôture DDS × MUA ===== */
   function FinalScene() {
     const {
       localTime
@@ -1307,9 +1549,8 @@
         fontSize: 52,
         color: 'rgba(206,219,240,0.55)'
       }
-    }, "×"), /*#__PURE__*/React.createElement(ERmark, {
-      h: 54,
-      color: "#EAF1FB"
+    }, "×"), /*#__PURE__*/React.createElement(MUAmark, {
+      h: 48
     })), /*#__PURE__*/React.createElement("div", {
       style: {
         width: 260 * w,
@@ -1326,9 +1567,9 @@
         color: '#D6E0F0',
         lineHeight: 1.28,
         opacity: ev(localTime, 0.7, 0.7),
-        maxWidth: '20ch'
+        maxWidth: '22ch'
       }
-    }, "Construit à Maurice.", /*#__PURE__*/React.createElement("br", null), "Pour Maurice, l’Afrique", /*#__PURE__*/React.createElement("br", null), "et l’océan Indien.")), /*#__PURE__*/React.createElement("div", {
+    }, "Bâtissons ensemble", /*#__PURE__*/React.createElement("br", null), "le standard de demain —", /*#__PURE__*/React.createElement("br", null), "pour Maurice, l’Afrique", /*#__PURE__*/React.createElement("br", null), "et l’océan Indien.")), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         right: 120,
@@ -1344,7 +1585,7 @@
         gap: 12,
         justifyContent: 'flex-start'
       }
-    }, ['Swan — signature en cours', 'Équipe 100% mauricienne', 'Écosystème de 3 produits IA'].map((c, i) => /*#__PURE__*/React.createElement("span", {
+    }, ['Swan — signature en cours', '60 000 références scientifiques', 'Équipe 100% mauricienne'].map((c, i) => /*#__PURE__*/React.createElement("span", {
       key: i,
       style: {
         padding: '11px 20px',
@@ -1400,7 +1641,7 @@
         color: C.blue,
         marginTop: 4
       }
-    }, "sbach@tibok.mu")), /*#__PURE__*/React.createElement("div", {
+    }, "sbach@tibok.mu · tibok.mu")), /*#__PURE__*/React.createElement("div", {
       style: {
         marginTop: 24,
         fontFamily: FD,
@@ -1412,14 +1653,15 @@
     }, "Mégane · Stephano · Adi · Rain · Baydon · Suzelle · Summer")));
   }
   window.SCENES_B = SCENES_B;
-  window.DDSOrg = DDSOrg;
-  window.Waveform = Waveform;
-  window.Ratios = Ratios;
   window.TibokHub = TibokHub;
+  window.LegalTimeline = LegalTimeline;
+  window.ToolsGrid = ToolsGrid;
+  window.IntelCore = IntelCore;
+  window.SilentCheckViz = SilentCheckViz;
+  window.SecondOpinionFlow = SecondOpinionFlow;
+  window.OfferCards = OfferCards;
   window.DimCard = DimCard;
   window.MiniPanel = MiniPanel;
-  window.EcosystemLive = EcosystemLive;
-  window.Modules = Modules;
   window.AfricaArc = AfricaArc;
   window.FinalScene = FinalScene;
 })();
