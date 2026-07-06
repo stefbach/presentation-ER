@@ -1145,38 +1145,31 @@
     })));
   }
 
-  /* ---------- ERmark — Groupe ER wordmark rendered as type ---------- */
-  function ERmark({
+  /* ---------- MUAmark — MUA logo on a white badge (brand colors need a light ground) ---------- */
+  function MUAmark({
     h = 34,
-    color = '#EAF1FB',
     style = {}
   }) {
     return /*#__PURE__*/React.createElement("span", {
       style: {
         display: 'inline-flex',
-        alignItems: 'baseline',
-        gap: h * 0.24,
-        fontFamily: FD,
-        lineHeight: 1,
+        alignItems: 'center',
+        background: '#FFFFFF',
+        borderRadius: Math.round(h * 0.28),
+        padding: `${Math.round(h * 0.26)}px ${Math.round(h * 0.44)}px`,
+        boxShadow: '0 8px 26px rgba(0,0,0,0.35)',
+        lineHeight: 0,
         ...style
       }
-    }, /*#__PURE__*/React.createElement("span", {
+    }, /*#__PURE__*/React.createElement("img", {
+      src: "assets/logos/mua.png",
+      alt: "MUA",
       style: {
-        fontWeight: 900,
-        fontSize: h,
-        letterSpacing: '-0.02em',
-        color
+        height: h,
+        width: 'auto',
+        display: 'block'
       }
-    }, "ER"), /*#__PURE__*/React.createElement("span", {
-      style: {
-        fontWeight: 600,
-        fontSize: h * 0.42,
-        letterSpacing: '0.14em',
-        textTransform: 'uppercase',
-        color,
-        opacity: 0.62
-      }
-    }, "Group"));
+    }));
   }
 
   /* ---------- HUD (persistent DDS wordmark + partnership tag) ----------
@@ -1207,12 +1200,12 @@
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 52,
+        top: 44,
         right: 120,
         display: 'flex',
         alignItems: 'center',
         gap: 14,
-        opacity: 0.72
+        opacity: 0.85
       }
     }, /*#__PURE__*/React.createElement("span", {
       style: {
@@ -1223,8 +1216,8 @@
         textTransform: 'uppercase',
         color: C.dim
       }
-    }, "Présenté au"), /*#__PURE__*/React.createElement(ERmark, {
-      h: 26
+    }, "Présenté à la"), /*#__PURE__*/React.createElement(MUAmark, {
+      h: 22
     })));
   }
   Object.assign(window, {
@@ -1247,6 +1240,6 @@
     FlowLink,
     NodeChip,
     Phone,
-    ERmark
+    MUAmark
   });
 })();

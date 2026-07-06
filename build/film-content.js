@@ -1,5 +1,6 @@
-/* film-content.jsx — Film DDS × Groupe ER (partie 1 : ouverture, fondateur,
-   vision, approche, équipe). Loads after film-lib.jsx. Exposes window.SCENES_A. */
+/* film-content.jsx — Film DDS × MUA (partie 1 : ouverture, fondateur,
+   DDS producteur de logiciels IA, l'enjeu santé pour l'assureur).
+   Loads after film-lib.jsx. Exposes window.SCENES_A. */
 
 (function () {
   const {
@@ -15,7 +16,7 @@
     Panel,
     Card3D,
     Logo,
-    ERmark,
+    MUAmark,
     PhotoTile,
     FlowSvg,
     FlowLink,
@@ -31,66 +32,6 @@
     useScene
   } = window;
   const IMG = n => `assets/team/${n}.jpg`;
-
-  /* ===== faces fan-in : l'équipe, en collectif (sans portrait individuel) ===== */
-  function FacesFan() {
-    const {
-      localTime
-    } = useScene();
-    const team = [['megane', '50% 20%'], ['stephano', '50% 20%'], ['adi', '50% 20%'], ['rain', '50% 18%'], ['baydon', '50% 16%'], ['suzelle', '50% 22%'], ['summer', '50% 22%']];
-    const names = ['Mégane', 'Stephano', 'Adi', 'Rain', 'Baydon', 'Suzelle', 'Summer'];
-    const W = 232,
-      H = 300,
-      gap = 16,
-      total = team.length * W + (team.length - 1) * gap;
-    const startX = (1920 - total) / 2,
-      baseY = 316;
-    return /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        inset: 0
-      }
-    }, team.map((t, i) => {
-      const p = ev(localTime, 0.3 + i * 0.14, 0.7, Easing.easeOutCubic);
-      const x = startX + i * (W + gap);
-      return /*#__PURE__*/React.createElement("div", {
-        key: i,
-        style: {
-          position: 'absolute',
-          left: x,
-          top: baseY + (1 - p) * 40,
-          width: W,
-          opacity: p
-        }
-      }, /*#__PURE__*/React.createElement("div", {
-        style: {
-          width: W,
-          height: H,
-          borderRadius: 14,
-          overflow: 'hidden',
-          outline: '1px solid rgba(255,255,255,0.12)',
-          boxShadow: '0 22px 50px rgba(0,0,0,0.45)'
-        }
-      }, /*#__PURE__*/React.createElement("img", {
-        src: IMG(t[0]),
-        style: {
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          objectPosition: t[1]
-        }
-      })), /*#__PURE__*/React.createElement("div", {
-        style: {
-          fontFamily: FD,
-          fontWeight: 600,
-          fontSize: 22,
-          color: '#fff',
-          marginTop: 12,
-          textAlign: 'center'
-        }
-      }, names[i]));
-    }));
-  }
 
   /* ===== timeline du fondateur ===== */
   function TimelineViz() {
@@ -246,12 +187,82 @@
         color: C.blue,
         opacity: ev(localTime, 1.6, 0.6)
       }
-    }, "Et sur chacun — toujours la même règle : ", /*#__PURE__*/React.createElement("span", {
+    }, "Sept Mauriciens formés en 12 mois · la force de 70 avec leurs agents IA · ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: '#fff',
         fontWeight: 700
       }
-    }, "création de valeur"), "."));
+    }, "0 talent importé")));
+  }
+
+  /* ===== l'enjeu : le fardeau du diabète, vu du payeur ===== */
+  function DiabetesStakes() {
+    const {
+      localTime
+    } = useScene();
+    const cards = [['1 sur 5', 'adulte mauricien est diabétique', C.coral, null], ['1 sur 3', 'ne le sait pas encore', C.gold, null], [null, 'décès causés par le diabète en 2024 — près d’un sur quatre', C.blue, 2709]];
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 392,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 26
+      }
+    }, cards.map((c, i) => /*#__PURE__*/React.createElement(Card3D, {
+      key: i,
+      w: 480,
+      at: 0.4 + i * 0.22,
+      i: i,
+      accent: c[2],
+      accentSide: "top",
+      minHeight: 240,
+      pad: "34px 34px"
+    }, c[0] ? /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 800,
+        fontSize: 84,
+        lineHeight: 0.95,
+        letterSpacing: '-0.03em',
+        color: c[2]
+      }
+    }, c[0]) : /*#__PURE__*/React.createElement(Stat, {
+      to: c[3],
+      size: 84,
+      color: c[2],
+      at: 0.8,
+      dur: 1.6
+    }), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 24,
+        color: C.txt,
+        marginTop: 20,
+        lineHeight: 1.35
+      }
+    }, c[1]))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 296,
+        left: 0,
+        right: 0,
+        textAlign: 'center',
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 23,
+        color: C.coral,
+        opacity: ev(localTime, 1.4, 0.7)
+      }
+    }, "Et la facture atterrit sur les contrats que la ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: '#fff',
+        fontWeight: 800
+      }
+    }, "MUA"), " porte."));
   }
 
   /* ============================ LE SCÉNARIO ============================ */
@@ -307,14 +318,13 @@
         textTransform: 'uppercase',
         color: 'rgba(206,219,240,0.5)'
       }
-    }, "Présenté au"), /*#__PURE__*/React.createElement(ERmark, {
-      h: 24,
-      color: "#D6E0F0"
+    }, "Présenté à la"), /*#__PURE__*/React.createElement(MUAmark, {
+      h: 26
     })), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         left: 124,
-        top: 296,
+        top: 306,
         width: 900
       }
     }, /*#__PURE__*/React.createElement("div", {
@@ -334,14 +344,14 @@
       style: {
         position: 'absolute',
         left: 130,
-        top: 548,
+        top: 558,
         fontFamily: FD,
         fontWeight: 500,
         fontSize: 29,
         letterSpacing: '-0.01em',
         color: '#D6E0F0'
       }
-    }, "Dr Stéphane Bach · Fondateur & CEO"), /*#__PURE__*/React.createElement("div", {
+    }, "TIBOK — la Medical Intelligence au service de la MUA"), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         left: 130,
@@ -350,9 +360,9 @@
         alignItems: 'center',
         gap: 14,
         flexWrap: 'wrap',
-        maxWidth: 820
+        maxWidth: 860
       }
-    }, ['SaaS IA', 'Agents IA', 'Expertise métier', 'Maîtrise de tous les LLM'].map((c, i) => /*#__PURE__*/React.createElement(Chip, {
+    }, ['Télémédecine', 'Medical Intelligence', 'Prévention', 'Contrôle de pertinence'].map((c, i) => /*#__PURE__*/React.createElement(Chip, {
       key: i,
       at: 0.4 + i * 0.14,
       color: C.blue
@@ -403,15 +413,15 @@
         height: 56
       }
     })))
-  }, /* ---------- 2 · LE FONDATEUR ---------- */
+  }, /* ---------- 2 · LE FONDATEUR, EN DEUX MOTS ---------- */
   {
-    dur: 28,
+    dur: 30,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
       act: "Le fondateur",
       title: "Dr Stéphane Bach"
     }), /*#__PURE__*/React.createElement(TimelineViz, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Je m’appelle Stéphane Bach. Je suis médecin.', 'Trente ans à voir comment fonctionnent', 'vraiment les systèmes de santé —', 'pas comme les manuels le décrivent.', 'J’ai dirigé des cliniques, géré des budgets,', 'publié des algorithmes avec Aix-Marseille.', 'Deux exits derrière moi.', 'Et dès l’arrivée des grands modèles de langage —', 'GPT-3, en juin 2020 — j’ai plongé dans l’IA,', 'j’ai grandi avec elle, ses modèles, ses capacités.'],
+      lines: ['Je m’appelle Stéphane Bach. Je suis médecin —', 'spécialiste en santé publique. Trente ans à voir comment', 'fonctionnent vraiment les systèmes de santé.', 'J’ai dirigé des cliniques, publié des algorithmes', 'avec Aix-Marseille, réalisé deux exits.', 'En 2019, j’ai choisi Maurice — pour y rester.', 'Ma femme est mauricienne, mes enfants grandiront ici.', 'Ce projet n’est pas une stratégie de sortie :', 'c’est une vision de long terme, pour Maurice,', 'pour l’Afrique et pour l’océan Indien.'],
       x: 960,
       width: 1500,
       align: "center",
@@ -423,73 +433,13 @@
       lead: 1.6,
       tail: 1.4
     }))
-  }, /* ---------- 3 · ANCRAGE MAURICE ---------- */
+  }, /* ---------- 3 · DDS, PRODUCTEUR DE LOGICIELS IA ---------- */
   {
-    dur: 22,
-    hue: 'gold',
-    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "L'engagement",
-      title: "Maurice, pour y rester",
-      color: C.gold
-    }), /*#__PURE__*/React.createElement(Photo, {
-      src: IMG('bach'),
-      x: 120,
-      y: 250,
-      w: 470,
-      h: 560,
-      objPos: "50% 22%"
-    }), /*#__PURE__*/React.createElement(Statement, {
-      x: 660,
-      y: 300,
-      size: 62,
-      lines: ['En 2019,', 'j’ai choisi Maurice.', 'Pour y rester.'],
-      accentIdx: [2],
-      accentColor: C.gold,
-      weight: 700
-    }), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Mon fils est mauricien. Ma femme est mauricienne.', 'Mes enfants grandiront ici. Cela change tout.', 'Ce projet n’est pas une stratégie de sortie —', 'c’est une vision de long terme : pour Maurice,', 'pour l’Afrique et pour l’océan Indien.'],
-      x: 660,
-      width: 1140,
-      align: "left",
-      y: 720,
-      size: 35,
-      italic: true,
-      accent: "#F2E6CF",
-      dim: "rgba(224,210,180,0.26)",
-      lead: 1.4,
-      tail: 1.3
-    }))
-  }, /* ---------- 4 · L'IA REBAT LES CARTES ---------- */
-  {
-    dur: 20,
-    hue: 'blue',
-    node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Statement, {
-      align: "center",
-      y: 280,
-      size: 100,
-      weight: 700,
-      lines: ['L’IA rebat', 'les cartes du jeu.'],
-      accentIdx: [1],
-      accentColor: C.blue
-    }), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Les géants du logiciel classique sont lents, lourds —', 'ils ne savent pas penser en IA.', 'L’opportunité de Maurice : repartir de zéro,', 'avec des gens ouverts, agiles, mauriciens.'],
-      x: 960,
-      width: 1500,
-      align: "center",
-      y: 720,
-      size: 40,
-      accent: "#CFE0FA",
-      dim: "rgba(206,219,240,0.22)",
-      lead: 1.4,
-      tail: 1.2
-    }))
-  }, /* ---------- 5 · L'APPROCHE DDS (4 piliers) ---------- */
-  {
-    dur: 26,
+    dur: 35,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "L'approche",
-      title: "Unique & disruptive"
+      act: "DDS",
+      title: "Producteur de logiciels IA"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 150,
@@ -498,8 +448,41 @@
       lines: ['DDS n’est pas une agence IA.', 'C’est un producteur de logiciels IA.'],
       accentIdx: [1],
       accentColor: C.blue
-    }), /*#__PURE__*/React.createElement(Pillars, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Beaucoup se disent « agence IA » : ils prennent ChatGPT,', 'y versent vos données. C’est inutile — et ça crée de la dépendance.', 'Nous, nous construisons des logiciels qui tournent en production,', 'en conditions réelles. Une approche unique à Maurice.'],
+    }), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 316,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 44
+      }
+    }, [['tibok', 150], ['lexora', 210], ['axon', 170]].map((l, i) => /*#__PURE__*/React.createElement("div", {
+      key: i,
+      style: {
+        height: 56,
+        display: 'flex',
+        alignItems: 'center'
+      }
+    }, /*#__PURE__*/React.createElement(Logo, {
+      name: l[0],
+      w: l[1],
+      intro: true,
+      at: 0.5 + i * 0.18,
+      style: {
+        position: 'static'
+      }
+    }))), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 20,
+        color: C.dim
+      }
+    }, "3 produits IA en production")), /*#__PURE__*/React.createElement(Pillars, null), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Trois produits en production — TIBOK, Lexora, Axon —', 'construits par une équipe de sept Mauriciens, formés en douze mois,', 'qui, augmentés par leurs agents IA, ont la force de soixante-dix.', 'Zéro talent importé. Et sur chaque produit, la même règle :', 'création de valeur. Aujourd’hui, je viens présenter à la MUA', 'le produit phare : TIBOK.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -511,67 +494,38 @@
       lead: 1.6,
       tail: 1.1
     }))
-  }, /* ---------- 6 · LA PETITE ÉQUIPE ---------- */
+  }, /* ---------- 4 · L'ENJEU POUR LA MUA ---------- */
   {
     dur: 30,
-    hue: 'gold',
+    hue: 'coral',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "La petite équipe",
-      title: "Ce que sept Mauriciens ont bâti",
-      color: C.gold
-    }), /*#__PURE__*/React.createElement(FacesFan, null), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        top: 672,
-        left: 0,
-        right: 0,
-        display: 'flex',
-        justifyContent: 'center',
-        gap: 64
-      }
-    }, /*#__PURE__*/React.createElement(Stat, {
-      to: 10,
-      prefix: "×",
-      suffix: "",
-      size: 80,
-      color: C.gold,
-      label: "Productivité par personne",
-      align: "center",
-      at: 0.6
-    }), /*#__PURE__*/React.createElement(Stat, {
-      to: 12,
-      prefix: "",
-      suffix: " mois",
-      size: 80,
-      color: C.green,
-      label: "Pour devenir experts",
-      align: "center",
-      at: 0.8
-    }), /*#__PURE__*/React.createElement(Stat, {
-      to: 0,
-      prefix: "",
-      suffix: "",
-      size: 80,
-      color: C.blue,
-      label: "Talent importé",
-      align: "center",
-      at: 1.0
-    })), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Sept Mauriciens. Aucun n’était ingénieur IA.', 'Curiosité, envie d’apprendre, foi en l’avenir : j’ai investi en eux.', 'Formés en douze mois — sept personnes qui, avec leurs agents IA,', 'ont la force de soixante-dix. L’IA n’est pas une menace pour Maurice.', 'C’est une opportunité — si l’on investit dans ses gens.'],
+      act: "L'enjeu",
+      title: "Soigner après, toujours après",
+      color: C.coral
+    }), /*#__PURE__*/React.createElement(Statement, {
+      x: 120,
+      y: 160,
+      size: 56,
+      weight: 700,
+      lines: ['Pendant que le corps se tait,', 'la médecine arrive trop tard.'],
+      accentIdx: [1],
+      accentColor: C.coral
+    }), /*#__PURE__*/React.createElement(DiabetesStakes, null), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['À Maurice, un adulte sur cinq est diabétique.', 'Et près d’un sur trois… ne le sait pas encore.', 'En 2024, le diabète a causé deux mille sept cent neuf décès —', 'près d’un sur quatre. Pendant que le corps se tait,', 'la médecine arrive trop tard — et la facture, elle,', 'atterrit sur les contrats que la MUA porte.', 'Soigner après. Toujours après.', 'C’est le modèle que TIBOK vient renverser.'],
       x: 960,
-      width: 1560,
+      width: 1540,
       align: "center",
-      y: 892,
+      y: 905,
       size: 30,
       italic: true,
-      accent: "#F2E6CF",
-      dim: "rgba(224,210,180,0.22)",
+      accent: "#F6DED7",
+      dim: "rgba(230,200,192,0.24)",
       lead: 1.6,
-      tail: 1.1
+      tail: 1.2
     }))
   }];
   window.SCENES_A = SCENES;
-  window.FacesFan = FacesFan;
   window.TimelineViz = TimelineViz;
   window.Pillars = Pillars;
+  window.DiabetesStakes = DiabetesStakes;
 })();
