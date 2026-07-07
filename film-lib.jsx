@@ -410,7 +410,7 @@ function Hud({actLabel}){
     <div style={{position:'absolute',inset:0,pointerEvents:'none',opacity:op}}>
       <img src="assets/logos/dds.png" alt="Digital Data Solutions" style={{position:'absolute',top:44,left:120,height:34,opacity:0.95}}/>
       <div style={{position:'absolute',top:44,right:120,display:'flex',alignItems:'center',gap:14,opacity:0.85}}>
-        <span style={{fontFamily:FD,fontWeight:500,fontSize:14,letterSpacing:'0.16em',textTransform:'uppercase',color:C.dim}}>Présenté à la</span>
+        <span style={{fontFamily:FD,fontWeight:500,fontSize:14,letterSpacing:'0.16em',textTransform:'uppercase',color:C.dim}}>{window.FILM_LANG==='en'?'Presented to':'Présenté à la'}</span>
         <MUAmark h={22}/>
       </div>
     </div>

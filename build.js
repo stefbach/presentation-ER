@@ -9,11 +9,13 @@ try { Babel = require('@babel/standalone'); }
 catch (e) { console.error('Missing @babel/standalone. Run:  npm i @babel/standalone'); process.exit(1); }
 
 const jobs = [
-  ['animations.jsx',    'build/animations.js'],
-  ['film-lib.jsx',      'build/film-lib.js'],
-  ['film-content.jsx',  'build/film-content.js'],
-  ['film-content2.jsx', 'build/film-content2.js'],
-  ['main.jsx',          'build/main.js'],
+  ['animations.jsx',       'build/animations.js'],
+  ['film-lib.jsx',         'build/film-lib.js'],
+  ['film-content.jsx',     'build/film-content.js'],
+  ['film-content2.jsx',    'build/film-content2.js'],
+  ['film-content-en.jsx',  'build/film-content-en.js'],
+  ['film-content2-en.jsx', 'build/film-content2-en.js'],
+  ['main.jsx',             'build/main.js'],
 ];
 fs.mkdirSync('build', { recursive: true });
 for (const [src, out] of jobs) {

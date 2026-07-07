@@ -31,7 +31,7 @@
       height: 1080,
       duration: total,
       background: C.navy,
-      persistKey: "muafilm",
+      persistKey: window.FILM_LANG === 'en' ? 'muafilm_en' : 'muafilm',
       loop: true
     }, placed.map((s, i) => /*#__PURE__*/React.createElement(Sprite, {
       key: i,
@@ -123,10 +123,11 @@
         a.play().catch(() => {});
       }
     });
-    const FD = window.FD;
+    const FD = window.FD,
+      EN = window.FILM_LANG === 'en';
     return /*#__PURE__*/React.createElement("div", {
       onClick: () => setMuted(m => !m),
-      title: "Activer / couper la voix off (M)",
+      title: EN ? 'Toggle voice-over (M)' : 'Activer / couper la voix off (M)',
       style: {
         position: 'absolute',
         right: 48,
@@ -166,7 +167,7 @@
       d: "M16 9l5 6M21 9l-5 6"
     }) : /*#__PURE__*/React.createElement("path", {
       d: "M16.5 8.5a5 5 0 0 1 0 7M19 6a8 8 0 0 1 0 12"
-    })), muted ? 'Voix coupée' : 'Voix activée');
+    })), muted ? EN ? 'Voice off' : 'Voix coupée' : EN ? 'Voice on' : 'Voix activée');
   }
   ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(Movie, null));
 })();

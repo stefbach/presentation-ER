@@ -1216,7 +1216,7 @@
         textTransform: 'uppercase',
         color: C.dim
       }
-    }, "Présenté à la"), /*#__PURE__*/React.createElement(MUAmark, {
+    }, window.FILM_LANG === 'en' ? 'Presented to' : 'Présenté à la'), /*#__PURE__*/React.createElement(MUAmark, {
       h: 22
     })));
   }

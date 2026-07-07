@@ -17,7 +17,7 @@ function Movie(){
   const total = placed.length ? placed[placed.length-1].end : 10;
 
   return (
-    <Stage width={1920} height={1080} duration={total} background={C.navy} persistKey="muafilm" loop={true}>
+    <Stage width={1920} height={1080} duration={total} background={C.navy} persistKey={window.FILM_LANG==='en'?'muafilm_en':'muafilm'} loop={true}>
       {placed.map((s,i)=>(
         <Sprite key={i} start={s.start} end={s.end}>
           <Scene><FX hue={s.hue} intensity={0.55}/>{s.node}</Scene>
@@ -62,9 +62,9 @@ function VoiceOver({placed}){
     if(Math.abs((a.currentTime||0)-off) > 1.5){ try{ a.currentTime=Math.max(0,off); }catch(e){} }
     if(a.paused){ a.play().catch(()=>{}); }
   });
-  const FD=window.FD;
+  const FD=window.FD, EN=window.FILM_LANG==='en';
   return (
-    <div onClick={()=>setMuted(m=>!m)} title="Activer / couper la voix off (M)"
+    <div onClick={()=>setMuted(m=>!m)} title={EN?'Toggle voice-over (M)':'Activer / couper la voix off (M)'}
       style={{position:'absolute',right:48,bottom:128,zIndex:60,pointerEvents:'auto',cursor:'pointer',
         display:'flex',alignItems:'center',gap:10,padding:'11px 18px',borderRadius:999,
         background:'rgba(16,30,56,0.85)',border:'1px solid '+(muted?'rgba(255,255,255,0.18)':C.blue),
@@ -74,7 +74,7 @@ function VoiceOver({placed}){
         <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" stroke="none"/>
         {muted ? <path d="M16 9l5 6M21 9l-5 6"/> : <path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8 8 0 0 1 0 12"/>}
       </svg>
-      {muted ? 'Voix coupée' : 'Voix activée'}
+      {muted ? (EN?'Voice off':'Voix coupée') : (EN?'Voice on':'Voix activée')}
     </div>
   );
 }
