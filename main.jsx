@@ -26,7 +26,24 @@ function Movie(){
       <Hud/>
       <Seeker/>
       <VoiceOver placed={placed}/>
+      <LangSwitch/>
     </Stage>
+  );
+}
+
+/* FR/EN toggle — links to the other language's page */
+function LangSwitch(){
+  const FD=window.FD, C=window.C, EN=window.FILM_LANG==='en';
+  return (
+    <a href={EN?'index.html':'en.html'} title={EN?'Voir la version française':'Watch the English version'}
+      style={{position:'absolute',left:48,bottom:128,zIndex:60,pointerEvents:'auto',cursor:'pointer',textDecoration:'none',
+        display:'flex',alignItems:'center',gap:10,padding:'11px 18px',borderRadius:999,
+        background:'rgba(16,30,56,0.85)',border:'1px solid rgba(255,255,255,0.18)',backdropFilter:'blur(4px)',
+        fontFamily:FD,fontWeight:600,fontSize:18,color:'#fff',userSelect:'none'}}>
+      <span style={{opacity:EN?0.55:1}}>FR</span>
+      <span style={{width:1,height:16,background:'rgba(255,255,255,0.25)'}}/>
+      <span style={{opacity:EN?1:0.55}}>EN</span>
+    </a>
   );
 }
 

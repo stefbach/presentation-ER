@@ -42,7 +42,54 @@
       intensity: 0.55
     }), s.node))), /*#__PURE__*/React.createElement(Hud, null), /*#__PURE__*/React.createElement(Seeker, null), /*#__PURE__*/React.createElement(VoiceOver, {
       placed: placed
-    }));
+    }), /*#__PURE__*/React.createElement(LangSwitch, null));
+  }
+
+  /* FR/EN toggle — links to the other language's page */
+  function LangSwitch() {
+    const FD = window.FD,
+      C = window.C,
+      EN = window.FILM_LANG === 'en';
+    return /*#__PURE__*/React.createElement("a", {
+      href: EN ? 'index.html' : 'en.html',
+      title: EN ? 'Voir la version française' : 'Watch the English version',
+      style: {
+        position: 'absolute',
+        left: 48,
+        bottom: 128,
+        zIndex: 60,
+        pointerEvents: 'auto',
+        cursor: 'pointer',
+        textDecoration: 'none',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 10,
+        padding: '11px 18px',
+        borderRadius: 999,
+        background: 'rgba(16,30,56,0.85)',
+        border: '1px solid rgba(255,255,255,0.18)',
+        backdropFilter: 'blur(4px)',
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 18,
+        color: '#fff',
+        userSelect: 'none'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        opacity: EN ? 0.55 : 1
+      }
+    }, "FR"), /*#__PURE__*/React.createElement("span", {
+      style: {
+        width: 1,
+        height: 16,
+        background: 'rgba(255,255,255,0.25)'
+      }
+    }), /*#__PURE__*/React.createElement("span", {
+      style: {
+        opacity: EN ? 1 : 0.55
+      }
+    }, "EN"));
   }
   function Seeker() {
     const {
