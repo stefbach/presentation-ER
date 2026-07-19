@@ -1,9 +1,9 @@
-/* film-content.jsx — Film DDS × MUA (partie 1 : ouverture, fondateur,
-   DDS producteur de logiciels IA, l'enjeu santé pour l'assureur).
+/* film-content.jsx — Film DDS × EDB (partie 1 : ouverture, fondateur,
+   DDS producteur de logiciels IA, l'enjeu santé pour Maurice).
    Loads after film-lib.jsx. Exposes window.SCENES_A. */
 
 (function(){
-const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Logo, MUAmark,
+const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Logo, EDBmark,
         PhotoTile, FlowSvg, FlowLink, NodeChip, Phone,
         C, FD, FS, Easing, ev, fr, clamp, useScene } = window;
 
@@ -83,7 +83,7 @@ function DiabetesStakes(){
         </Card3D>
       ))}
       <div style={{position:'absolute',top:296,left:0,right:0,textAlign:'center',fontFamily:FD,fontWeight:600,fontSize:23,color:C.coral,opacity:ev(localTime,1.4,0.7)}}>
-        Et la facture atterrit sur les contrats que la <span style={{color:'#fff',fontWeight:800}}>MUA</span> porte.</div>
+        Et la facture atterrit sur le système de santé — et sur l’économie de <span style={{color:'#fff',fontWeight:800}}>Maurice</span>.</div>
     </div>
   );
 }
@@ -97,17 +97,17 @@ const SCENES = [
   <div style={{position:'absolute',top:0,left:0,bottom:0,width:1300,background:'linear-gradient(90deg, #0A1A33 38%, rgba(10,26,51,0.2) 70%, transparent 88%)'}}/>
   <img src="assets/logos/dds.png" alt="Digital Data Solutions" style={{position:'absolute',left:122,top:92,height:88}}/>
   <div style={{position:'absolute',left:126,top:210,display:'flex',alignItems:'center',gap:14}}>
-    <span style={{fontFamily:FD,fontWeight:600,fontSize:13.5,letterSpacing:'0.18em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Présenté à la</span>
-    <MUAmark h={26}/>
+    <span style={{fontFamily:FD,fontWeight:600,fontSize:13.5,letterSpacing:'0.18em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Présenté à l’</span>
+    <EDBmark h={26}/>
   </div>
   <div style={{position:'absolute',left:124,top:306,width:900}}>
     <div style={{fontFamily:FD,fontWeight:800,fontSize:62,lineHeight:1.04,letterSpacing:'-0.03em',color:'#fff'}}>
       L&rsquo;intelligence artificielle<br/><span style={{color:C.blue}}>souveraine</span>, construite<br/>à Maurice.</div>
   </div>
   <div style={{position:'absolute',left:130,top:558,fontFamily:FD,fontWeight:500,fontSize:29,letterSpacing:'-0.01em',color:'#D6E0F0'}}>
-    TIBOK — la Medical Intelligence au service de la MUA</div>
+    TIBOK — la Medical Intelligence, vitrine de l’IA mauricienne</div>
   <div style={{position:'absolute',left:130,top:636,display:'flex',alignItems:'center',gap:14,flexWrap:'wrap',maxWidth:860}}>
-    {['Télémédecine','Medical Intelligence','Prévention','Contrôle de pertinence'].map((c,i)=>(
+    {['Télémédecine','Medical Intelligence','Prévention','Export Afrique'].map((c,i)=>(
       <Chip key={i} at={0.4+i*0.14} color={C.blue}>{c}</Chip>
     ))}
   </div>
@@ -158,13 +158,13 @@ const SCENES = [
     'construits par une équipe de sept Mauriciens, formés en douze mois,',
     'qui, augmentés par leurs agents IA, ont la force de soixante-dix.',
     'Zéro talent importé. Et sur chaque produit, la même règle :',
-    'création de valeur. Aujourd’hui, je viens présenter à la MUA',
+    'création de valeur. Aujourd’hui, je viens présenter à l’EDB',
     'le produit phare : TIBOK.']}
     x={960} width={1560} align="center" y={905} size={29} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
-/* ---------- 4 · L'ENJEU POUR LA MUA ---------- */
+/* ---------- 4 · L'ENJEU POUR MAURICE ---------- */
 { dur:30, hue:'coral', node:(<React.Fragment>
   <ActTag act="L'enjeu" title="Soigner après, toujours après" color={C.coral}/>
   <Statement x={120} y={160} size={56} weight={700}
@@ -175,8 +175,8 @@ const SCENES = [
     'Et près d’un sur trois… ne le sait pas encore.',
     'En 2024, le diabète a causé deux mille sept cent neuf décès —',
     'près d’un sur quatre. Pendant que le corps se tait,',
-    'la médecine arrive trop tard — et la facture, elle,',
-    'atterrit sur les contrats que la MUA porte.',
+    'la médecine arrive trop tard — et la facture atterrit',
+    'sur le système de santé et sur l’économie du pays.',
     'Soigner après. Toujours après.',
     'C’est le modèle que TIBOK vient renverser.']}
     x={960} width={1540} align="center" y={905} size={30} italic={true}

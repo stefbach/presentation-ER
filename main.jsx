@@ -17,7 +17,7 @@ function Movie(){
   const total = placed.length ? placed[placed.length-1].end : 10;
 
   return (
-    <Stage width={1920} height={1080} duration={total} background={C.navy} persistKey={window.FILM_LANG==='en'?'muafilm_en':'muafilm'} loop={true}>
+    <Stage width={1920} height={1080} duration={total} background={C.navy} persistKey={window.FILM_LANG==='en'?'edbfilm_en':'edbfilm'} loop={true}>
       {placed.map((s,i)=>(
         <Sprite key={i} start={s.start} end={s.end}>
           <Scene><FX hue={s.hue} intensity={0.55}/>{s.node}</Scene>

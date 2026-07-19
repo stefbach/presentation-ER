@@ -1,9 +1,9 @@
-/* film-content-en.jsx — DDS × MUA film, ENGLISH version (part 1: opening,
-   founder, DDS as an AI software producer, the stakes for the insurer).
+/* film-content-en.jsx — DDS × EDB film, ENGLISH version (part 1: opening,
+   founder, DDS as an AI software producer, the stakes for Mauritius).
    Loaded by en.html INSTEAD of film-content.jsx. Exposes window.SCENES_A. */
 
 (function(){
-const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Logo, MUAmark,
+const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Logo, EDBmark,
         PhotoTile, FlowSvg, FlowLink, NodeChip, Phone,
         C, FD, FS, Easing, ev, fr, clamp, useScene } = window;
 
@@ -83,7 +83,7 @@ function DiabetesStakes(){
         </Card3D>
       ))}
       <div style={{position:'absolute',top:296,left:0,right:0,textAlign:'center',fontFamily:FD,fontWeight:600,fontSize:23,color:C.coral,opacity:ev(localTime,1.4,0.7)}}>
-        And the bill lands on the policies <span style={{color:'#fff',fontWeight:800}}>MUA</span> carries.</div>
+        And the bill lands on the health system — and on <span style={{color:'#fff',fontWeight:800}}>Mauritius</span>&rsquo; economy.</div>
     </div>
   );
 }
@@ -97,17 +97,17 @@ const SCENES = [
   <div style={{position:'absolute',top:0,left:0,bottom:0,width:1300,background:'linear-gradient(90deg, #0A1A33 38%, rgba(10,26,51,0.2) 70%, transparent 88%)'}}/>
   <img src="assets/logos/dds.png" alt="Digital Data Solutions" style={{position:'absolute',left:122,top:92,height:88}}/>
   <div style={{position:'absolute',left:126,top:210,display:'flex',alignItems:'center',gap:14}}>
-    <span style={{fontFamily:FD,fontWeight:600,fontSize:13.5,letterSpacing:'0.18em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Presented to</span>
-    <MUAmark h={26}/>
+    <span style={{fontFamily:FD,fontWeight:600,fontSize:13.5,letterSpacing:'0.18em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Presented to the</span>
+    <EDBmark h={26}/>
   </div>
   <div style={{position:'absolute',left:124,top:306,width:900}}>
     <div style={{fontFamily:FD,fontWeight:800,fontSize:62,lineHeight:1.04,letterSpacing:'-0.03em',color:'#fff'}}>
       <span style={{color:C.blue}}>Sovereign</span> artificial<br/>intelligence, built<br/>in Mauritius.</div>
   </div>
   <div style={{position:'absolute',left:130,top:558,fontFamily:FD,fontWeight:500,fontSize:29,letterSpacing:'-0.01em',color:'#D6E0F0'}}>
-    TIBOK — Medical Intelligence in the service of MUA</div>
+    TIBOK — Medical Intelligence, the showcase of Mauritian AI</div>
   <div style={{position:'absolute',left:130,top:636,display:'flex',alignItems:'center',gap:14,flexWrap:'wrap',maxWidth:860}}>
-    {['Telemedicine','Medical Intelligence','Prevention','Relevance control'].map((c,i)=>(
+    {['Telemedicine','Medical Intelligence','Prevention','Africa export'].map((c,i)=>(
       <Chip key={i} at={0.4+i*0.14} color={C.blue}>{c}</Chip>
     ))}
   </div>
@@ -158,13 +158,13 @@ const SCENES = [
     'built by a team of seven Mauritians, trained in twelve months,',
     'who, augmented by their AI agents, have the strength of seventy.',
     'Zero imported talent. And on every product, the same rule:',
-    'value creation. Today, I come to present MUA',
+    'value creation. Today, I come to present the EDB',
     'with our flagship product: TIBOK.']}
     x={960} width={1560} align="center" y={905} size={29} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
-/* ---------- 4 · WHAT IS AT STAKE FOR MUA ---------- */
+/* ---------- 4 · WHAT IS AT STAKE FOR MAURITIUS ---------- */
 { dur:30, hue:'coral', node:(<React.Fragment>
   <ActTag act="The stakes" title="Treating after, always after" color={C.coral}/>
   <Statement x={120} y={160} size={56} weight={700}
@@ -176,7 +176,7 @@ const SCENES = [
     'In 2024, diabetes caused two thousand seven hundred',
     'and nine deaths — nearly one in four.',
     'While the body stays silent, medicine arrives too late —',
-    'and the bill lands on the policies MUA carries.',
+    "and the bill lands on the health system and the country's economy.",
     'Treating after. Always after.',
     'That is the model TIBOK has come to overturn.']}
     x={960} width={1540} align="center" y={905} size={30} italic={true}

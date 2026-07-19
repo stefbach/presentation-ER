@@ -1,12 +1,15 @@
-# SCRIPT AUDIO — DDS × MUA
-**TIBOK Medical Intelligence pour la MUA — l'assureur mauricien de référence**
-**Version à enregistrer · ton posé, médical · ~145 mots/min · ≈ 11 min**
+# SCRIPT AUDIO — DDS × EDB
+**TIBOK Medical Intelligence présenté à l'Economic Development Board — Mauritius**
+**Version à enregistrer · ton posé, institutionnel · ~145 mots/min · ≈ 12 min**
 
-> **Note de positionnement.** La MUA est un assureur — un porteur de risque, ancré à Maurice
-> et présent en Afrique de l'Est. Le script lui vend le contrôle natif du risque médical :
-> prévention en amont, contrôle de pertinence en temps réel, maîtrise du ratio
-> sinistres/primes, et un mécanisme de gainsharing sur les coûts évités.
-> L'introduction DDS est volontairement courte : la MUA achète TIBOK, pas une biographie.
+> **Note de positionnement.** L'EDB est l'agence apex de l'État mauricien : planification
+> économique, promotion de l'investissement, branding pays, facilitation des affaires.
+> Le Budget 2026-27 fait de « Leveraging AI and Digitisation » le **premier pilier**
+> stratégique du pays (Startup Act, accélérateur EDB, incitations IA, AI SEZ de Côte d'Or,
+> missions africaines). Le script vend à l'EDB ce qu'elle cherche : un **champion national
+> de l'IA souveraine**, déjà en production, validé par le marché (Swan), 100 % mauricien,
+> et **exportable vers l'Afrique**. L'introduction DDS reste courte : l'EDB achète la
+> preuve, pas une biographie.
 
 ---
 
@@ -14,7 +17,7 @@
 
 L'intelligence artificielle souveraine, construite à Maurice.
 
-Digital Data Solutions présente TIBOK — la Medical Intelligence au service de la MUA.
+Digital Data Solutions présente TIBOK — la Medical Intelligence, vitrine de l'IA mauricienne, présentée à l'Economic Development Board.
 
 ---
 
@@ -34,11 +37,11 @@ Trois produits en production — TIBOK, Lexora, Axon — construits par une équ
 
 Quatre piliers : SaaS IA, agents IA, expertise métier, maîtrise de tous les grands modèles de langage. Et sur chacun, toujours la même règle : création de valeur.
 
-Aujourd'hui, c'est le produit phare que je viens présenter à la MUA : TIBOK.
+Aujourd'hui, c'est le produit phare que je viens présenter à l'EDB : TIBOK.
 
 ---
 
-## 4 — L'ENJEU POUR LA MUA (1:20 → 1:50)
+## 4 — L'ENJEU POUR MAURICE (1:20 → 1:50)
 
 À Maurice, un adulte sur cinq est diabétique.
 
@@ -46,7 +49,7 @@ Et près d'un sur trois… ne le sait pas encore.
 
 En 2024, le diabète a causé deux mille sept cent neuf décès. Près d'un sur quatre.
 
-Pendant que le corps se tait, la médecine arrive trop tard — et la facture, elle, atterrit sur les contrats que la MUA porte.
+Pendant que le corps se tait, la médecine arrive trop tard — et la facture atterrit sur le système de santé et sur l'économie du pays tout entière.
 
 Soigner après. Toujours après. C'est le modèle que TIBOK vient renverser.
 
@@ -58,11 +61,11 @@ Tibok est la première plateforme mauricienne de télémédecine grand public.
 
 Plus de vingt médecins inscrits au Medical Council of Mauritius prennent en charge les patients en vidéo — en français, en anglais, ou en kreol — sept jours sur sept.
 
-Mais Tibok n'est pas une application de consultation. C'est une couche d'intelligence médicale — un système d'exploitation clinique conçu pour s'installer au-dessus de l'assurance santé.
+Mais Tibok n'est pas une application de consultation. C'est une couche d'intelligence médicale — un système d'exploitation clinique pour tout le système de santé.
 
 Une chaîne complète : la consultation, l'ordonnance, la pharmacie, les analyses, le suivi des maladies chroniques, le second avis, la prévention — et le contrôle de pertinence.
 
-Là où l'assureur ne voit que la trace papier d'un acte déjà survenu, Tibok produit l'acte lui-même — natif, structuré, horodaté, vérifiable.
+Là où le système ne voit que la trace papier d'un acte déjà survenu, Tibok produit l'acte lui-même — natif, structuré, horodaté, vérifiable.
 
 Le tout, conçu et opéré depuis Maurice par Digital Data Solutions.
 
@@ -80,7 +83,7 @@ L'acte médical se définit par la qualité de son auteur — un médecin inscri
 
 Ce qui n'est pas interdit est permis.
 
-La téléconsultation Tibok est donc un acte médical légal, opposable, et adjudicable — un acte que la MUA peut couvrir et rembourser en droit commun, dans la nomenclature qu'elle pilote déjà.
+La téléconsultation Tibok est donc un acte médical légal, opposable, et adjudicable — un cadre clair, que Maurice peut revendiquer, ériger en standard, et exporter.
 
 ---
 
@@ -96,9 +99,9 @@ Au cœur de tout : la Medical Intelligence. Elle ne se limite pas à un module �
 
 Et autour d'elle, des agents d'intelligence artificielle qui ne dorment jamais.
 
-L'agent de suivi chronique, qui envoie les rappels par WhatsApp et alerte le médecin en cas de valeur anormale. L'agent de prévention, qui croise les cohortes avec les référentiels scientifiques. L'agent de contrôle, qui analyse chaque ordonnance et chaque examen avant qu'ils n'entrent dans le circuit de remboursement.
+L'agent de suivi chronique, qui envoie les rappels par WhatsApp et alerte le médecin en cas de valeur anormale. L'agent de prévention, qui croise les cohortes avec les référentiels scientifiques. L'agent de contrôle, qui analyse chaque ordonnance et chaque examen avant qu'ils n'entrent dans le circuit de la dépense.
 
-Pour la MUA, ces agents ne sont pas un gadget : ce sont les bras que votre gestion du risque n'a jamais eus — une chaîne pilotée, tracée, verrouillée, qui prolonge votre métier d'assureur.
+Pour Maurice, ce n'est pas un gadget : c'est une infrastructure de santé numérique souveraine, complète — pilotée, tracée, verrouillée — construite ici.
 
 ---
 
@@ -132,7 +135,7 @@ SilentCheck détecte cinq à dix ans à l'avance les anomalies que les symptôme
 
 Quatre-vingts pour cent des maladies cardiaques se développent sans symptôme pendant une décennie. Quatre-vingt-cinq pour cent des complications sont évitables avec une détection précoce.
 
-Un assureur classique regarde dans le rétroviseur : il mesure et paie ce qui a déjà coûté. SilentCheck regarde devant. C'est la brique qui fait passer la MUA de la sinistralité subie à la prévention active. C'est ça, la prévention : agir avant la maladie. Pas après.
+Un système de santé classique regarde dans le rétroviseur : il mesure et paie ce qui a déjà coûté. SilentCheck regarde devant. C'est la brique qui fait passer Maurice de la médecine subie à la prévention active. C'est ça, la prévention : agir avant la maladie. Pas après.
 
 ---
 
@@ -146,49 +149,57 @@ Les grands modèles de langage analysent le dossier dans sa globalité. Le moteu
 
 Une seconde lecture entièrement sourcée.
 
-Pour l'assuré : la rassurance d'un dossier revu sans angle mort. Pour la MUA : un contrôle qualité automatisé avant tout acte coûteux — le geste lourd, l'hospitalisation, l'orientation à l'étranger. Exactement là où se joue la dépense.
+Pour le patient : la rassurance d'un dossier revu sans angle mort. Pour le système de santé : un contrôle qualité automatisé avant tout acte coûteux — le geste lourd, l'hospitalisation, l'orientation à l'étranger. Exactement là où se joue la dépense.
 
 ---
 
 ## 11 — LE CONTRÔLE DE PERTINENCE (8:45 → 9:55)
 
-Et c'est précisément là que se trouve le module clé pour la MUA.
+Et c'est précisément là que se trouve le module qui change l'économie de la santé.
 
 Aujourd'hui, on vérifie un document : un formulaire, un reçu, une ordonnance — reconstruits après coup. Personne n'a observé l'acte. La fraude, la sur-prescription, l'acte fantôme se détectent en différé, sur pièces, partiellement.
 
 Tibok renverse ce modèle. Chaque ordonnance, chaque prescription d'examen, chaque intervention proposée transite par la plateforme — nativement prouvable : horodatage, signature électronique, traçabilité vidéo, et analyse de pertinence générée par la Medical Intelligence.
 
-La MUA passe du contrôle ex-post sur papier au contrôle natif, en temps réel. Vous pouvez valider, demander un complément, ou orienter vers un second avis — avant que l'acte n'engage le payeur.
+On passe du contrôle ex-post sur papier au contrôle natif, en temps réel — pour les assureurs, les employeurs, l'État.
 
-Pour la MUA, trois leviers structurels :
+Trois leviers structurels :
 
 **Fin de la sur-prescription** — chaque examen, chaque acte est confronté aux référentiels avant d'entrer dans la dépense. La prescription opportuniste devient visible.
 
 **Lutte structurée contre la fraude** — horodatage, signature électronique, traçabilité vidéo. L'acte fantôme et le sur-codage n'ont plus d'angle mort.
 
-**Maîtrise du ratio sinistres / primes** — détection précoce, parcours coordonné, donnée clinique structurée pour piloter vos cohortes et votre tarification.
+**Maîtrise des coûts de santé** — détection précoce, parcours coordonné, donnée clinique structurée pour piloter la dépense.
+
+Et c'est un produit prêt à l'export — pour tous les marchés où la santé se pilote encore sur papier.
 
 ---
 
-## 12 — LA PREUVE : SWAN A VALIDÉ LE PRINCIPE (9:55 → 10:20)
+## 12 — LA PREUVE : LE MARCHÉ A VALIDÉ (9:55 → 10:20)
 
 Ce modèle n'est pas une promesse. Avec Swan, la signature est en cours : le premier grand assureur à s'engager sur le remboursement des consultations et des prescriptions faites sur Tibok.
 
-Le principe est validé sur le marché mauricien. La place de partenaire de référence, elle, est encore ouverte. C'est cette place que je propose à la MUA.
+Le principe est validé sur le marché mauricien. La preuve commerciale existe.
+
+Ce qu'il faut maintenant, c'est une plateforme pays. Et c'est ce que je viens chercher à l'EDB.
 
 ---
 
-## 13 — L'OFFRE : UN PARTENARIAT DE PLATEFORME (10:20 → 11:30)
+## 13 — LA PROPOSITION : UN CHAMPION NATIONAL DE L'IA (10:20 → 11:30)
 
-Voici concrètement ce que Tibok propose à la MUA. Pas un produit de plus à gérer — une couche d'intelligence à embarquer sur l'ensemble de votre portefeuille.
+Voici ce que je propose à l'EDB.
 
-L'accès à la plateforme est offert à la MUA — en marque conjointe, MUA Medical Intelligence, powered by Tibok. Pas d'abonnement, pas de surcoût administratif.
+Le Budget 2026-27 fait de l'IA et de la digitalisation le premier pilier stratégique du pays. TIBOK est exactement ce que cette stratégie veut produire : une IA souveraine, en production, cent pour cent mauricienne — et déjà validée par le marché.
 
-Vos assurés paient uniquement la consultation : cinq cents roupies, au lieu de huit cents pour le grand public. Tout le reste leur est offert — le second avis médical, le suivi des maladies chroniques, SilentCheck.
+Trois axes.
 
-Un seul module se paie : le contrôle de pertinence — cinquante roupies par mois et par vie couverte. Ou, mieux : le gagnant-gagnant. Pas d'abonnement — un partage des économies générées, documentées et auditables. Vous ne payez que sur les coûts évités. (Part et seuils à fixer ensemble.)
+**Un : la vitrine.** Faire de TIBOK le cas d'école du Mauritius AI Hub — la preuve, dans le branding pays de l'EDB, que Maurice ne consomme pas l'IA : elle la produit.
 
-Aucun standard de cette qualité n'existe aujourd'hui sur le continent africain. Soixante mille références scientifiques. Quatre millions de patients dans la base. Le verrouillage LLM plus RAG. Vingt médecins du Medical Council of Mauritius. C'est unique.
+**Deux : l'accélération.** Startup Act, accélérateur EDB, incitations IA, zone économique spéciale de Côte d'Or — les leviers existent. Appliquons-les à un produit déjà en production, pour scaler l'équipe et l'infrastructure depuis Maurice.
+
+**Trois : l'export.** Embarquer TIBOK dans les missions économiques de l'EDB en Afrique, et faire de la Medical Intelligence mauricienne un produit d'exportation de services.
+
+Aucun standard de cette qualité n'existe aujourd'hui sur le continent africain. Soixante mille références scientifiques. Quatre millions de patients dans la base. Le verrouillage LLM plus RAG. Vingt médecins du Medical Council of Mauritius. C'est unique — et c'est mauricien.
 
 ---
 
@@ -196,17 +207,19 @@ Aucun standard de cette qualité n'existe aujourd'hui sur le continent africain.
 
 Maurice est la preuve de concept. Ça marche ici — donc ça marche partout où le problème est le même : pas assez de médecins.
 
-Et la MUA est déjà là où Tibok veut aller : en Afrique de l'Est. Votre réseau régional, notre infrastructure de santé souveraine. Ensemble, le standard mauricien peut devenir le standard du continent et de son océan.
+Et l'EDB est déjà là où Tibok veut aller : ses missions, son réseau, son mandat de promotion couvrent le continent. Votre plateforme pays, notre infrastructure de santé souveraine. Ensemble, le standard mauricien peut devenir le standard du continent et de son océan.
 
 ---
 
 ## 15 — FERMETURE (11:55 → 12:20)
 
-Le marché mauricien de l'assurance santé est à un tournant. Les assurés attendent des services modernes. Les régulateurs attendent de la transparence. Les coûts de santé augmentent.
+Maurice est à un tournant. Le pays a fait de l'intelligence artificielle le premier pilier de sa stratégie économique. Il lui faut maintenant des preuves — des produits réels, en production, exportables.
 
-Votre métier : protéger ce qui compte le plus — la santé de vos assurés. Ce qui rend cette protection durable, c'est l'intelligence — la prévention, le contrôle natif, la donnée clinique.
+TIBOK est cette preuve.
 
-C'est ce que Tibok apporte à la MUA. Bâtissons ensemble le standard de demain — pour Maurice, pour l'Afrique et pour l'océan Indien.
+Votre mandat : faire de Maurice une économie à hauts revenus, innovante, ouverte sur l'Afrique. Le nôtre : construire les logiciels souverains qui la portent.
+
+Bâtissons ensemble le standard de demain — pour Maurice, pour l'Afrique et pour l'océan Indien.
 
 Docteur Stéphane Bach. Digital Data Solutions Limited. tibok.mu.
 
@@ -214,9 +227,12 @@ Docteur Stéphane Bach. Digital Data Solutions Limited. tibok.mu.
 
 ## Notes de production
 
-- **Voix** : posée, grave, ton médical/conseil, francophone neutre.
-- **Débit** : ~145 mots/min, plus lent sur les chiffres clés (2 709, 60 000, 4 millions, 50 roupies).
-- **« MUA »** se prononce en lettres détachées : « M-U-A ».
+- **Voix** : posée, grave, ton institutionnel/conseil, francophone neutre.
+- **Débit** : ~145 mots/min, plus lent sur les chiffres clés (2 709, 60 000, 4 millions, Budget 2026-27).
+- **« EDB »** se prononce en lettres détachées : « E-D-B ».
 - **Silences** : un blanc entre chaque paragraphe (≈ 0,8 s).
 - **Musique** : nappe minimaliste, piano + cordes. Couper sous les punchlines des scènes 11, 12, 13 et 15.
-- **Structure** : scènes 1–3 = DDS (courtes, crédibilité) ; scènes 4–13 = TIBOK pour l'assureur (le cœur) ; scènes 14–15 = vision et appel.
+- **Structure** : scènes 1–3 = DDS (courtes, crédibilité) ; scènes 4–12 = TIBOK, la preuve produit (le cœur) ; scènes 13–15 = la proposition à l'EDB, vision et appel.
+- **Voix off** : les pistes doivent être réenregistrées à partir de ce script et déposées dans
+  `assets/vo/edb_scene_0.mp3 … edb_scene_14.mp3` (une piste par scène), puis les durées
+  mises à jour dans `build/vo-manifest.js`.

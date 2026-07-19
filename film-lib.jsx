@@ -390,12 +390,12 @@ function Phone({x, y, h=440, at=0, tilt=-9}){
   );
 }
 
-/* ---------- MUAmark — MUA logo on a white badge (brand colors need a light ground) ---------- */
-function MUAmark({h=34, style={}}){
+/* ---------- EDBmark — EDB logo on a white badge (brand colors need a light ground) ---------- */
+function EDBmark({h=34, style={}}){
   return (
     <span style={{display:'inline-flex',alignItems:'center',background:'#FFFFFF',borderRadius:Math.round(h*0.28),
       padding:`${Math.round(h*0.26)}px ${Math.round(h*0.44)}px`,boxShadow:'0 8px 26px rgba(0,0,0,0.35)',lineHeight:0,...style}}>
-      <img src="assets/logos/mua.png" alt="MUA" style={{height:h,width:'auto',display:'block'}}/>
+      <img src="assets/logos/edb.svg" alt="Economic Development Board — Mauritius" style={{height:h,width:'auto',display:'block'}}/>
     </span>
   );
 }
@@ -410,12 +410,12 @@ function Hud({actLabel}){
     <div style={{position:'absolute',inset:0,pointerEvents:'none',opacity:op}}>
       <img src="assets/logos/dds.png" alt="Digital Data Solutions" style={{position:'absolute',top:44,left:120,height:34,opacity:0.95}}/>
       <div style={{position:'absolute',top:44,right:120,display:'flex',alignItems:'center',gap:14,opacity:0.85}}>
-        <span style={{fontFamily:FD,fontWeight:500,fontSize:14,letterSpacing:'0.16em',textTransform:'uppercase',color:C.dim}}>{window.FILM_LANG==='en'?'Presented to':'Présenté à la'}</span>
-        <MUAmark h={22}/>
+        <span style={{fontFamily:FD,fontWeight:500,fontSize:14,letterSpacing:'0.16em',textTransform:'uppercase',color:C.dim}}>{window.FILM_LANG==='en'?'Presented to the':'Présenté à l’'}</span>
+        <EDBmark h={22}/>
       </div>
     </div>
   );
 }
 
-Object.assign(window, { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Hud, Logo, Swan, PhotoTile, FlowSvg, FlowLink, NodeChip, Phone, MUAmark });
+Object.assign(window, { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Hud, Logo, Swan, PhotoTile, FlowSvg, FlowLink, NodeChip, Phone, EDBmark });
 })();

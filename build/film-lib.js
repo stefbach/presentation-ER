@@ -1145,8 +1145,8 @@
     })));
   }
 
-  /* ---------- MUAmark — MUA logo on a white badge (brand colors need a light ground) ---------- */
-  function MUAmark({
+  /* ---------- EDBmark — EDB logo on a white badge (brand colors need a light ground) ---------- */
+  function EDBmark({
     h = 34,
     style = {}
   }) {
@@ -1162,8 +1162,8 @@
         ...style
       }
     }, /*#__PURE__*/React.createElement("img", {
-      src: "assets/logos/mua.png",
-      alt: "MUA",
+      src: "assets/logos/edb.svg",
+      alt: "Economic Development Board — Mauritius",
       style: {
         height: h,
         width: 'auto',
@@ -1216,7 +1216,7 @@
         textTransform: 'uppercase',
         color: C.dim
       }
-    }, window.FILM_LANG === 'en' ? 'Presented to' : 'Présenté à la'), /*#__PURE__*/React.createElement(MUAmark, {
+    }, window.FILM_LANG === 'en' ? 'Presented to the' : 'Présenté à l’'), /*#__PURE__*/React.createElement(EDBmark, {
       h: 22
     })));
   }
@@ -1240,6 +1240,6 @@
     FlowLink,
     NodeChip,
     Phone,
-    MUAmark
+    EDBmark
   });
 })();

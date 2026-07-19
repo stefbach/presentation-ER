@@ -31,7 +31,7 @@
       height: 1080,
       duration: total,
       background: C.navy,
-      persistKey: window.FILM_LANG === 'en' ? 'muafilm_en' : 'muafilm',
+      persistKey: window.FILM_LANG === 'en' ? 'edbfilm_en' : 'edbfilm',
       loop: true
     }, placed.map((s, i) => /*#__PURE__*/React.createElement(Sprite, {
       key: i,

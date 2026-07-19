@@ -1,5 +1,5 @@
-/* film-content.jsx — Film DDS × MUA (partie 1 : ouverture, fondateur,
-   DDS producteur de logiciels IA, l'enjeu santé pour l'assureur).
+/* film-content.jsx — Film DDS × EDB (partie 1 : ouverture, fondateur,
+   DDS producteur de logiciels IA, l'enjeu santé pour Maurice).
    Loads after film-lib.jsx. Exposes window.SCENES_A. */
 
 (function () {
@@ -16,7 +16,7 @@
     Panel,
     Card3D,
     Logo,
-    MUAmark,
+    EDBmark,
     PhotoTile,
     FlowSvg,
     FlowLink,
@@ -257,12 +257,12 @@
         color: C.coral,
         opacity: ev(localTime, 1.4, 0.7)
       }
-    }, "Et la facture atterrit sur les contrats que la ", /*#__PURE__*/React.createElement("span", {
+    }, "Et la facture atterrit sur le système de santé — et sur l’économie de ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: '#fff',
         fontWeight: 800
       }
-    }, "MUA"), " porte."));
+    }, "Maurice"), "."));
   }
 
   /* ============================ LE SCÉNARIO ============================ */
@@ -318,7 +318,7 @@
         textTransform: 'uppercase',
         color: 'rgba(206,219,240,0.5)'
       }
-    }, "Présenté à la"), /*#__PURE__*/React.createElement(MUAmark, {
+    }, "Présenté à l’"), /*#__PURE__*/React.createElement(EDBmark, {
       h: 26
     })), /*#__PURE__*/React.createElement("div", {
       style: {
@@ -351,7 +351,7 @@
         letterSpacing: '-0.01em',
         color: '#D6E0F0'
       }
-    }, "TIBOK — la Medical Intelligence au service de la MUA"), /*#__PURE__*/React.createElement("div", {
+    }, "TIBOK — la Medical Intelligence, vitrine de l’IA mauricienne"), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         left: 130,
@@ -362,7 +362,7 @@
         flexWrap: 'wrap',
         maxWidth: 860
       }
-    }, ['Télémédecine', 'Medical Intelligence', 'Prévention', 'Contrôle de pertinence'].map((c, i) => /*#__PURE__*/React.createElement(Chip, {
+    }, ['Télémédecine', 'Medical Intelligence', 'Prévention', 'Export Afrique'].map((c, i) => /*#__PURE__*/React.createElement(Chip, {
       key: i,
       at: 0.4 + i * 0.14,
       color: C.blue
@@ -482,7 +482,7 @@
         color: C.dim
       }
     }, "3 produits IA en production")), /*#__PURE__*/React.createElement(Pillars, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Trois produits en production — TIBOK, Lexora, Axon —', 'construits par une équipe de sept Mauriciens, formés en douze mois,', 'qui, augmentés par leurs agents IA, ont la force de soixante-dix.', 'Zéro talent importé. Et sur chaque produit, la même règle :', 'création de valeur. Aujourd’hui, je viens présenter à la MUA', 'le produit phare : TIBOK.'],
+      lines: ['Trois produits en production — TIBOK, Lexora, Axon —', 'construits par une équipe de sept Mauriciens, formés en douze mois,', 'qui, augmentés par leurs agents IA, ont la force de soixante-dix.', 'Zéro talent importé. Et sur chaque produit, la même règle :', 'création de valeur. Aujourd’hui, je viens présenter à l’EDB', 'le produit phare : TIBOK.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -494,7 +494,7 @@
       lead: 1.6,
       tail: 1.1
     }))
-  }, /* ---------- 4 · L'ENJEU POUR LA MUA ---------- */
+  }, /* ---------- 4 · L'ENJEU POUR MAURICE ---------- */
   {
     dur: 30,
     hue: 'coral',
@@ -511,7 +511,7 @@
       accentIdx: [1],
       accentColor: C.coral
     }), /*#__PURE__*/React.createElement(DiabetesStakes, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['À Maurice, un adulte sur cinq est diabétique.', 'Et près d’un sur trois… ne le sait pas encore.', 'En 2024, le diabète a causé deux mille sept cent neuf décès —', 'près d’un sur quatre. Pendant que le corps se tait,', 'la médecine arrive trop tard — et la facture, elle,', 'atterrit sur les contrats que la MUA porte.', 'Soigner après. Toujours après.', 'C’est le modèle que TIBOK vient renverser.'],
+      lines: ['À Maurice, un adulte sur cinq est diabétique.', 'Et près d’un sur trois… ne le sait pas encore.', 'En 2024, le diabète a causé deux mille sept cent neuf décès —', 'près d’un sur quatre. Pendant que le corps se tait,', 'la médecine arrive trop tard — et la facture atterrit', 'sur le système de santé et sur l’économie du pays.', 'Soigner après. Toujours après.', 'C’est le modèle que TIBOK vient renverser.'],
       x: 960,
       width: 1540,
       align: "center",

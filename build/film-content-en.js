@@ -1,5 +1,5 @@
-/* film-content-en.jsx — DDS × MUA film, ENGLISH version (part 1: opening,
-   founder, DDS as an AI software producer, the stakes for the insurer).
+/* film-content-en.jsx — DDS × EDB film, ENGLISH version (part 1: opening,
+   founder, DDS as an AI software producer, the stakes for Mauritius).
    Loaded by en.html INSTEAD of film-content.jsx. Exposes window.SCENES_A. */
 
 (function () {
@@ -16,7 +16,7 @@
     Panel,
     Card3D,
     Logo,
-    MUAmark,
+    EDBmark,
     PhotoTile,
     FlowSvg,
     FlowLink,
@@ -257,12 +257,12 @@
         color: C.coral,
         opacity: ev(localTime, 1.4, 0.7)
       }
-    }, "And the bill lands on the policies ", /*#__PURE__*/React.createElement("span", {
+    }, "And the bill lands on the health system — and on ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: '#fff',
         fontWeight: 800
       }
-    }, "MUA"), " carries."));
+    }, "Mauritius"), "’ economy."));
   }
 
   /* ============================ THE SCENARIO ============================ */
@@ -318,7 +318,7 @@
         textTransform: 'uppercase',
         color: 'rgba(206,219,240,0.5)'
       }
-    }, "Presented to"), /*#__PURE__*/React.createElement(MUAmark, {
+    }, "Presented to the"), /*#__PURE__*/React.createElement(EDBmark, {
       h: 26
     })), /*#__PURE__*/React.createElement("div", {
       style: {
@@ -351,7 +351,7 @@
         letterSpacing: '-0.01em',
         color: '#D6E0F0'
       }
-    }, "TIBOK — Medical Intelligence in the service of MUA"), /*#__PURE__*/React.createElement("div", {
+    }, "TIBOK — Medical Intelligence, the showcase of Mauritian AI"), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         left: 130,
@@ -362,7 +362,7 @@
         flexWrap: 'wrap',
         maxWidth: 860
       }
-    }, ['Telemedicine', 'Medical Intelligence', 'Prevention', 'Relevance control'].map((c, i) => /*#__PURE__*/React.createElement(Chip, {
+    }, ['Telemedicine', 'Medical Intelligence', 'Prevention', 'Africa export'].map((c, i) => /*#__PURE__*/React.createElement(Chip, {
       key: i,
       at: 0.4 + i * 0.14,
       color: C.blue
@@ -482,7 +482,7 @@
         color: C.dim
       }
     }, "3 AI products in production")), /*#__PURE__*/React.createElement(Pillars, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Three products in production — TIBOK, Lexora, Axon —', 'built by a team of seven Mauritians, trained in twelve months,', 'who, augmented by their AI agents, have the strength of seventy.', 'Zero imported talent. And on every product, the same rule:', 'value creation. Today, I come to present MUA', 'with our flagship product: TIBOK.'],
+      lines: ['Three products in production — TIBOK, Lexora, Axon —', 'built by a team of seven Mauritians, trained in twelve months,', 'who, augmented by their AI agents, have the strength of seventy.', 'Zero imported talent. And on every product, the same rule:', 'value creation. Today, I come to present the EDB', 'with our flagship product: TIBOK.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -494,7 +494,7 @@
       lead: 1.6,
       tail: 1.1
     }))
-  }, /* ---------- 4 · WHAT IS AT STAKE FOR MUA ---------- */
+  }, /* ---------- 4 · WHAT IS AT STAKE FOR MAURITIUS ---------- */
   {
     dur: 30,
     hue: 'coral',
@@ -511,7 +511,7 @@
       accentIdx: [1],
       accentColor: C.coral
     }), /*#__PURE__*/React.createElement(DiabetesStakes, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['In Mauritius, one adult in five is diabetic.', "And nearly one in three… doesn't know it yet.", 'In 2024, diabetes caused two thousand seven hundred', 'and nine deaths — nearly one in four.', 'While the body stays silent, medicine arrives too late —', 'and the bill lands on the policies MUA carries.', 'Treating after. Always after.', 'That is the model TIBOK has come to overturn.'],
+      lines: ['In Mauritius, one adult in five is diabetic.', "And nearly one in three… doesn't know it yet.", 'In 2024, diabetes caused two thousand seven hundred', 'and nine deaths — nearly one in four.', 'While the body stays silent, medicine arrives too late —', "and the bill lands on the health system and the country's economy.", 'Treating after. Always after.', 'That is the model TIBOK has come to overturn.'],
       x: 960,
       width: 1540,
       align: "center",

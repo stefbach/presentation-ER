@@ -1,11 +1,11 @@
-/* film-content2-en.jsx — DDS × MUA film, ENGLISH version (part 2: the TIBOK
-   platform seen from the insurer — legal framework, ecosystem, Medical
+/* film-content2-en.jsx — DDS × EDB film, ENGLISH version (part 2: the TIBOK
+   platform as proof of sovereign AI — legal framework, ecosystem, Medical
    Intelligence, SilentCheck, second opinion, relevance control, Swan proof,
-   offer, vision, closing). Loaded by en.html INSTEAD of film-content2.jsx.
-   Exposes window.SCENES_B. */
+   proposal to the EDB, vision, closing). Loaded by en.html INSTEAD of
+   film-content2.jsx. Exposes window.SCENES_B. */
 
 (function(){
-const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Logo, Swan, MUAmark,
+const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Logo, Swan, EDBmark,
         C, FD, FS, Easing, ev, fr, clamp, useScene,
         Phone, FlowSvg, FlowLink, NodeChip, PhotoTile } = window;
 
@@ -16,7 +16,7 @@ const SCENES_B = [
 
 /* ---------- 5 · TIBOK, THE PLATFORM ---------- */
 { dur:40, hue:'blue', node:(<React.Fragment>
-  <ActTag act="TIBOK" title="A clinical OS on top of health insurance"/>
+  <ActTag act="TIBOK" title="A clinical OS for the whole health system"/>
   <Statement x={120} y={168} size={50} weight={700}
     lines={['Not a consultation app.','A layer of medical intelligence.']} accentIdx={[1]} accentColor={C.blue}/>
   <TibokHub/>
@@ -31,10 +31,11 @@ const SCENES_B = [
     'of Mauritius see patients by video — in French, in English,',
     'or in Kreol — seven days a week. But Tibok is not',
     'a consultation app: it is a layer of medical intelligence,',
-    'a clinical operating system designed to sit',
-    'on top of health insurance. Where the insurer only sees',
-    'the paper trail of an act that has already happened, Tibok produces',
-    'the act itself — native, structured, time-stamped, verifiable.']}
+    'a clinical operating system for the whole health system.',
+    'Where the system only sees the paper trail of an act',
+    'that has already happened, Tibok produces the act itself —',
+    'native, structured, time-stamped, verifiable.',
+    'All of it designed and operated from Mauritius.']}
     x={960} width={1560} align="center" y={918} size={30} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -48,7 +49,7 @@ const SCENES_B = [
   <div style={{position:'absolute',top:700,left:0,right:0,display:'flex',justifyContent:'center'}}>
     <Panel at={1.6} style={{maxWidth:1400}}>
       <div style={{fontFamily:FD,fontWeight:600,fontSize:27,color:'#fff',lineHeight:1.45,textAlign:'center'}}>
-        A <span style={{color:C.gold,fontWeight:800}}>legal, enforceable, adjudicable</span> medical act — one that MUA can cover and reimburse under ordinary law, within the schedule of benefits it already runs.</div>
+        A <span style={{color:C.gold,fontWeight:800}}>legal, enforceable, adjudicable</span> medical act — a clear framework Mauritius can claim, raise into a standard, and export.</div>
     </Panel>
   </div>
   <Narration lines={[
@@ -61,7 +62,7 @@ const SCENES_B = [
     'The Medical Council Act of 1999 imposes no requirement',
     'of physical presence. What is not forbidden is permitted.',
     'A Tibok teleconsultation is a legal, enforceable, adjudicable',
-    'medical act — one MUA can cover and reimburse under ordinary law.']}
+    'medical act — a standard Mauritius can claim and export.']}
     x={960} width={1560} align="center" y={928} size={29} italic={true}
     accent="#F2E6CF" dim="rgba(224,210,180,0.22)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -85,8 +86,9 @@ const SCENES_B = [
     'and imaging. Chronic-disease follow-up. Family management.',
     'SilentCheck for prevention. The second opinion. Relevance control.',
     'And around it all, AI agents that never sleep: chronic follow-up,',
-    'prevention, control. For MUA, they are the arms your risk',
-    'management never had — a chain that is steered, traced, and locked.']}
+    'prevention, control. For Mauritius, this is no gadget:',
+    'it is a sovereign digital-health infrastructure —',
+    'steered, traced, locked — built here.']}
     x={960} width={1560} align="center" y={928} size={29} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -124,9 +126,9 @@ const SCENES_B = [
     'Fifty-three references published in the New England Journal',
     'of Medicine, The Lancet, JACC, Circulation. Fifteen biomarkers.',
     'SilentCheck detects, five to ten years in advance, the anomalies',
-    'that symptoms do not yet reveal. A traditional insurer',
+    'that symptoms do not yet reveal. A traditional health system',
     'looks in the rear-view mirror. SilentCheck looks ahead:',
-    'it is the building block that moves MUA from claims endured',
+    'it is the building block that moves Mauritius from medicine endured',
     'to active prevention.']}
     x={960} width={1560} align="center" y={928} size={29} italic={true}
     accent="#F2E6CF" dim="rgba(224,210,180,0.22)" lead={1.6} tail={1.2}/>
@@ -143,10 +145,10 @@ const SCENES_B = [
     "The patient's complete file — history, prescriptions, imaging,",
     'biology, antecedents — is re-verified by our AI and RAG system,',
     'then validated by a Tibok physician. A second reading, fully sourced.',
-    'For the insured: a file reviewed with no blind spots. For MUA:',
+    'For the patient: a file reviewed with no blind spots. For the system:',
     'automated quality control before every costly act — the major',
     'procedure, the hospitalisation, the overseas referral.',
-    'Exactly where the money is at stake.']}
+    'Exactly where healthcare money is at stake.']}
     x={960} width={1560} align="center" y={918} size={30} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -164,20 +166,20 @@ const SCENES_B = [
   <div style={{position:'absolute',top:470,left:0,right:0,display:'flex',justifyContent:'center',gap:22}}>
     {[['An end to over-prescription','Every test, every act is confronted with the guidelines before it enters the expense. Opportunistic prescribing becomes visible.',C.teal],
       ['A structured fight against fraud','The phantom act and up-coding have no blind spot left — the act is natively provable.',C.blue],
-      ['Command of the loss ratio','Early detection, coordinated care paths, structured clinical data to steer cohorts and pricing.',C.gold]].map((p,i)=>(
+      ['Command of healthcare costs','Early detection, coordinated care paths, structured clinical data — for insurers, employers, the State.',C.gold]].map((p,i)=>(
       <DimCard key={i} p={p} i={i}/>
     ))}
   </div>
   <Narration lines={[
-    'And here is the key module for MUA.',
+    'And here is the module that changes the economics of healthcare.',
     'Today, you verify a document reconstructed after the fact —',
     'nobody observed the act. Tibok reverses that model:',
     'every prescription, every test passes through the platform,',
     'natively provable — time-stamping, electronic signature,',
-    'video traceability, relevance analysis. MUA moves from ex-post',
+    'video traceability, relevance analysis. We move from ex-post',
     'control on paper to native, real-time control. Three levers:',
     'an end to over-prescription, a structured fight against fraud,',
-    'and command of the loss ratio.']}
+    'command of costs. An export-ready product.']}
     x={960} width={1560} align="center" y={928} size={29} italic={true}
     accent="#DDF2E8" dim="rgba(200,230,216,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -196,10 +198,11 @@ const SCENES_B = [
   </div>
   <div style={{position:'absolute',top:588,left:0,right:0,display:'flex',flexDirection:'column',alignItems:'center',gap:22}}>
     <div style={{fontFamily:FD,fontWeight:700,fontSize:30,color:'#fff'}}>
-      The seat of <span style={{color:C.gold}}>reference partner</span> is still open.</div>
+      The commercial proof exists. What is needed now is a <span style={{color:C.gold}}>country platform</span>.</div>
     <div style={{display:'flex',alignItems:'center',gap:18}}>
-      <span style={{fontFamily:FD,fontWeight:600,fontSize:22,color:C.dim}}>That seat is what I am offering</span>
-      <MUAmark h={30}/>
+      <span style={{fontFamily:FD,fontWeight:600,fontSize:22,color:C.dim}}>And that is what I have come to the</span>
+      <EDBmark h={30}/>
+      <span style={{fontFamily:FD,fontWeight:600,fontSize:22,color:C.dim}}>for</span>
     </div>
   </div>
   <Narration lines={[
@@ -207,30 +210,30 @@ const SCENES_B = [
     'the first major insurer to commit to reimbursing',
     'consultations and prescriptions made on Tibok.',
     'The principle is validated on the Mauritian market.',
-    'The seat of reference partner, however, is still open.',
-    'That seat is what I am offering MUA.']}
+    'The commercial proof exists. What is needed now',
+    'is a country platform — and that is what I have come to the EDB for.']}
     x={960} width={1500} align="center" y={912} size={31} italic={true}
     accent="#DDF2E8" dim="rgba(200,230,216,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
 
-/* ---------- 13 · THE OFFER: A PLATFORM PARTNERSHIP ---------- */
+/* ---------- 13 · THE PROPOSAL: A NATIONAL AI CHAMPION ---------- */
 { dur:50, hue:'gold', node:(<React.Fragment>
-  <ActTag act="The offer" title="A platform partnership" color={C.gold}/>
+  <ActTag act="The proposal" title="A national champion for the AI pillar" color={C.gold}/>
   <Statement x={120} y={128} size={40} weight={700}
-    lines={['Not one more product to manage.','A layer of intelligence across your whole portfolio.']} accentIdx={[1]} accentColor={C.gold}/>
+    lines={['Mauritius made AI its first strategic pillar.','TIBOK is the proof that it works.']} accentIdx={[1]} accentColor={C.gold}/>
   <OfferCards/>
   <Narration lines={[
-    'Not one more product to manage — a layer of intelligence',
-    'to embed across your entire portfolio.',
-    'Platform access is offered to MUA — co-branded,',
-    'MUA Medical Intelligence, powered by Tibok. No subscription.',
-    'Your policyholders pay only for the consultation: five hundred',
-    'rupees, instead of eight hundred. Everything else is included —',
-    'the second opinion, chronic-disease follow-up, SilentCheck.',
-    'Only one module carries a fee: relevance control,',
-    'at fifty rupees per month per covered life. Or, better:',
-    'the win-win — no subscription, a share of the savings generated,',
-    'documented and auditable. You pay only on avoided costs.']}
+    'Here is what I propose to the EDB. Budget 2026-27 makes AI',
+    "and digitisation the country's first strategic pillar.",
+    'TIBOK is exactly what that strategy is meant to produce:',
+    'sovereign AI, in production, one hundred percent Mauritian,',
+    'already validated by the market. Three axes. One: the showcase —',
+    'make TIBOK the flagship case of the Mauritius AI Hub.',
+    'Two: acceleration — the Startup Act, the EDB accelerator,',
+    "AI incentives, the Côte d'Or special economic zone: apply those",
+    'levers to a product already in production. Three: export —',
+    "take TIBOK aboard your African missions, and make",
+    'Medical Intelligence a Mauritian services export.']}
     x={960} width={1560} align="center" y={935} size={28} italic={true}
     accent="#F2E6CF" dim="rgba(224,210,180,0.22)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -240,14 +243,15 @@ const SCENES_B = [
   <ActTag act="Regional vision" title="Mauritius, then Africa"/>
   <AfricaArc/>
   <div style={{position:'absolute',top:588,left:0,right:0,textAlign:'center'}}>
-    <div style={{fontFamily:FD,fontWeight:700,fontSize:52,letterSpacing:'-0.025em',color:'#fff'}}>MUA is already where TIBOK wants to go.</div>
-    <div style={{fontFamily:FD,fontWeight:600,fontSize:28,color:C.blue,marginTop:12}}>Your regional network · our sovereign health infrastructure</div>
+    <div style={{fontFamily:FD,fontWeight:700,fontSize:52,letterSpacing:'-0.025em',color:'#fff'}}>The EDB is already where TIBOK wants to go.</div>
+    <div style={{fontFamily:FD,fontWeight:600,fontSize:28,color:C.blue,marginTop:12}}>Your country platform · our sovereign health infrastructure</div>
   </div>
   <Narration lines={[
     'Mauritius is the proof of concept. It works here — so it works',
     'everywhere the problem is the same: not enough doctors.',
-    'And MUA is already where Tibok wants to go: East Africa.',
-    'Your regional network, our sovereign health infrastructure.',
+    'And the EDB is already where Tibok wants to go: its missions,',
+    'its network, its promotion mandate cover the continent.',
+    'Your country platform, our sovereign health infrastructure.',
     'Together, the Mauritian standard can become the standard',
     'for a continent and its ocean.']}
     x={960} width={1560} align="center" y={912} size={30} italic={true}
@@ -258,13 +262,13 @@ const SCENES_B = [
 { dur:30, hue:'blue', node:(<React.Fragment>
   <FinalScene/>
   <Narration lines={[
-    'The Mauritian health-insurance market is at a turning point.',
-    'Policyholders expect modern services. Regulators expect',
-    'transparency. Healthcare costs keep rising.',
-    "Your profession: protecting what matters most — your policyholders' health.",
-    'What makes that protection durable is intelligence —',
-    'prevention, native control, clinical data.',
-    'That is what Tibok brings to MUA.',
+    'Mauritius is at a turning point. The country has made',
+    'artificial intelligence the first pillar of its economic strategy.',
+    'What it needs now is proof — real products,',
+    'in production, exportable. TIBOK is that proof.',
+    'Your mandate: making Mauritius a high-income, innovative',
+    'economy, open to Africa. Ours: building',
+    'the sovereign software that carries it.',
     "Let us build tomorrow's standard together — for Mauritius,",
     'for Africa, and for the Indian Ocean.',
     'Doctor Stéphane Bach · Digital Data Solutions · tibok.mu']}
@@ -467,37 +471,36 @@ function SecondOpinionFlow(){
   );
 }
 
-/* ===== the offer: three pricing cards + win-win ===== */
+/* ===== the proposal: three axes aligned with the EDB strategy ===== */
 function OfferCards(){
   const {localTime}=useScene();
   return (
     <div style={{position:'absolute',top:330,left:0,right:0}}>
       <div style={{display:'flex',justifyContent:'center',gap:24,alignItems:'stretch'}}>
-        <Card3D w={440} at={0.4} i={0} accent={C.blue} accentSide="top" minHeight={300} pad="30px 32px">
-          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.blue}}>Platform access · MUA</div>
-          <div style={{fontFamily:FD,fontWeight:800,fontSize:64,color:'#fff',marginTop:16,lineHeight:1}}>Free</div>
-          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.dim,marginTop:8}}>no subscription, no overhead</div>
-          <div style={{fontFamily:FD,fontWeight:400,fontSize:17,color:C.dim,marginTop:14,lineHeight:1.45}}>Co-branded — <span style={{color:'#fff',fontWeight:600}}>MUA Medical Intelligence</span>, powered by TIBOK — across the whole portfolio.</div>
+        <Card3D w={470} at={0.4} i={0} accent={C.blue} accentSide="top" minHeight={300} pad="30px 32px">
+          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.blue}}>Axis 1 · Mauritius AI Hub</div>
+          <div style={{fontFamily:FD,fontWeight:800,fontSize:58,color:'#fff',marginTop:16,lineHeight:1}}>The showcase</div>
+          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.dim,marginTop:8}}>the “Leveraging AI &amp; Digitisation” pillar</div>
+          <div style={{fontFamily:FD,fontWeight:400,fontSize:17,color:C.dim,marginTop:14,lineHeight:1.45}}>Sovereign AI in production, the flagship case of the country brand — <span style={{color:'#fff',fontWeight:600}}>Mauritius does not consume AI: it produces it</span>.</div>
         </Card3D>
         <Card3D w={470} at={0.6} i={1} accent={C.green} accentSide="top" minHeight={300} pad="30px 32px">
-          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.green}}>MUA policyholders</div>
-          <div style={{fontFamily:FD,fontWeight:800,fontSize:64,color:'#fff',marginTop:16,lineHeight:1}}>Rs 500 <span style={{fontSize:26,fontWeight:600,color:C.dim,textDecoration:'line-through'}}>800</span></div>
-          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.dim,marginTop:8}}>per consultation — the only payment</div>
-          <div style={{fontFamily:FD,fontWeight:500,fontSize:17,color:C.txt,marginTop:14,lineHeight:1.6}}>✓ Medical second opinion included<br/>✓ Chronic-disease follow-up included<br/>✓ SilentCheck included</div>
+          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.green}}>Axis 2 · Startup Act &amp; AI SEZ</div>
+          <div style={{fontFamily:FD,fontWeight:800,fontSize:58,color:'#fff',marginTop:16,lineHeight:1}}>Acceleration</div>
+          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.dim,marginTop:8}}>the EDB levers, on a product already in production</div>
+          <div style={{fontFamily:FD,fontWeight:500,fontSize:17,color:C.txt,marginTop:14,lineHeight:1.6}}>✓ Startup Act &amp; EDB accelerator<br/>✓ AI incentives · innovation grants<br/>✓ Côte d’Or AI SEZ</div>
         </Card3D>
-        <Card3D w={520} at={0.8} i={2} accent={C.gold} accentSide="top" minHeight={300} pad="30px 32px"
+        <Card3D w={490} at={0.8} i={2} accent={C.gold} accentSide="top" minHeight={300} pad="30px 32px"
           style={{background:'rgba(224,169,59,0.08)',border:'1px solid rgba(224,169,59,0.35)'}}>
-          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.gold}}>Only paid module · Relevance control</div>
-          <div style={{fontFamily:FD,fontWeight:800,fontSize:56,color:C.gold,marginTop:14,lineHeight:1}}>Rs 50</div>
-          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:'#fff',marginTop:6}}>per month · per covered life</div>
-          <div style={{fontFamily:FD,fontWeight:600,fontSize:18,color:C.teal,marginTop:14,lineHeight:1.4}}>or the win-win option:</div>
-          <div style={{fontFamily:FD,fontWeight:400,fontSize:17,color:C.dim,marginTop:6,lineHeight:1.45}}>no subscription — a share of the <span style={{color:'#fff',fontWeight:600}}>savings generated</span>, documented and auditable.</div>
+          <div style={{fontFamily:FD,fontWeight:700,fontSize:15,letterSpacing:'0.14em',textTransform:'uppercase',color:C.gold}}>Axis 3 · African missions</div>
+          <div style={{fontFamily:FD,fontWeight:800,fontSize:58,color:C.gold,marginTop:16,lineHeight:1}}>Export</div>
+          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:'#fff',marginTop:8}}>Medical Intelligence as a services export</div>
+          <div style={{fontFamily:FD,fontWeight:400,fontSize:17,color:C.dim,marginTop:14,lineHeight:1.45}}>Take TIBOK aboard the EDB&rsquo;s economic missions — the <span style={{color:'#fff',fontWeight:600}}>Mauritian standard</span> of digital health, sold to the continent.</div>
         </Card3D>
       </div>
       <div style={{display:'flex',justifyContent:'center',marginTop:26}}>
         <Panel at={1.3} style={{maxWidth:1420}}>
           <div style={{fontFamily:FD,fontWeight:600,fontSize:24,color:'#fff',lineHeight:1.45,textAlign:'center'}}>
-            <span style={{color:C.gold,fontWeight:800}}>Win-win</span> — native veracity makes the economics measurable: you pay only on <span style={{color:C.teal,fontWeight:700}}>avoided costs</span>. <span style={{color:C.dim,fontWeight:400,fontSize:19}}>(share and thresholds to be set together)</span></div>
+            <span style={{color:C.gold,fontWeight:800}}>Win-win</span> — DDS brings the living proof; the EDB brings the country platform. Together: the <span style={{color:C.teal,fontWeight:700}}>Mauritian standard</span> of digital health, exported to Africa.</div>
         </Panel>
       </div>
     </div>
@@ -525,7 +528,7 @@ function DimCard({p,i}){
 /* ===== East-Africa / Indian-Ocean constellation ===== */
 function AfricaArc(){
   const {localTime}=useScene();
-  // gold = MUA network in East Africa · blue = TIBOK today · teal = natural expansion
+  // gold = EDB missions & network in Africa · blue = TIBOK today · teal = natural expansion
   const nodes=[['Mauritius',0,C.blue],['Rodrigues',0.8,C.blue],['Madagascar',1.6,C.teal],['Mozambique',2.0,C.teal],['Tanzania',2.6,C.gold],['Kenya',3.0,C.gold],['Uganda',3.4,C.gold],['Rwanda',3.8,C.gold]];
   const cx=960, cy=400, rx=760, ry=200;
   return (
@@ -543,7 +546,7 @@ function AfricaArc(){
         );
       })}
       <div style={{position:'absolute',top:492,left:0,right:0,display:'flex',justifyContent:'center',gap:28,opacity:ev(localTime,3.4,0.7)}}>
-        {[['TIBOK today',C.blue],['MUA network — East Africa',C.gold],['Natural expansion',C.teal]].map((l,i)=>(
+        {[['TIBOK today',C.blue],['EDB missions & network — Africa',C.gold],['Natural expansion',C.teal]].map((l,i)=>(
           <span key={i} style={{display:'inline-flex',alignItems:'center',gap:10,fontFamily:FD,fontWeight:600,fontSize:18,color:C.dim}}>
             <i style={{width:12,height:12,borderRadius:6,background:l[1],boxShadow:`0 0 12px ${l[1]}`}}/>{l[0]}</span>
         ))}
@@ -552,7 +555,7 @@ function AfricaArc(){
   );
 }
 
-/* ===== DDS × MUA closing ===== */
+/* ===== DDS × EDB closing ===== */
 function FinalScene(){
   const {localTime}=useScene();
   const w=ev(localTime,0.3,0.8,Easing.easeOutExpo);
@@ -562,7 +565,7 @@ function FinalScene(){
         <div style={{display:'flex',alignItems:'center',gap:22,opacity:ev(localTime,0.2,0.7),transform:`translateY(${(1-ev(localTime,0.2,0.7))*20}px)`}}>
           <img src="assets/logos/dds.png" alt="Digital Data Solutions" style={{height:60}}/>
           <span style={{fontFamily:FD,fontWeight:300,fontSize:52,color:'rgba(206,219,240,0.55)'}}>×</span>
-          <MUAmark h={48}/>
+          <EDBmark h={48}/>
         </div>
         <div style={{width:260*w,height:8,borderRadius:3,background:`linear-gradient(90deg,${C.blue},${C.teal})`,margin:'30px 0'}}/>
         <div style={{fontFamily:FD,fontWeight:500,fontSize:34,color:'#D6E0F0',lineHeight:1.28,opacity:ev(localTime,0.7,0.7),maxWidth:'22ch'}}>
@@ -570,7 +573,7 @@ function FinalScene(){
       </div>
       <div style={{position:'absolute',right:120,top:300,width:680,opacity:ev(localTime,1.0,0.7),transform:`translateY(${(1-ev(localTime,1.0,0.7))*18}px)`}}>
         <div style={{display:'flex',flexWrap:'wrap',gap:12,justifyContent:'flex-start'}}>
-          {['Swan — signature under way','60,000 scientific references','100% Mauritian team'].map((c,i)=>(
+          {['Swan — signature under way','3 AI products in production','100% Mauritian team'].map((c,i)=>(
             <span key={i} style={{padding:'11px 20px',border:'1px solid rgba(255,255,255,0.16)',background:'rgba(255,255,255,0.05)',borderRadius:999,fontFamily:FD,fontWeight:500,fontSize:20,color:C.txt,display:'inline-flex',alignItems:'center',gap:10}}>
               <span style={{width:20,height:20,borderRadius:10,background:C.green,color:C.navy,display:'grid',placeItems:'center',fontSize:12,fontWeight:800}}>✓</span>{c}</span>
           ))}
