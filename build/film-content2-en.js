@@ -1,8 +1,8 @@
-/* film-content2-en.jsx — DDS × MUA film, ENGLISH version (part 2: the TIBOK
-   platform seen from the insurer — legal framework, ecosystem, Medical
+/* film-content2-en.jsx — DDS × EDB film, ENGLISH version (part 2: the TIBOK
+   platform as proof of sovereign AI — legal framework, ecosystem, Medical
    Intelligence, SilentCheck, second opinion, relevance control, Swan proof,
-   offer, vision, closing). Loaded by en.html INSTEAD of film-content2.jsx.
-   Exposes window.SCENES_B. */
+   proposal to the EDB, vision, closing). Loaded by en.html INSTEAD of
+   film-content2.jsx. Exposes window.SCENES_B. */
 
 (function () {
   const {
@@ -19,7 +19,7 @@
     Card3D,
     Logo,
     Swan,
-    MUAmark,
+    EDBmark,
     C,
     FD,
     FS,
@@ -42,7 +42,7 @@
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
       act: "TIBOK",
-      title: "A clinical OS on top of health insurance"
+      title: "A clinical OS for the whole health system"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 168,
@@ -66,7 +66,7 @@
       at: 0.6 + i * 0.16,
       color: C.teal
     }, c))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Tibok is the first Mauritian telemedicine platform for the general public.', 'More than twenty physicians registered with the Medical Council', 'of Mauritius see patients by video — in French, in English,', 'or in Kreol — seven days a week. But Tibok is not', 'a consultation app: it is a layer of medical intelligence,', 'a clinical operating system designed to sit', 'on top of health insurance. Where the insurer only sees', 'the paper trail of an act that has already happened, Tibok produces', 'the act itself — native, structured, time-stamped, verifiable.'],
+      lines: ['Tibok is the first Mauritian telemedicine platform for the general public.', 'More than twenty physicians registered with the Medical Council', 'of Mauritius see patients by video — in French, in English,', 'or in Kreol — seven days a week. But Tibok is not', 'a consultation app: it is a layer of medical intelligence,', 'a clinical operating system for the whole health system.', 'Where the system only sees the paper trail of an act', 'that has already happened, Tibok produces the act itself —', 'native, structured, time-stamped, verifiable.', 'All of it designed and operated from Mauritius.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -122,8 +122,8 @@
         color: C.gold,
         fontWeight: 800
       }
-    }, "legal, enforceable, adjudicable"), " medical act — one that MUA can cover and reimburse under ordinary law, within the schedule of benefits it already runs."))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Teleconsultation is not a legal debate.', 'It has been an established fact for nearly thirty years.', 'Since 1997, the WHO has defined it as a medical act in its own right.', 'France has reimbursed it since 2018. The United States,', 'the United Kingdom, Germany, Australia, Canada and Switzerland', 'have written it into their law. And in Mauritius?', 'The Medical Council Act of 1999 imposes no requirement', 'of physical presence. What is not forbidden is permitted.', 'A Tibok teleconsultation is a legal, enforceable, adjudicable', 'medical act — one MUA can cover and reimburse under ordinary law.'],
+    }, "legal, enforceable, adjudicable"), " medical act — a clear framework Mauritius can claim, raise into a standard, and export."))), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Teleconsultation is not a legal debate.', 'It has been an established fact for nearly thirty years.', 'Since 1997, the WHO has defined it as a medical act in its own right.', 'France has reimbursed it since 2018. The United States,', 'the United Kingdom, Germany, Australia, Canada and Switzerland', 'have written it into their law. And in Mauritius?', 'The Medical Council Act of 1999 imposes no requirement', 'of physical presence. What is not forbidden is permitted.', 'A Tibok teleconsultation is a legal, enforceable, adjudicable', 'medical act — a standard Mauritius can claim and export.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -177,7 +177,7 @@
       at: 1.7,
       color: C.gold
     }, "Control agent — every prescription analysed"))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Ten tools — orbiting one central intelligence.', 'Video consultation with no appointment. The signed digital prescription.', 'A pharmacy network that delivers as far as Rodrigues. Lab tests', 'and imaging. Chronic-disease follow-up. Family management.', 'SilentCheck for prevention. The second opinion. Relevance control.', 'And around it all, AI agents that never sleep: chronic follow-up,', 'prevention, control. For MUA, they are the arms your risk', 'management never had — a chain that is steered, traced, and locked.'],
+      lines: ['Ten tools — orbiting one central intelligence.', 'Video consultation with no appointment. The signed digital prescription.', 'A pharmacy network that delivers as far as Rodrigues. Lab tests', 'and imaging. Chronic-disease follow-up. Family management.', 'SilentCheck for prevention. The second opinion. Relevance control.', 'And around it all, AI agents that never sleep: chronic follow-up,', 'prevention, control. For Mauritius, this is no gadget:', 'it is a sovereign digital-health infrastructure —', 'steered, traced, locked — built here.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -235,7 +235,7 @@
       accentIdx: [1],
       accentColor: C.gold
     }), /*#__PURE__*/React.createElement(SilentCheckViz, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Our flagship innovation is called SilentCheck —', 'cardiovascular risk stratification, based on the BSD Score.', 'Four million patients followed across fifty-two countries.', 'Fifty-three references published in the New England Journal', 'of Medicine, The Lancet, JACC, Circulation. Fifteen biomarkers.', 'SilentCheck detects, five to ten years in advance, the anomalies', 'that symptoms do not yet reveal. A traditional insurer', 'looks in the rear-view mirror. SilentCheck looks ahead:', 'it is the building block that moves MUA from claims endured', 'to active prevention.'],
+      lines: ['Our flagship innovation is called SilentCheck —', 'cardiovascular risk stratification, based on the BSD Score.', 'Four million patients followed across fifty-two countries.', 'Fifty-three references published in the New England Journal', 'of Medicine, The Lancet, JACC, Circulation. Fifteen biomarkers.', 'SilentCheck detects, five to ten years in advance, the anomalies', 'that symptoms do not yet reveal. A traditional health system', 'looks in the rear-view mirror. SilentCheck looks ahead:', 'it is the building block that moves Mauritius from medicine endured', 'to active prevention.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -263,7 +263,7 @@
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(SecondOpinionFlow, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['For complex conditions: the Medical Second Opinion.', "The patient's complete file — history, prescriptions, imaging,", 'biology, antecedents — is re-verified by our AI and RAG system,', 'then validated by a Tibok physician. A second reading, fully sourced.', 'For the insured: a file reviewed with no blind spots. For MUA:', 'automated quality control before every costly act — the major', 'procedure, the hospitalisation, the overseas referral.', 'Exactly where the money is at stake.'],
+      lines: ['For complex conditions: the Medical Second Opinion.', "The patient's complete file — history, prescriptions, imaging,", 'biology, antecedents — is re-verified by our AI and RAG system,', 'then validated by a Tibok physician. A second reading, fully sourced.', 'For the patient: a file reviewed with no blind spots. For the system:', 'automated quality control before every costly act — the major', 'procedure, the hospitalisation, the overseas referral.', 'Exactly where healthcare money is at stake.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -315,12 +315,12 @@
         justifyContent: 'center',
         gap: 22
       }
-    }, [['An end to over-prescription', 'Every test, every act is confronted with the guidelines before it enters the expense. Opportunistic prescribing becomes visible.', C.teal], ['A structured fight against fraud', 'The phantom act and up-coding have no blind spot left — the act is natively provable.', C.blue], ['Command of the loss ratio', 'Early detection, coordinated care paths, structured clinical data to steer cohorts and pricing.', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
+    }, [['An end to over-prescription', 'Every test, every act is confronted with the guidelines before it enters the expense. Opportunistic prescribing becomes visible.', C.teal], ['A structured fight against fraud', 'The phantom act and up-coding have no blind spot left — the act is natively provable.', C.blue], ['Command of healthcare costs', 'Early detection, coordinated care paths, structured clinical data — for insurers, employers, the State.', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
       key: i,
       p: p,
       i: i
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['And here is the key module for MUA.', 'Today, you verify a document reconstructed after the fact —', 'nobody observed the act. Tibok reverses that model:', 'every prescription, every test passes through the platform,', 'natively provable — time-stamping, electronic signature,', 'video traceability, relevance analysis. MUA moves from ex-post', 'control on paper to native, real-time control. Three levers:', 'an end to over-prescription, a structured fight against fraud,', 'and command of the loss ratio.'],
+      lines: ['And here is the module that changes the economics of healthcare.', 'Today, you verify a document reconstructed after the fact —', 'nobody observed the act. Tibok reverses that model:', 'every prescription, every test passes through the platform,', 'natively provable — time-stamping, electronic signature,', 'video traceability, relevance analysis. We move from ex-post', 'control on paper to native, real-time control. Three levers:', 'an end to over-prescription, a structured fight against fraud,', 'command of costs. An export-ready product.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -399,11 +399,11 @@
         fontSize: 30,
         color: '#fff'
       }
-    }, "The seat of ", /*#__PURE__*/React.createElement("span", {
+    }, "The commercial proof exists. What is needed now is a ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: C.gold
       }
-    }, "reference partner"), " is still open."), /*#__PURE__*/React.createElement("div", {
+    }, "country platform"), "."), /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         alignItems: 'center',
@@ -416,10 +416,17 @@
         fontSize: 22,
         color: C.dim
       }
-    }, "That seat is what I am offering"), /*#__PURE__*/React.createElement(MUAmark, {
+    }, "And that is what I have come to the"), /*#__PURE__*/React.createElement(EDBmark, {
       h: 30
-    }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['This model is not a promise. With Swan, signature is under way:', 'the first major insurer to commit to reimbursing', 'consultations and prescriptions made on Tibok.', 'The principle is validated on the Mauritian market.', 'The seat of reference partner, however, is still open.', 'That seat is what I am offering MUA.'],
+    }), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 600,
+        fontSize: 22,
+        color: C.dim
+      }
+    }, "for"))), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['This model is not a promise. With Swan, signature is under way:', 'the first major insurer to commit to reimbursing', 'consultations and prescriptions made on Tibok.', 'The principle is validated on the Mauritian market.', 'The commercial proof exists. What is needed now', 'is a country platform — and that is what I have come to the EDB for.'],
       x: 960,
       width: 1500,
       align: "center",
@@ -431,24 +438,24 @@
       lead: 1.6,
       tail: 1.2
     }))
-  }, /* ---------- 13 · THE OFFER: A PLATFORM PARTNERSHIP ---------- */
+  }, /* ---------- 13 · THE PROPOSAL: A NATIONAL AI CHAMPION ---------- */
   {
     dur: 50,
     hue: 'gold',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "The offer",
-      title: "A platform partnership",
+      act: "The proposal",
+      title: "A national champion for the AI pillar",
       color: C.gold
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 128,
       size: 40,
       weight: 700,
-      lines: ['Not one more product to manage.', 'A layer of intelligence across your whole portfolio.'],
+      lines: ['Mauritius made AI its first strategic pillar.', 'TIBOK is the proof that it works.'],
       accentIdx: [1],
       accentColor: C.gold
     }), /*#__PURE__*/React.createElement(OfferCards, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Not one more product to manage — a layer of intelligence', 'to embed across your entire portfolio.', 'Platform access is offered to MUA — co-branded,', 'MUA Medical Intelligence, powered by Tibok. No subscription.', 'Your policyholders pay only for the consultation: five hundred', 'rupees, instead of eight hundred. Everything else is included —', 'the second opinion, chronic-disease follow-up, SilentCheck.', 'Only one module carries a fee: relevance control,', 'at fifty rupees per month per covered life. Or, better:', 'the win-win — no subscription, a share of the savings generated,', 'documented and auditable. You pay only on avoided costs.'],
+      lines: ['Here is what I propose to the EDB. Budget 2026-27 makes AI', "and digitisation the country's first strategic pillar.", 'TIBOK is exactly what that strategy is meant to produce:', 'sovereign AI, in production, one hundred percent Mauritian,', 'already validated by the market. Three axes. One: the showcase —', 'make TIBOK the flagship case of the Mauritius AI Hub.', 'Two: acceleration — the Startup Act, the EDB accelerator,', "AI incentives, the Côte d'Or special economic zone: apply those", 'levers to a product already in production. Three: export —', "take TIBOK aboard your African missions, and make", 'Medical Intelligence a Mauritian services export.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -483,7 +490,7 @@
         letterSpacing: '-0.025em',
         color: '#fff'
       }
-    }, "MUA is already where TIBOK wants to go."), /*#__PURE__*/React.createElement("div", {
+    }, "The EDB is already where TIBOK wants to go."), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 600,
@@ -491,8 +498,8 @@
         color: C.blue,
         marginTop: 12
       }
-    }, "Your regional network · our sovereign health infrastructure")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['Mauritius is the proof of concept. It works here — so it works', 'everywhere the problem is the same: not enough doctors.', 'And MUA is already where Tibok wants to go: East Africa.', 'Your regional network, our sovereign health infrastructure.', 'Together, the Mauritian standard can become the standard', 'for a continent and its ocean.'],
+    }, "Your country platform · our sovereign health infrastructure")), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['Mauritius is the proof of concept. It works here — so it works', 'everywhere the problem is the same: not enough doctors.', 'And the EDB is already where Tibok wants to go: its missions,', 'its network, its promotion mandate cover the continent.', 'Your country platform, our sovereign health infrastructure.', 'Together, the Mauritian standard can become the standard', 'for a continent and its ocean.'],
       x: 960,
       width: 1560,
       align: "center",
@@ -509,7 +516,7 @@
     dur: 30,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(FinalScene, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['The Mauritian health-insurance market is at a turning point.', 'Policyholders expect modern services. Regulators expect', 'transparency. Healthcare costs keep rising.', "Your profession: protecting what matters most — your policyholders' health.", 'What makes that protection durable is intelligence —', 'prevention, native control, clinical data.', 'That is what Tibok brings to MUA.', "Let us build tomorrow's standard together — for Mauritius,", 'for Africa, and for the Indian Ocean.', 'Doctor Stéphane Bach · Digital Data Solutions · tibok.mu'],
+      lines: ['Mauritius is at a turning point. The country has made', 'artificial intelligence the first pillar of its economic strategy.', 'What it needs now is proof — real products,', 'in production, exportable. TIBOK is that proof.', 'Your mandate: making Mauritius a high-income, innovative', 'economy, open to Africa. Ours: building', 'the sovereign software that carries it.', "Let us build tomorrow's standard together — for Mauritius,", 'for Africa, and for the Indian Ocean.', 'Doctor Stéphane Bach · Digital Data Solutions · tibok.mu'],
       x: 960,
       width: 1560,
       align: "center",
@@ -1170,7 +1177,7 @@
     }, "A second reading, fully sourced — before the major procedure, the hospitalisation, the overseas referral."));
   }
 
-  /* ===== the offer: three pricing cards + win-win ===== */
+  /* ===== the proposal: three axes aligned with the EDB strategy ===== */
   function OfferCards() {
     const {
       localTime
@@ -1190,7 +1197,7 @@
         alignItems: 'stretch'
       }
     }, /*#__PURE__*/React.createElement(Card3D, {
-      w: 440,
+      w: 470,
       at: 0.4,
       i: 0,
       accent: C.blue,
@@ -1206,16 +1213,16 @@
         textTransform: 'uppercase',
         color: C.blue
       }
-    }, "Platform access · MUA"), /*#__PURE__*/React.createElement("div", {
+    }, "Axis 1 · Mauritius AI Hub"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 800,
-        fontSize: 64,
+        fontSize: 58,
         color: '#fff',
         marginTop: 16,
         lineHeight: 1
       }
-    }, "Free"), /*#__PURE__*/React.createElement("div", {
+    }, "The showcase"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 500,
@@ -1223,7 +1230,7 @@
         color: C.dim,
         marginTop: 8
       }
-    }, "no subscription, no overhead"), /*#__PURE__*/React.createElement("div", {
+    }, "the “Leveraging AI & Digitisation” pillar"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 400,
@@ -1232,12 +1239,12 @@
         marginTop: 14,
         lineHeight: 1.45
       }
-    }, "Co-branded — ", /*#__PURE__*/React.createElement("span", {
+    }, "Sovereign AI in production, the flagship case of the country brand — ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: '#fff',
         fontWeight: 600
       }
-    }, "MUA Medical Intelligence"), ", powered by TIBOK — across the whole portfolio.")), /*#__PURE__*/React.createElement(Card3D, {
+    }, "Mauritius does not consume AI: it produces it"), ".")), /*#__PURE__*/React.createElement(Card3D, {
       w: 470,
       at: 0.6,
       i: 1,
@@ -1254,23 +1261,16 @@
         textTransform: 'uppercase',
         color: C.green
       }
-    }, "MUA policyholders"), /*#__PURE__*/React.createElement("div", {
+    }, "Axis 2 · Startup Act & AI SEZ"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 800,
-        fontSize: 64,
+        fontSize: 58,
         color: '#fff',
         marginTop: 16,
         lineHeight: 1
       }
-    }, "Rs 500 ", /*#__PURE__*/React.createElement("span", {
-      style: {
-        fontSize: 26,
-        fontWeight: 600,
-        color: C.dim,
-        textDecoration: 'line-through'
-      }
-    }, "800")), /*#__PURE__*/React.createElement("div", {
+    }, "Acceleration"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 500,
@@ -1278,7 +1278,7 @@
         color: C.dim,
         marginTop: 8
       }
-    }, "per consultation — the only payment"), /*#__PURE__*/React.createElement("div", {
+    }, "the EDB levers, on a product already in production"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 500,
@@ -1287,8 +1287,8 @@
         marginTop: 14,
         lineHeight: 1.6
       }
-    }, "✓ Medical second opinion included", /*#__PURE__*/React.createElement("br", null), "✓ Chronic-disease follow-up included", /*#__PURE__*/React.createElement("br", null), "✓ SilentCheck included")), /*#__PURE__*/React.createElement(Card3D, {
-      w: 520,
+    }, "✓ Startup Act & EDB accelerator", /*#__PURE__*/React.createElement("br", null), "✓ AI incentives · innovation grants", /*#__PURE__*/React.createElement("br", null), "✓ Côte d’Or AI SEZ")), /*#__PURE__*/React.createElement(Card3D, {
+      w: 490,
       at: 0.8,
       i: 2,
       accent: C.gold,
@@ -1308,47 +1308,38 @@
         textTransform: 'uppercase',
         color: C.gold
       }
-    }, "Only paid module · Relevance control"), /*#__PURE__*/React.createElement("div", {
+    }, "Axis 3 · African missions"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 800,
-        fontSize: 56,
+        fontSize: 58,
         color: C.gold,
-        marginTop: 14,
+        marginTop: 16,
         lineHeight: 1
       }
-    }, "Rs 50"), /*#__PURE__*/React.createElement("div", {
+    }, "Export"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 500,
         fontSize: 20,
         color: '#fff',
-        marginTop: 6
+        marginTop: 8
       }
-    }, "per month · per covered life"), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 600,
-        fontSize: 18,
-        color: C.teal,
-        marginTop: 14,
-        lineHeight: 1.4
-      }
-    }, "or the win-win option:"), /*#__PURE__*/React.createElement("div", {
+    }, "Medical Intelligence as a services export"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 400,
         fontSize: 17,
         color: C.dim,
-        marginTop: 6,
+        marginTop: 14,
         lineHeight: 1.45
       }
-    }, "no subscription — a share of the ", /*#__PURE__*/React.createElement("span", {
+    }, "Take TIBOK aboard the EDB’s economic missions — the ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: '#fff',
         fontWeight: 600
       }
-    }, "savings generated"), ", documented and auditable."))), /*#__PURE__*/React.createElement("div", {
+    }, "Mauritian standard"), " of digital health, sold to the continent."))), /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         justifyContent: 'center',
@@ -1373,18 +1364,12 @@
         color: C.gold,
         fontWeight: 800
       }
-    }, "Win-win"), " — native veracity makes the economics measurable: you pay only on ", /*#__PURE__*/React.createElement("span", {
+    }, "Win-win"), " — DDS brings the living proof; the EDB brings the country platform. Together: the ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: C.teal,
         fontWeight: 700
       }
-    }, "avoided costs"), ". ", /*#__PURE__*/React.createElement("span", {
-      style: {
-        color: C.dim,
-        fontWeight: 400,
-        fontSize: 19
-      }
-    }, "(share and thresholds to be set together)")))));
+    }, "Mauritian standard"), " of digital health, exported to Africa."))));
   }
   function MiniPanel({
     p,
@@ -1451,7 +1436,7 @@
     const {
       localTime
     } = useScene();
-    // gold = MUA network in East Africa · blue = TIBOK today · teal = natural expansion
+    // gold = EDB missions & network in Africa · blue = TIBOK today · teal = natural expansion
     const nodes = [['Mauritius', 0, C.blue], ['Rodrigues', 0.8, C.blue], ['Madagascar', 1.6, C.teal], ['Mozambique', 2.0, C.teal], ['Tanzania', 2.6, C.gold], ['Kenya', 3.0, C.gold], ['Uganda', 3.4, C.gold], ['Rwanda', 3.8, C.gold]];
     const cx = 960,
       cy = 400,
@@ -1509,7 +1494,7 @@
         gap: 28,
         opacity: ev(localTime, 3.4, 0.7)
       }
-    }, [['TIBOK today', C.blue], ['MUA network — East Africa', C.gold], ['Natural expansion', C.teal]].map((l, i) => /*#__PURE__*/React.createElement("span", {
+    }, [['TIBOK today', C.blue], ['EDB missions & network — Africa', C.gold], ['Natural expansion', C.teal]].map((l, i) => /*#__PURE__*/React.createElement("span", {
       key: i,
       style: {
         display: 'inline-flex',
@@ -1531,7 +1516,7 @@
     }), l[0]))));
   }
 
-  /* ===== DDS × MUA closing ===== */
+  /* ===== DDS × EDB closing ===== */
   function FinalScene() {
     const {
       localTime
@@ -1569,7 +1554,7 @@
         fontSize: 52,
         color: 'rgba(206,219,240,0.55)'
       }
-    }, "×"), /*#__PURE__*/React.createElement(MUAmark, {
+    }, "×"), /*#__PURE__*/React.createElement(EDBmark, {
       h: 48
     })), /*#__PURE__*/React.createElement("div", {
       style: {
@@ -1605,7 +1590,7 @@
         gap: 12,
         justifyContent: 'flex-start'
       }
-    }, ['Swan — signature under way', '60,000 scientific references', '100% Mauritian team'].map((c, i) => /*#__PURE__*/React.createElement("span", {
+    }, ['Swan — signature under way', '3 AI products in production', '100% Mauritian team'].map((c, i) => /*#__PURE__*/React.createElement("span", {
       key: i,
       style: {
         padding: '11px 20px',

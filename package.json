@@ -1,7 +1,7 @@
 {
   "name": "dds-groupe-er-film",
   "version": "1.0.0",
-  "description": "Film stratégique Digital Data Solutions × Groupe ER (français, ~7 min).",
+  "description": "Film stratégique Digital Data Solutions × EDB — TIBOK Medical Intelligence (FR+EN, ~12 min).",
   "private": true,
   "scripts": {
     "build": "node build.js"
