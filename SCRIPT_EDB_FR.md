@@ -233,6 +233,7 @@ Docteur Stéphane Bach. Digital Data Solutions Limited. tibok.mu.
 - **Silences** : un blanc entre chaque paragraphe (≈ 0,8 s).
 - **Musique** : nappe minimaliste, piano + cordes. Couper sous les punchlines des scènes 11, 12, 13 et 15.
 - **Structure** : scènes 1–3 = DDS (courtes, crédibilité) ; scènes 4–12 = TIBOK, la preuve produit (le cœur) ; scènes 13–15 = la proposition à l'EDB, vision et appel.
-- **Voix off** : les pistes doivent être réenregistrées à partir de ce script et déposées dans
-  `assets/vo/edb_scene_0.mp3 … edb_scene_14.mp3` (une piste par scène), puis les durées
-  mises à jour dans `build/vo-manifest.js`.
+- **Voix off** : pistes générées depuis ce script via Replicate (`minimax/speech-02-hd`),
+  voix clonée des enregistrements ElevenLabs d'origine (`voice_id` FR : `R8_VHXA68M8`).
+  Fichiers : `assets/vo/edb_scene_0.mp3 … edb_scene_14.mp3` (une piste par scène) ;
+  durées dans `build/vo-manifest.js`.

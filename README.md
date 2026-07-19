@@ -17,12 +17,12 @@ Ken Burns, chiffres animés, diagrammes qui se construisent. Une **voix-off** na
 scène ; le film est **recalé sur la durée de chaque clip**. La voix se coupe/réactive au
 clic sur le bouton en bas à droite, ou avec la touche **M**.
 
-> **Voix-off à réenregistrer.** Les pistes de l'ancienne version MUA ont été retirées :
-> le texte a changé. Enregistrer les nouvelles pistes depuis `SCRIPT_EDB_FR.md`
-> (→ `assets/vo/edb_scene_0.mp3 … edb_scene_14.mp3`) et `SCRIPT_EDB_EN.md`
-> (→ `assets/vo/edb_scene_en_0.mp3 … edb_scene_en_14.mp3`), puis mettre à jour les durées
-> dans `build/vo-manifest.js` / `build/vo-manifest-en.js`. Sans les fichiers audio, le
-> film tourne en silencieux avec le même minutage.
+> **Voix-off.** Les pistes (`assets/vo/edb_scene_*.mp3` et `edb_scene_en_*.mp3`) ont été
+> générées via **Replicate** (`minimax/speech-02-hd`), avec une voix **clonée depuis les
+> enregistrements ElevenLabs d'origine** (`minimax/voice-cloning` — voix FR `R8_VHXA68M8`,
+> voix EN `R8_G1TSXTMA`). Pour regénérer après un changement de texte : relancer la
+> synthèse scène par scène avec ces `voice_id`, remplacer les mp3, puis recalculer les
+> durées dans `build/vo-manifest.js` / `build/vo-manifest-en.js` (paquet `mp3-duration`).
 
 C'est un site statique : React 18 + JS précompilé, servi en local, sans CDN.
 
